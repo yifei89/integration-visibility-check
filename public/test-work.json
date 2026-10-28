@@ -227,7 +227,7 @@
     },
     {
       "id": "qq",
-      "name": "qq",
+      "name": "QQ",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -236,7 +236,7 @@
     },
     {
       "id": "weibo",
-      "name": "weibo",
+      "name": "微博",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -245,7 +245,7 @@
     },
     {
       "id": "redbook",
-      "name": "redbook",
+      "name": "小红书",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -254,7 +254,7 @@
     },
     {
       "id": "bilibili",
-      "name": "bilibili",
+      "name": "哔哩哔哩",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -263,7 +263,7 @@
     },
     {
       "id": "alipay",
-      "name": "alipay",
+      "name": "支付宝",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -272,7 +272,7 @@
     },
     {
       "id": "taobao",
-      "name": "taobao",
+      "name": "淘宝",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -281,7 +281,7 @@
     },
     {
       "id": "netease",
-      "name": "netease",
+      "name": "网易云音乐",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -290,7 +290,7 @@
     },
     {
       "id": "delivery",
-      "name": "delivery",
+      "name": "外卖",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -299,7 +299,7 @@
     },
     {
       "id": "forum",
-      "name": "forum",
+      "name": "论坛",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -308,7 +308,7 @@
     },
     {
       "id": "whatsapp",
-      "name": "whatsapp",
+      "name": "WhatsApp",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -326,7 +326,7 @@
     },
     {
       "id": "tiktok",
-      "name": "tiktok",
+      "name": "TikTok",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -335,7 +335,7 @@
     },
     {
       "id": "twitter",
-      "name": "twitter",
+      "name": "X",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -344,7 +344,7 @@
     },
     {
       "id": "telegram",
-      "name": "telegram",
+      "name": "Telegram",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -353,7 +353,7 @@
     },
     {
       "id": "discord",
-      "name": "discord",
+      "name": "Discord",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -362,7 +362,7 @@
     },
     {
       "id": "youtube",
-      "name": "youtube",
+      "name": "YouTube",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -371,7 +371,7 @@
     },
     {
       "id": "line",
-      "name": "line",
+      "name": "LINE",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -380,7 +380,7 @@
     },
     {
       "id": "snapchat",
-      "name": "snapchat",
+      "name": "Snapchat",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -389,7 +389,7 @@
     },
     {
       "id": "facebook",
-      "name": "facebook",
+      "name": "Facebook",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -398,7 +398,7 @@
     },
     {
       "id": "messenger",
-      "name": "messenger",
+      "name": "Messenger",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -407,7 +407,7 @@
     },
     {
       "id": "reddit",
-      "name": "reddit",
+      "name": "Reddit",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -416,7 +416,7 @@
     },
     {
       "id": "spotify",
-      "name": "spotify",
+      "name": "Spotify",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -425,7 +425,7 @@
     },
     {
       "id": "netflix",
-      "name": "netflix",
+      "name": "Netflix",
       "installed": false,
       "visible": false,
       "dock": false,
@@ -434,7 +434,7 @@
     },
     {
       "id": "pinterest",
-      "name": "pinterest",
+      "name": "Pinterest",
       "installed": false,
       "visible": false,
       "dock": false,
