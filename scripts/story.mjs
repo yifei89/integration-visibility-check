@@ -83,12 +83,12 @@ try {
   }
   const raw = JSON.parse(json);
   const { compileStory, storySchema } = await server.ssrLoadModule(
-    "/src/story-engine/compiler.ts",
+    "/src/foundphone/story-engine/compiler.ts",
   );
   const { story, work } = compileStory(raw);
   if (mode === "test" || mode === "build") {
     const { testStory } = await server.ssrLoadModule(
-      "/src/story-engine/testStory.ts",
+      "/src/foundphone/story-engine/testStory.ts",
     );
     const errors = testStory(story, work);
     if (errors.length) throw Error(errors.join("\n"));

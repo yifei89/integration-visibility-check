@@ -8,6 +8,7 @@ import {
   type Work,
 } from "../schema";
 import { registry } from "../registry";
+import { preinstalledApps } from "../apps";
 import { validateGraph } from "../engine";
 const id = z.string().regex(/^[a-zA-Z][a-zA-Z0-9_.-]*$/, "需要稳定的英文 ID");
 const content = itemSchema
@@ -41,15 +42,7 @@ export const storySchema = z
       .strict(),
     installedApps: z
       .array(z.union([z.string(), workSchema.shape.apps.element]))
-      .default([
-        "appstore",
-        "phone",
-        "messages",
-        "photos",
-        "notes",
-        "safari",
-        "settings",
-      ]),
+      .default(preinstalledApps),
     contacts: z
       .array(
         z.object({
@@ -138,7 +131,7 @@ export function compileStory(raw: unknown): { story: Story; work: Work } {
     raw: Partial<z.infer<typeof itemSchema>>,
     p: string,
   ) => {
-    if (!installed.has(app)) fail(p, `App ${app} 未安装`);
+    if (!configuredIds.includes(app)) fail(p, `App ${app} 未配置`);
     unique(raw.id!, p + ".id");
     const item = itemSchema.parse({
       time: s.phone.date + " " + (s.phone.time || "21:41"),

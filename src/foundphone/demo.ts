@@ -1,5 +1,6 @@
 import { makeItem, uid, type Work } from "./schema";
 import { registry } from "./registry";
+import { preinstalledApps } from "./apps";
 export function createWork(title = "雨停之前"): Work {
   const w: Work = {
     formatVersion: 1,
@@ -23,16 +24,8 @@ export function createWork(title = "雨停之前"): Work {
     apps: registry.map((a) => ({
       id: a.id,
       name: a.name,
-      installed: [
-        "appstore",
-        "phone",
-        "messages",
-        "photos",
-        "notes",
-        "safari",
-        "settings",
-      ].includes(a.id),
-      visible: true,
+      installed: preinstalledApps.includes(a.id),
+      visible: preinstalledApps.includes(a.id),
       dock: ["phone", "messages", "safari", "music"].includes(a.id),
       folder:
         ![

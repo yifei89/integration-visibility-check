@@ -33,6 +33,15 @@ const systemApps = new Set([
   "calculator",
   "settings",
 ]);
+export const preinstalledApps = [...systemApps, "wechat", "instagram", "kakao", "threads"];
+export function applyPreinstalledApps(w: Work) {
+  for (const a of w.apps) {
+    if (!registry.some((r) => r.id === a.id)) continue;
+    a.installed = preinstalledApps.includes(a.id);
+    a.visible = a.installed;
+    if (!a.installed) a.dock = false;
+  }
+}
 export function category(id: string) {
   if (systemApps.has(id)) return "系统";
   const app = registry.find((a) => a.id === id);
