@@ -22,6 +22,7 @@ import {
 import type { Work, Item } from "../schema";
 import { IOSToggle } from "../vendor/konsta/Toggle";
 import { NavigationPage, useNavigation } from "./Navigation";
+import { useRealClock } from "../realtime";
 type Row = [ComponentType<{ size?: number }>, string, string];
 const groups: Row[][] = [
   [
@@ -63,7 +64,8 @@ export function NativeSettings({
     [airplane, setAirplane] = useState(false),
     [wifi, setWifi] = useState(true),
     [bluetooth, setBluetooth] = useState(true),
-    [lowPower, setLowPower] = useState(false);
+    [lowPower, setLowPower] = useState(false),
+    realClock = useRealClock(work.phone.autoTime !== false);
   const row = (label: string, value?: string, click?: () => void) => (
     <button key={label} className="settings-native-row" onClick={click}>
       <span>{label}</span>
@@ -152,8 +154,12 @@ export function NativeSettings({
       case "日期与时间":
         return (
           <div className="settings-group">
-            {row("日期", work.phone.date || "2026-09-01")}
-            {row("时间", work.phone.time)}
+            {row("日期", realClock?.date || work.phone.date || "2026-09-01")}
+            {row("时间", realClock?.time || work.phone.time)}
+            {row(
+              "自动设置",
+              work.phone.autoTime === false ? "关闭（虚拟时间）" : "北京时间",
+            )}
             {row("时区", "中国标准时间")}
           </div>
         );
