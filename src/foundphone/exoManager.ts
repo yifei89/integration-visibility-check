@@ -117,7 +117,7 @@ export const exoAvatars: Record<string, string> = {
   朴灿烈: media("avatar-chanyeol"), 灿烈哥: media("avatar-chanyeol"),
   都暻秀: media("avatar-do"), 暻秀哥: media("avatar-do"),
   金钟仁: media("avatar-kai"), 钟仁哥: media("avatar-kai"),
-  吴世勋: media("avatar-sehun"), 世勋哥: media("avatar-sehun"),
+  吴世勋: media("avatar-sehun"), 世勋: media("avatar-sehun"),
   "EXO工作群（6）": media("avatar-group"),
 };
 const avatarFor = (text: string) =>
@@ -190,11 +190,20 @@ export function applyExoExtras(w: Work): boolean {
   applyExoDialogue(w);
   return true;
 }
-export const exoDialogueMarker = "exo_dialogue_ko_v1";
+export const exoDialogueMarker = "exo_dialogue_ko_v2";
 /** Members' own voice (Korean with Chinese translation): replaces imported chats, fixed replies and notices once. */
 export function applyExoDialogue(w: Work): boolean {
   if (w.variables[exoDialogueMarker]) return false;
   const threads = Object.keys(content.chats);
+  // The manager is older than Sehun (he calls her 누나), so his chat is 世勋, not 世勋哥.
+  for (const items of Object.values(w.data)) for (const i of items) {
+    i.title = i.title.replaceAll("世勋哥", "世勋");
+    i.body = i.body.replaceAll("世勋哥", "世勋");
+  }
+  for (const n of w.nodes) {
+    n.target = n.target.replaceAll("世勋哥", "世勋");
+    for (const a of n.actions) if (typeof a.value === "string") a.value = a.value.replaceAll("世勋哥", "世勋");
+  }
   // The HTML's chat-list summaries would show up as extra messages inside each chat.
   w.data.wechat = (w.data.wechat ?? []).filter((i) => !/^exo-wechat-\d+$/.test(i.id));
   threads.forEach((thread, t) => {
