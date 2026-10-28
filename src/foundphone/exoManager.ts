@@ -131,7 +131,7 @@ const exoPhotos = [
   ["exo-15", "EXO-K · 2012 丽水世博"], ["exo-16", "世勋 · EXO'rDIUM"],
 ] as const;
 /** Apps whose posts/media read as picture content; fill empty ones with the EXO photo pool. */
-const pictureApps = ["instagram", "threads", "weibo", "redbook", "douyin", "bilibili", "tiktok",
+const pictureApps = ["photos", "instagram", "threads", "weibo", "redbook", "douyin", "bilibili", "tiktok",
   "twitter", "youtube", "pinterest", "reddit", "netflix"];
 
 /**
