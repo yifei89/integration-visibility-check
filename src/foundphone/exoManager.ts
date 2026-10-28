@@ -195,7 +195,8 @@ export const exoDialogueMarker = "exo_dialogue_ko_v1";
 export function applyExoDialogue(w: Work): boolean {
   if (w.variables[exoDialogueMarker]) return false;
   const threads = Object.keys(content.chats);
-  w.data.wechat ??= [];
+  // The HTML's chat-list summaries would show up as extra messages inside each chat.
+  w.data.wechat = (w.data.wechat ?? []).filter((i) => !/^exo-wechat-\d+$/.test(i.id));
   threads.forEach((thread, t) => {
     const chats = dialogue.chats[thread as keyof typeof dialogue.chats] ?? [];
     const replies = dialogue.replies[thread as keyof typeof dialogue.replies] ?? [];
