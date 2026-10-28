@@ -1,6 +1,6 @@
 import { AppManager } from "./AppLibrary";
 import { useEffect, useState, useRef, lazy, Suspense } from "react";
-import { createRoot } from "react-dom/client";
+
 import {
   Smartphone,
   LayoutGrid,
@@ -44,7 +44,7 @@ import "./styles.css";
 const StoryEditor = lazy(() =>
   import("./StoryEditor").then((m) => ({ default: m.StoryEditor })),
 );
-function Studio() {
+export function Studio() {
   const store = useStudio();
   const { work, works, change } = store;
   const [view, setView] = useState("phone");
@@ -884,4 +884,3 @@ function Metadata({
     </Modal>
   );
 }
-createRoot(document.getElementById("root")!).render(<Studio />);
