@@ -12,4 +12,10 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    define: {
+      // FoundPhone: original app icons are shipped in public/icon-assets.
+      "import.meta.env.VITE_ORIGINAL_ICONS": JSON.stringify("true"),
+    },
+  },
 });

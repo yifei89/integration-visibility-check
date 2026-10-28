@@ -1,24 +1,70 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, ClientOnly, Link } from "@tanstack/react-router";
+import { lazy, Suspense } from "react";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const StoryPlayer = lazy(() =>
+  import("@/foundphone/runtime/StoryPlayer").then((m) => ({
+    default: m.StoryPlayer,
+  })),
+);
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "捡手机 · FoundPhone Studio" },
+      {
+        name: "description",
+        content:
+          "《捡手机》是一个交互式虚拟手机故事框架：打开一部手机，翻阅聊天、照片和备忘录，推动剧情走向不同结局。",
+      },
+      { property: "og:title", content: "捡手机 · FoundPhone Studio" },
+      {
+        property: "og:description",
+        content:
+          "交互式虚拟手机故事：聊天、照片、密码、来电与多结局剧情，全部在浏览器中运行。",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
+    <ClientOnly
+      fallback={
+        <main className="story-runtime">
+          <p role="status">正在打开手机…</p>
+        </main>
+      }
     >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+      <Suspense
+        fallback={
+          <main className="story-runtime">
+            <p role="status">正在打开手机…</p>
+          </main>
+        }
+      >
+        <StoryPlayer />
+      </Suspense>
+      <Link
+        to="/studio"
+        style={{
+          position: "fixed",
+          right: 16,
+          bottom: 16,
+          zIndex: 9999,
+          padding: "10px 18px",
+          borderRadius: 999,
+          background: "#1c1c1e",
+          color: "#f5f4f0",
+          fontSize: 14,
+          textDecoration: "none",
+          boxShadow: "0 8px 24px rgba(0,0,0,.25)",
+        }}
+      >
+        打开创作器
+      </Link>
+    </ClientOnly>
   );
 }
