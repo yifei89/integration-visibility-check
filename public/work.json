@@ -508,7 +508,7 @@
         },
         "time": "2026-10-28 08:12",
         "sender": "俊勉哥",
-        "avatar": "",
+        "avatar": "./media/avatar-suho.jpg",
         "kind": "call",
         "media": "",
         "hidden": false,
@@ -531,7 +531,7 @@
         },
         "time": "2026-10-27 22:16",
         "sender": "灿烈哥",
-        "avatar": "",
+        "avatar": "./media/avatar-chanyeol.jpg",
         "kind": "call",
         "media": "",
         "hidden": false,
@@ -577,7 +577,7 @@
         },
         "time": "2026-10-27 16:05",
         "sender": "钟仁哥",
-        "avatar": "",
+        "avatar": "./media/avatar-kai.jpg",
         "kind": "call",
         "media": "",
         "hidden": false,
@@ -600,7 +600,7 @@
         },
         "time": "2026-10-28 09:42",
         "sender": "灿烈哥",
-        "avatar": "",
+        "avatar": "./media/avatar-chanyeol.jpg",
         "kind": "text",
         "media": "",
         "hidden": true,
@@ -625,7 +625,7 @@
         },
         "time": "2026-10-28 09:42",
         "sender": "金俊勉｜俊勉哥",
-        "avatar": "",
+        "avatar": "./media/avatar-suho.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -648,7 +648,7 @@
         },
         "time": "2026-10-28 09:42",
         "sender": "朴灿烈｜灿烈哥",
-        "avatar": "",
+        "avatar": "./media/avatar-chanyeol.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -671,7 +671,7 @@
         },
         "time": "2026-10-28 09:42",
         "sender": "都暻秀｜暻秀哥",
-        "avatar": "",
+        "avatar": "./media/avatar-do.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -694,7 +694,7 @@
         },
         "time": "2026-10-28 09:42",
         "sender": "金钟仁｜钟仁哥",
-        "avatar": "",
+        "avatar": "./media/avatar-kai.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -717,7 +717,7 @@
         },
         "time": "2026-10-28 09:42",
         "sender": "吴世勋｜世勋哥",
-        "avatar": "",
+        "avatar": "./media/avatar-sehun.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -864,6 +864,374 @@
         "unlock": "",
         "password": "",
         "folder": "最近项目相册",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-0",
+        "title": "2018 KBS 歌谣大祝祭 · 红毯",
+        "body": "2018 KBS 歌谣大祝祭 · 红毯",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-10 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-01.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-1",
+        "title": "2016 KBS 歌谣大祝祭 · 红毯",
+        "body": "2016 KBS 歌谣大祝祭 · 红毯",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-11 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-02.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-2",
+        "title": "Monster 舞台 · 水原",
+        "body": "Monster 舞台 · 水原",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-12 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-03.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-3",
+        "title": "灿烈、俊勉、世勋 · 新加坡活动",
+        "body": "灿烈、俊勉、世勋 · 新加坡活动",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-13 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-04.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-4",
+        "title": "俊勉 · EXO'luXion 澳门",
+        "body": "俊勉 · EXO'luXion 澳门",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-14 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-05.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-5",
+        "title": "俊勉 · 2024 活动",
+        "body": "俊勉 · 2024 活动",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-15 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-06.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-6",
+        "title": "灿烈 · 演唱会嘉宾",
+        "body": "灿烈 · 演唱会嘉宾",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-16 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-07.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-7",
+        "title": "灿烈 · ElyXiOn 曼谷",
+        "body": "灿烈 · ElyXiOn 曼谷",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-17 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-08.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-8",
+        "title": "暻秀 · SMTOWN LIVE 首尔",
+        "body": "暻秀 · SMTOWN LIVE 首尔",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-18 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-09.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-9",
+        "title": "暻秀 · 电影发布会",
+        "body": "暻秀 · 电影发布会",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-19 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-10.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-10",
+        "title": "钟仁 · EXO'luXion 香港",
+        "body": "钟仁 · EXO'luXion 香港",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-20 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-11.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-11",
+        "title": "钟仁 · 电台录制",
+        "body": "钟仁 · 电台录制",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-21 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-12.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-12",
+        "title": "世勋 · Music Bank 柏林",
+        "body": "世勋 · Music Bank 柏林",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-22 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-13.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-13",
+        "title": "世勋 · 品牌活动",
+        "body": "世勋 · 品牌活动",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-23 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-14.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-14",
+        "title": "EXO-K · 2012 丽水世博",
+        "body": "EXO-K · 2012 丽水世博",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-24 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-15.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photo-15",
+        "title": "世勋 · EXO'rDIUM",
+        "body": "世勋 · EXO'rDIUM",
+        "richText": "",
+        "meta": {
+          "source": "Wikimedia Commons · 见 media/credits.txt"
+        },
+        "time": "2026-10-25 20:00",
+        "sender": "相册",
+        "avatar": "",
+        "kind": "image",
+        "media": "./media/exo-16.jpg",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "EXO",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -2213,7 +2581,7 @@
         "sender": "关注列表",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-07.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2236,7 +2604,7 @@
         "sender": "草稿箱",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-08.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2259,7 +2627,7 @@
         "sender": "提醒",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-09.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2284,7 +2652,7 @@
         "sender": "收藏：职场通勤包整理",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-10.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2307,7 +2675,7 @@
         "sender": "收藏：一人食便当",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-11.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2330,7 +2698,7 @@
         "sender": "草稿：入职首周碎碎念",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-12.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2355,7 +2723,7 @@
         "sender": "收藏：拉伸教程",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-13.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2378,7 +2746,7 @@
         "sender": "收藏：桌面收纳",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-14.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2401,7 +2769,7 @@
         "sender": "草稿",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-15.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2426,7 +2794,7 @@
         "sender": "Excel 行程表排版基础",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-16.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2449,7 +2817,7 @@
         "sender": "新手工作汇报结构",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-01.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2472,7 +2840,7 @@
         "sender": "自制咖啡教程",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-02.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2804,7 +3172,7 @@
         "sender": "关注",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-01.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2827,7 +3195,7 @@
         "sender": "Story 草稿",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-02.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2850,7 +3218,7 @@
         "sender": "收藏",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-03.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2875,7 +3243,7 @@
         "sender": "收藏：快速办公整理",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-03.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2898,7 +3266,7 @@
         "sender": "收藏：城市夜景剪辑",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-04.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2921,7 +3289,7 @@
         "sender": "发布状态",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-05.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2946,7 +3314,7 @@
         "sender": "列表：官方资讯",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-06.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2969,7 +3337,7 @@
         "sender": "草稿",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-07.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -2992,7 +3360,7 @@
         "sender": "书签",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-08.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3017,7 +3385,7 @@
         "sender": "EXO 官方公开表演",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-09.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3040,7 +3408,7 @@
         "sender": "5分钟会议纪要整理",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-10.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3063,7 +3431,7 @@
         "sender": "睡前拉伸 10 分钟",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-11.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3134,7 +3502,7 @@
         "sender": "r/productivity",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-15.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3157,7 +3525,7 @@
         "sender": "r/organization",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-16.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3180,7 +3548,7 @@
         "sender": "个人备注",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-01.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3276,7 +3644,7 @@
         "sender": "下班放松片单",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-02.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3299,7 +3667,7 @@
         "sender": "稍后观看",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-03.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3322,7 +3690,7 @@
         "sender": "提醒",
         "avatar": "",
         "kind": "text",
-        "media": "",
+        "media": "./media/exo-04.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3347,7 +3715,7 @@
         "sender": "工作桌面布置",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-12.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3370,7 +3738,7 @@
         "sender": "极简行程手账",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-13.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3393,7 +3761,7 @@
         "sender": "深夜城市摄影",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-14.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3418,7 +3786,7 @@
         "sender": "草稿",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-04.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3441,7 +3809,7 @@
         "sender": "收藏",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-05.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3464,7 +3832,7 @@
         "sender": "提醒",
         "avatar": "",
         "kind": "post",
-        "media": "",
+        "media": "./media/exo-06.jpg",
         "hidden": false,
         "unlock": "",
         "password": "",
@@ -3648,11 +4016,12 @@
         "body": "俊勉哥：大家到了之后在群里说一声",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-group.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "EXO工作群（6）",
-        "avatar": "",
+        "avatar": "./media/avatar-group.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -3671,11 +4040,12 @@
         "body": "如果有不清楚的随时问我",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-suho.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "俊勉哥",
-        "avatar": "",
+        "avatar": "./media/avatar-suho.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -3694,11 +4064,12 @@
         "body": "下午几点来着ㅋㅋ",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-chanyeol.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "灿烈哥",
-        "avatar": "",
+        "avatar": "./media/avatar-chanyeol.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -3717,11 +4088,12 @@
         "body": "那家汤饭店不错",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-do.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "暻秀哥",
-        "avatar": "",
+        "avatar": "./media/avatar-do.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -3740,11 +4112,12 @@
         "body": "停车场入口找到了！",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-kai.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "钟仁哥",
-        "avatar": "",
+        "avatar": "./media/avatar-kai.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -3763,11 +4136,12 @@
         "body": "哥，我在六楼",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-sehun.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "世勋哥",
-        "avatar": "",
+        "avatar": "./media/avatar-sehun.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -3786,11 +4160,12 @@
         "body": "大家早上好，今天新经纪人第一天上班。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-group.jpg"
         },
         "time": "2026-10-28 09:20",
         "sender": "金俊勉",
-        "avatar": "",
+        "avatar": "./media/avatar-suho.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -3809,11 +4184,12 @@
         "body": "欢迎欢迎👏👏",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-group.jpg"
         },
         "time": "2026-10-28 09:21",
         "sender": "朴灿烈",
-        "avatar": "",
+        "avatar": "./media/avatar-chanyeol.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -3832,11 +4208,12 @@
         "body": "你好ㅎㅎ",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-group.jpg"
         },
         "time": "2026-10-28 09:22",
         "sender": "金钟仁",
-        "avatar": "",
+        "avatar": "./media/avatar-kai.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -3855,11 +4232,12 @@
         "body": "你好，以后辛苦了。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-group.jpg"
         },
         "time": "2026-10-28 09:23",
         "sender": "都暻秀",
-        "avatar": "",
+        "avatar": "./media/avatar-do.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -3878,11 +4256,12 @@
         "body": "你好",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-group.jpg"
         },
         "time": "2026-10-28 09:24",
         "sender": "吴世勋",
-        "avatar": "",
+        "avatar": "./media/avatar-sehun.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -3901,7 +4280,8 @@
         "body": "大家好！以后请多多关照！",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-group.jpg"
         },
         "time": "2026-10-28 09:25",
         "sender": "我",
@@ -3924,11 +4304,12 @@
         "body": "今天下午两点，七楼会议室见。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-group.jpg"
         },
         "time": "2026-10-28 09:26",
         "sender": "金俊勉",
-        "avatar": "",
+        "avatar": "./media/avatar-suho.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -3942,70 +4323,25 @@
         "comments": []
       },
       {
-        "id": "exo-wechat-sent-0-0",
-        "title": "EXO工作群（6）",
-        "body": "收到，大家下午见！",
-        "richText": "",
-        "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
-        },
-        "time": "2026-10-28 09:42",
-        "sender": "我",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": true,
-        "unlock": "",
-        "password": "",
-        "folder": "微信",
-        "favorite": false,
-        "outgoing": true,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
         "id": "exo-wechat-received-0-0",
         "title": "EXO工作群（6）",
         "body": "好的ㅎㅎ 我们下午见。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-group.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "金俊勉",
-        "avatar": "",
+        "avatar": "./media/avatar-suho.jpg",
         "kind": "text",
         "media": "",
-        "hidden": true,
+        "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "微信",
+        "folder": "自动回复",
         "favorite": false,
         "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
-        "id": "exo-wechat-sent-0-1",
-        "title": "EXO工作群（6）",
-        "body": "请大家确认到达时间",
-        "richText": "",
-        "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
-        },
-        "time": "2026-10-28 09:42",
-        "sender": "我",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": true,
-        "unlock": "",
-        "password": "",
-        "folder": "微信",
-        "favorite": false,
-        "outgoing": true,
         "read": false,
         "likes": 0,
         "comments": []
@@ -4016,42 +4352,20 @@
         "body": "我已经到了。六楼没人。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-group.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "吴世勋",
-        "avatar": "",
+        "avatar": "./media/avatar-sehun.jpg",
         "kind": "text",
         "media": "",
-        "hidden": true,
+        "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "微信",
+        "folder": "自动回复",
         "favorite": false,
         "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
-        "id": "exo-wechat-sent-0-2",
-        "title": "EXO工作群（6）",
-        "body": "会议室在七楼！",
-        "richText": "",
-        "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
-        },
-        "time": "2026-10-28 09:42",
-        "sender": "我",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": true,
-        "unlock": "",
-        "password": "",
-        "folder": "微信",
-        "favorite": false,
-        "outgoing": true,
         "read": false,
         "likes": 0,
         "comments": []
@@ -4062,17 +4376,18 @@
         "body": "ㅋㅋㅋ世勋你又走错楼了？",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-group.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "朴灿烈",
-        "avatar": "",
+        "avatar": "./media/avatar-chanyeol.jpg",
         "kind": "text",
         "media": "",
-        "hidden": true,
+        "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "微信",
+        "folder": "自动回复",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -4085,11 +4400,12 @@
         "body": "有什么不清楚的直接问我。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-suho.jpg"
         },
         "time": "2026-10-28 09:20",
         "sender": "金俊勉",
-        "avatar": "",
+        "avatar": "./media/avatar-suho.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -4108,11 +4424,12 @@
         "body": "提醒一下：会议室换到七楼了。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-suho.jpg"
         },
         "time": "2026-10-28 09:21",
         "sender": "金俊勉",
-        "avatar": "",
+        "avatar": "./media/avatar-suho.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -4126,70 +4443,25 @@
         "comments": []
       },
       {
-        "id": "exo-wechat-sent-1-0",
-        "title": "俊勉哥",
-        "body": "收到，谢谢俊勉哥！",
-        "richText": "",
-        "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
-        },
-        "time": "2026-10-28 09:42",
-        "sender": "我",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": true,
-        "unlock": "",
-        "password": "",
-        "folder": "微信",
-        "favorite": false,
-        "outgoing": true,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
         "id": "exo-wechat-received-1-0",
         "title": "俊勉哥",
         "body": "不客气ㅎㅎ 不用太紧张。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-suho.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "金俊勉",
-        "avatar": "",
+        "avatar": "./media/avatar-suho.jpg",
         "kind": "text",
         "media": "",
-        "hidden": true,
+        "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "微信",
+        "folder": "自动回复",
         "favorite": false,
         "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
-        "id": "exo-wechat-sent-1-1",
-        "title": "俊勉哥",
-        "body": "灿烈哥需要单独提醒吗？",
-        "richText": "",
-        "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
-        },
-        "time": "2026-10-28 09:42",
-        "sender": "我",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": true,
-        "unlock": "",
-        "password": "",
-        "folder": "微信",
-        "favorite": false,
-        "outgoing": true,
         "read": false,
         "likes": 0,
         "comments": []
@@ -4200,17 +4472,18 @@
         "body": "最好再发一次ㅋㅋ 他有时候消息太多。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-suho.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "金俊勉",
-        "avatar": "",
+        "avatar": "./media/avatar-suho.jpg",
         "kind": "text",
         "media": "",
-        "hidden": true,
+        "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "微信",
+        "folder": "自动回复",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -4223,11 +4496,12 @@
         "body": "新经纪人你好！！",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-chanyeol.jpg"
         },
         "time": "2026-10-28 09:20",
         "sender": "朴灿烈",
-        "avatar": "",
+        "avatar": "./media/avatar-chanyeol.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -4246,11 +4520,12 @@
         "body": "下午几点来着ㅋㅋ",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-chanyeol.jpg"
         },
         "time": "2026-10-28 09:21",
         "sender": "朴灿烈",
-        "avatar": "",
+        "avatar": "./media/avatar-chanyeol.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -4264,70 +4539,25 @@
         "comments": []
       },
       {
-        "id": "exo-wechat-sent-2-0",
-        "title": "灿烈哥",
-        "body": "下午两点，七楼会议室",
-        "richText": "",
-        "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
-        },
-        "time": "2026-10-28 09:42",
-        "sender": "我",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": true,
-        "unlock": "",
-        "password": "",
-        "folder": "微信",
-        "favorite": false,
-        "outgoing": true,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
         "id": "exo-wechat-received-2-0",
         "title": "灿烈哥",
         "body": "啊对对ㅋㅋ 谢谢！",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-chanyeol.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "朴灿烈",
-        "avatar": "",
+        "avatar": "./media/avatar-chanyeol.jpg",
         "kind": "text",
         "media": "",
-        "hidden": true,
+        "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "微信",
+        "folder": "自动回复",
         "favorite": false,
         "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
-        "id": "exo-wechat-sent-2-1",
-        "title": "灿烈哥",
-        "body": "哥，记得提前十分钟到",
-        "richText": "",
-        "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
-        },
-        "time": "2026-10-28 09:42",
-        "sender": "我",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": true,
-        "unlock": "",
-        "password": "",
-        "folder": "微信",
-        "favorite": false,
-        "outgoing": true,
         "read": false,
         "likes": 0,
         "comments": []
@@ -4338,17 +4568,18 @@
         "body": "明白！我尽量第一个到ㅋㅋ",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-chanyeol.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "朴灿烈",
-        "avatar": "",
+        "avatar": "./media/avatar-chanyeol.jpg",
         "kind": "text",
         "media": "",
-        "hidden": true,
+        "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "微信",
+        "folder": "自动回复",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -4361,11 +4592,12 @@
         "body": "下午两点，七楼对吧？我会提前到。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-do.jpg"
         },
         "time": "2026-10-28 09:20",
         "sender": "都暻秀",
-        "avatar": "",
+        "avatar": "./media/avatar-do.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -4384,11 +4616,12 @@
         "body": "你吃早饭了吗？公司右转有家汤饭店。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-do.jpg"
         },
         "time": "2026-10-28 09:21",
         "sender": "都暻秀",
-        "avatar": "",
+        "avatar": "./media/avatar-do.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -4402,70 +4635,25 @@
         "comments": []
       },
       {
-        "id": "exo-wechat-sent-3-0",
-        "title": "暻秀哥",
-        "body": "谢谢哥，我会吃饭的",
-        "richText": "",
-        "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
-        },
-        "time": "2026-10-28 09:42",
-        "sender": "我",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": true,
-        "unlock": "",
-        "password": "",
-        "folder": "微信",
-        "favorite": false,
-        "outgoing": true,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
         "id": "exo-wechat-received-3-0",
         "title": "暻秀哥",
         "body": "嗯，忙也要记得吃。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-do.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "都暻秀",
-        "avatar": "",
+        "avatar": "./media/avatar-do.jpg",
         "kind": "text",
         "media": "",
-        "hidden": true,
+        "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "微信",
+        "folder": "自动回复",
         "favorite": false,
         "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
-        "id": "exo-wechat-sent-3-1",
-        "title": "暻秀哥",
-        "body": "哥，餐厅推荐收到啦",
-        "richText": "",
-        "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
-        },
-        "time": "2026-10-28 09:42",
-        "sender": "我",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": true,
-        "unlock": "",
-        "password": "",
-        "folder": "微信",
-        "favorite": false,
-        "outgoing": true,
         "read": false,
         "likes": 0,
         "comments": []
@@ -4476,17 +4664,18 @@
         "body": "那家汤不错。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-do.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "都暻秀",
-        "avatar": "",
+        "avatar": "./media/avatar-do.jpg",
         "kind": "text",
         "media": "",
-        "hidden": true,
+        "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "微信",
+        "folder": "自动回复",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -4499,11 +4688,12 @@
         "body": "你好ㅎㅎ",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-kai.jpg"
         },
         "time": "2026-10-28 09:20",
         "sender": "金钟仁",
-        "avatar": "",
+        "avatar": "./media/avatar-kai.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -4522,11 +4712,12 @@
         "body": "地下停车场入口在哪里啊？",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-kai.jpg"
         },
         "time": "2026-10-28 09:21",
         "sender": "金钟仁",
-        "avatar": "",
+        "avatar": "./media/avatar-kai.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -4540,70 +4731,25 @@
         "comments": []
       },
       {
-        "id": "exo-wechat-sent-4-0",
-        "title": "钟仁哥",
-        "body": "我给你发停车场位置",
-        "richText": "",
-        "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
-        },
-        "time": "2026-10-28 09:42",
-        "sender": "我",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": true,
-        "unlock": "",
-        "password": "",
-        "folder": "微信",
-        "favorite": false,
-        "outgoing": true,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
         "id": "exo-wechat-received-4-0",
         "title": "钟仁哥",
         "body": "谢谢！！啊我好像看到入口了ㅋㅋ",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-kai.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "金钟仁",
-        "avatar": "",
+        "avatar": "./media/avatar-kai.jpg",
         "kind": "text",
         "media": "",
-        "hidden": true,
+        "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "微信",
+        "folder": "自动回复",
         "favorite": false,
         "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
-        "id": "exo-wechat-sent-4-1",
-        "title": "钟仁哥",
-        "body": "哥，七楼会议室见",
-        "richText": "",
-        "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
-        },
-        "time": "2026-10-28 09:42",
-        "sender": "我",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": true,
-        "unlock": "",
-        "password": "",
-        "folder": "微信",
-        "favorite": false,
-        "outgoing": true,
         "read": false,
         "likes": 0,
         "comments": []
@@ -4614,17 +4760,18 @@
         "body": "知道啦ㅎㅎ",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-kai.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "金钟仁",
-        "avatar": "",
+        "avatar": "./media/avatar-kai.jpg",
         "kind": "text",
         "media": "",
-        "hidden": true,
+        "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "微信",
+        "folder": "自动回复",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -4637,11 +4784,12 @@
         "body": "你好。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-sehun.jpg"
         },
         "time": "2026-10-28 09:20",
         "sender": "吴世勋",
-        "avatar": "",
+        "avatar": "./media/avatar-sehun.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -4660,11 +4808,12 @@
         "body": "下午你也在吗？",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-sehun.jpg"
         },
         "time": "2026-10-28 09:21",
         "sender": "吴世勋",
-        "avatar": "",
+        "avatar": "./media/avatar-sehun.jpg",
         "kind": "text",
         "media": "",
         "hidden": false,
@@ -4678,70 +4827,25 @@
         "comments": []
       },
       {
-        "id": "exo-wechat-sent-5-0",
-        "title": "世勋哥",
-        "body": "哥，我们在七楼",
-        "richText": "",
-        "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
-        },
-        "time": "2026-10-28 09:42",
-        "sender": "我",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": true,
-        "unlock": "",
-        "password": "",
-        "folder": "微信",
-        "favorite": false,
-        "outgoing": true,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
         "id": "exo-wechat-received-5-0",
         "title": "世勋哥",
         "body": "……知道了ㅋㅋ",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-sehun.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "吴世勋",
-        "avatar": "",
+        "avatar": "./media/avatar-sehun.jpg",
         "kind": "text",
         "media": "",
-        "hidden": true,
+        "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "微信",
+        "folder": "自动回复",
         "favorite": false,
         "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
-        "id": "exo-wechat-sent-5-1",
-        "title": "世勋哥",
-        "body": "对，我会全程跟着大家",
-        "richText": "",
-        "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
-        },
-        "time": "2026-10-28 09:42",
-        "sender": "我",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": true,
-        "unlock": "",
-        "password": "",
-        "folder": "微信",
-        "favorite": false,
-        "outgoing": true,
         "read": false,
         "likes": 0,
         "comments": []
@@ -4752,17 +4856,18 @@
         "body": "哦，那下午见。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-sehun.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "吴世勋",
-        "avatar": "",
+        "avatar": "./media/avatar-sehun.jpg",
         "kind": "text",
         "media": "",
-        "hidden": true,
+        "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "微信",
+        "folder": "自动回复",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -4775,11 +4880,12 @@
         "body": "下午几点来着ㅋㅋ",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-chanyeol.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "朴灿烈",
-        "avatar": "",
+        "avatar": "./media/avatar-chanyeol.jpg",
         "kind": "text",
         "media": "",
         "hidden": true,
@@ -4798,11 +4904,12 @@
         "body": "我在六楼，会议室没人",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-sehun.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "吴世勋",
-        "avatar": "",
+        "avatar": "./media/avatar-sehun.jpg",
         "kind": "text",
         "media": "",
         "hidden": true,
@@ -4821,11 +4928,12 @@
         "body": "大家都到了吗？还差谁？",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-group.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "金俊勉",
-        "avatar": "",
+        "avatar": "./media/avatar-suho.jpg",
         "kind": "text",
         "media": "",
         "hidden": true,
@@ -4844,11 +4952,12 @@
         "body": "找到停车场啦，谢谢！",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-kai.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "金钟仁",
-        "avatar": "",
+        "avatar": "./media/avatar-kai.jpg",
         "kind": "text",
         "media": "",
         "hidden": true,
@@ -4867,11 +4976,12 @@
         "body": "忙完记得吃饭。",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-do.jpg"
         },
         "time": "2026-10-28 09:42",
         "sender": "都暻秀",
-        "avatar": "",
+        "avatar": "./media/avatar-do.jpg",
         "kind": "text",
         "media": "",
         "hidden": true,
@@ -5601,776 +5711,6 @@
   },
   "nodes": [
     {
-      "id": "exo-offer-0-0",
-      "label": "回复 EXO工作群（6）",
-      "type": "action",
-      "event": "read",
-      "target": "EXO工作群（6）",
-      "conditions": [
-        {
-          "key": "exo-reply-0-0",
-          "op": "neq",
-          "value": true
-        }
-      ],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "choice",
-          "key": "exo-reply-0-0",
-          "value": "收到，大家下午见！"
-        }
-      ],
-      "next": [],
-      "once": false,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-reply-0-0",
-      "label": "收到，大家下午见！",
-      "type": "action",
-      "event": "",
-      "target": "",
-      "conditions": [],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "exo-wechat-sent-0-0",
-          "value": true
-        },
-        {
-          "type": "unlock",
-          "key": "exo-wechat-received-0-0",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "exo-reply-0-0",
-          "value": true
-        }
-      ],
-      "next": [
-        "exo-offer-0-0",
-        "exo-offer-0-1",
-        "exo-offer-0-2"
-      ],
-      "once": true,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-offer-0-1",
-      "label": "回复 EXO工作群（6）",
-      "type": "action",
-      "event": "read",
-      "target": "EXO工作群（6）",
-      "conditions": [
-        {
-          "key": "exo-reply-0-1",
-          "op": "neq",
-          "value": true
-        }
-      ],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "choice",
-          "key": "exo-reply-0-1",
-          "value": "请大家确认到达时间"
-        }
-      ],
-      "next": [],
-      "once": false,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-reply-0-1",
-      "label": "请大家确认到达时间",
-      "type": "action",
-      "event": "",
-      "target": "",
-      "conditions": [],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "exo-wechat-sent-0-1",
-          "value": true
-        },
-        {
-          "type": "unlock",
-          "key": "exo-wechat-received-0-1",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "exo-reply-0-1",
-          "value": true
-        }
-      ],
-      "next": [
-        "exo-offer-0-0",
-        "exo-offer-0-1",
-        "exo-offer-0-2"
-      ],
-      "once": true,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-offer-0-2",
-      "label": "回复 EXO工作群（6）",
-      "type": "action",
-      "event": "read",
-      "target": "EXO工作群（6）",
-      "conditions": [
-        {
-          "key": "exo-reply-0-2",
-          "op": "neq",
-          "value": true
-        }
-      ],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "choice",
-          "key": "exo-reply-0-2",
-          "value": "会议室在七楼！"
-        }
-      ],
-      "next": [],
-      "once": false,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-reply-0-2",
-      "label": "会议室在七楼！",
-      "type": "action",
-      "event": "",
-      "target": "",
-      "conditions": [],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "exo-wechat-sent-0-2",
-          "value": true
-        },
-        {
-          "type": "unlock",
-          "key": "exo-wechat-received-0-2",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "exo-reply-0-2",
-          "value": true
-        }
-      ],
-      "next": [
-        "exo-offer-0-0",
-        "exo-offer-0-1",
-        "exo-offer-0-2"
-      ],
-      "once": true,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-offer-1-0",
-      "label": "回复 俊勉哥",
-      "type": "action",
-      "event": "read",
-      "target": "俊勉哥",
-      "conditions": [
-        {
-          "key": "exo-reply-1-0",
-          "op": "neq",
-          "value": true
-        }
-      ],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "choice",
-          "key": "exo-reply-1-0",
-          "value": "收到，谢谢俊勉哥！"
-        }
-      ],
-      "next": [],
-      "once": false,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-reply-1-0",
-      "label": "收到，谢谢俊勉哥！",
-      "type": "action",
-      "event": "",
-      "target": "",
-      "conditions": [],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "exo-wechat-sent-1-0",
-          "value": true
-        },
-        {
-          "type": "unlock",
-          "key": "exo-wechat-received-1-0",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "exo-reply-1-0",
-          "value": true
-        }
-      ],
-      "next": [
-        "exo-offer-1-0",
-        "exo-offer-1-1"
-      ],
-      "once": true,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-offer-1-1",
-      "label": "回复 俊勉哥",
-      "type": "action",
-      "event": "read",
-      "target": "俊勉哥",
-      "conditions": [
-        {
-          "key": "exo-reply-1-1",
-          "op": "neq",
-          "value": true
-        }
-      ],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "choice",
-          "key": "exo-reply-1-1",
-          "value": "灿烈哥需要单独提醒吗？"
-        }
-      ],
-      "next": [],
-      "once": false,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-reply-1-1",
-      "label": "灿烈哥需要单独提醒吗？",
-      "type": "action",
-      "event": "",
-      "target": "",
-      "conditions": [],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "exo-wechat-sent-1-1",
-          "value": true
-        },
-        {
-          "type": "unlock",
-          "key": "exo-wechat-received-1-1",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "exo-reply-1-1",
-          "value": true
-        }
-      ],
-      "next": [
-        "exo-offer-1-0",
-        "exo-offer-1-1"
-      ],
-      "once": true,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-offer-2-0",
-      "label": "回复 灿烈哥",
-      "type": "action",
-      "event": "read",
-      "target": "灿烈哥",
-      "conditions": [
-        {
-          "key": "exo-reply-2-0",
-          "op": "neq",
-          "value": true
-        }
-      ],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "choice",
-          "key": "exo-reply-2-0",
-          "value": "下午两点，七楼会议室"
-        }
-      ],
-      "next": [],
-      "once": false,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-reply-2-0",
-      "label": "下午两点，七楼会议室",
-      "type": "action",
-      "event": "",
-      "target": "",
-      "conditions": [],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "exo-wechat-sent-2-0",
-          "value": true
-        },
-        {
-          "type": "unlock",
-          "key": "exo-wechat-received-2-0",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "exo-reply-2-0",
-          "value": true
-        }
-      ],
-      "next": [
-        "exo-offer-2-0",
-        "exo-offer-2-1"
-      ],
-      "once": true,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-offer-2-1",
-      "label": "回复 灿烈哥",
-      "type": "action",
-      "event": "read",
-      "target": "灿烈哥",
-      "conditions": [
-        {
-          "key": "exo-reply-2-1",
-          "op": "neq",
-          "value": true
-        }
-      ],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "choice",
-          "key": "exo-reply-2-1",
-          "value": "哥，记得提前十分钟到"
-        }
-      ],
-      "next": [],
-      "once": false,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-reply-2-1",
-      "label": "哥，记得提前十分钟到",
-      "type": "action",
-      "event": "",
-      "target": "",
-      "conditions": [],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "exo-wechat-sent-2-1",
-          "value": true
-        },
-        {
-          "type": "unlock",
-          "key": "exo-wechat-received-2-1",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "exo-reply-2-1",
-          "value": true
-        }
-      ],
-      "next": [
-        "exo-offer-2-0",
-        "exo-offer-2-1"
-      ],
-      "once": true,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-offer-3-0",
-      "label": "回复 暻秀哥",
-      "type": "action",
-      "event": "read",
-      "target": "暻秀哥",
-      "conditions": [
-        {
-          "key": "exo-reply-3-0",
-          "op": "neq",
-          "value": true
-        }
-      ],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "choice",
-          "key": "exo-reply-3-0",
-          "value": "谢谢哥，我会吃饭的"
-        }
-      ],
-      "next": [],
-      "once": false,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-reply-3-0",
-      "label": "谢谢哥，我会吃饭的",
-      "type": "action",
-      "event": "",
-      "target": "",
-      "conditions": [],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "exo-wechat-sent-3-0",
-          "value": true
-        },
-        {
-          "type": "unlock",
-          "key": "exo-wechat-received-3-0",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "exo-reply-3-0",
-          "value": true
-        }
-      ],
-      "next": [
-        "exo-offer-3-0",
-        "exo-offer-3-1"
-      ],
-      "once": true,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-offer-3-1",
-      "label": "回复 暻秀哥",
-      "type": "action",
-      "event": "read",
-      "target": "暻秀哥",
-      "conditions": [
-        {
-          "key": "exo-reply-3-1",
-          "op": "neq",
-          "value": true
-        }
-      ],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "choice",
-          "key": "exo-reply-3-1",
-          "value": "哥，餐厅推荐收到啦"
-        }
-      ],
-      "next": [],
-      "once": false,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-reply-3-1",
-      "label": "哥，餐厅推荐收到啦",
-      "type": "action",
-      "event": "",
-      "target": "",
-      "conditions": [],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "exo-wechat-sent-3-1",
-          "value": true
-        },
-        {
-          "type": "unlock",
-          "key": "exo-wechat-received-3-1",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "exo-reply-3-1",
-          "value": true
-        }
-      ],
-      "next": [
-        "exo-offer-3-0",
-        "exo-offer-3-1"
-      ],
-      "once": true,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-offer-4-0",
-      "label": "回复 钟仁哥",
-      "type": "action",
-      "event": "read",
-      "target": "钟仁哥",
-      "conditions": [
-        {
-          "key": "exo-reply-4-0",
-          "op": "neq",
-          "value": true
-        }
-      ],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "choice",
-          "key": "exo-reply-4-0",
-          "value": "我给你发停车场位置"
-        }
-      ],
-      "next": [],
-      "once": false,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-reply-4-0",
-      "label": "我给你发停车场位置",
-      "type": "action",
-      "event": "",
-      "target": "",
-      "conditions": [],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "exo-wechat-sent-4-0",
-          "value": true
-        },
-        {
-          "type": "unlock",
-          "key": "exo-wechat-received-4-0",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "exo-reply-4-0",
-          "value": true
-        }
-      ],
-      "next": [
-        "exo-offer-4-0",
-        "exo-offer-4-1"
-      ],
-      "once": true,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-offer-4-1",
-      "label": "回复 钟仁哥",
-      "type": "action",
-      "event": "read",
-      "target": "钟仁哥",
-      "conditions": [
-        {
-          "key": "exo-reply-4-1",
-          "op": "neq",
-          "value": true
-        }
-      ],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "choice",
-          "key": "exo-reply-4-1",
-          "value": "哥，七楼会议室见"
-        }
-      ],
-      "next": [],
-      "once": false,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-reply-4-1",
-      "label": "哥，七楼会议室见",
-      "type": "action",
-      "event": "",
-      "target": "",
-      "conditions": [],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "exo-wechat-sent-4-1",
-          "value": true
-        },
-        {
-          "type": "unlock",
-          "key": "exo-wechat-received-4-1",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "exo-reply-4-1",
-          "value": true
-        }
-      ],
-      "next": [
-        "exo-offer-4-0",
-        "exo-offer-4-1"
-      ],
-      "once": true,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-offer-5-0",
-      "label": "回复 世勋哥",
-      "type": "action",
-      "event": "read",
-      "target": "世勋哥",
-      "conditions": [
-        {
-          "key": "exo-reply-5-0",
-          "op": "neq",
-          "value": true
-        }
-      ],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "choice",
-          "key": "exo-reply-5-0",
-          "value": "哥，我们在七楼"
-        }
-      ],
-      "next": [],
-      "once": false,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-reply-5-0",
-      "label": "哥，我们在七楼",
-      "type": "action",
-      "event": "",
-      "target": "",
-      "conditions": [],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "exo-wechat-sent-5-0",
-          "value": true
-        },
-        {
-          "type": "unlock",
-          "key": "exo-wechat-received-5-0",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "exo-reply-5-0",
-          "value": true
-        }
-      ],
-      "next": [
-        "exo-offer-5-0",
-        "exo-offer-5-1"
-      ],
-      "once": true,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-offer-5-1",
-      "label": "回复 世勋哥",
-      "type": "action",
-      "event": "read",
-      "target": "世勋哥",
-      "conditions": [
-        {
-          "key": "exo-reply-5-1",
-          "op": "neq",
-          "value": true
-        }
-      ],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "choice",
-          "key": "exo-reply-5-1",
-          "value": "对，我会全程跟着大家"
-        }
-      ],
-      "next": [],
-      "once": false,
-      "x": 80,
-      "y": 80
-    },
-    {
-      "id": "exo-reply-5-1",
-      "label": "对，我会全程跟着大家",
-      "type": "action",
-      "event": "",
-      "target": "",
-      "conditions": [],
-      "logic": "and",
-      "actions": [
-        {
-          "type": "unlock",
-          "key": "exo-wechat-sent-5-1",
-          "value": true
-        },
-        {
-          "type": "unlock",
-          "key": "exo-wechat-received-5-1",
-          "value": true
-        },
-        {
-          "type": "variable",
-          "key": "exo-reply-5-1",
-          "value": true
-        }
-      ],
-      "next": [
-        "exo-offer-5-0",
-        "exo-offer-5-1"
-      ],
-      "once": true,
-      "x": 80,
-      "y": 80
-    },
-    {
       "id": "exo-notifications-start",
       "label": "开始工作日通知",
       "type": "action",
@@ -6515,7 +5855,7 @@
         {
           "type": "notification",
           "key": "wechat",
-          "value": "微信 · 俊勉哥：大家都到了吗？还差谁？"
+          "value": "微信 · EXO工作群（6）：俊勉哥：大家都到了吗？还差谁？"
         }
       ],
       "next": [
@@ -6669,7 +6009,8 @@
     "playerGender": "female",
     "playerNameRequired": true,
     "player_setup_v1": true,
-    "exo_manager_import_v1": true
+    "exo_manager_import_v1": true,
+    "exo_manager_media_v2": true
   },
   "mode": "mixed"
 }
