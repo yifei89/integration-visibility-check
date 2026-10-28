@@ -1,6 +1,6 @@
 import { NativeComposer } from "./DeviceSystem";
 import { useSkinState } from "./skinState";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ChevronLeft,
   Plus,
@@ -31,7 +31,8 @@ import {
   Layers,
   ShoppingBag,
 } from "lucide-react";
-import { isImage, safeMedia, type Item, type UiValue } from "./schema";
+import { isImage, makeItem, safeMedia, type Item, type UiValue } from "./schema";
+import { autoReplyFolder, nextAutoReply } from "./wechatReplies";
 export type SkinProps = {
   ui?: Record<string, UiValue>;
   onUi?: (key: string, value: UiValue) => void;
@@ -151,6 +152,65 @@ function Compose({
     </div>
   );
 }
+type Sent = { th: string; o: boolean; b: string; t: string; s: string; a: string };
+/** Player chat: free text in, the thread's fixed replies out (cycled), stored in runtime UI state. */
+function WxFreeChat({ p }: { p: SkinProps }) {
+  const [log, setLog] = useSkinState<string[]>(p, "freeChat", []);
+  const [draft, setDraft] = useState("");
+  const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
+  useEffect(() => () => clearTimeout(timer.current), []);
+  const thread = p.thread;
+  const base = p.items.filter((i) => i.title === thread && i.folder !== autoReplyFolder);
+  const replies = p.items.filter((i) => i.title === thread && i.folder === autoReplyFolder);
+  const extras = log
+    .map((l) => JSON.parse(l) as Sent)
+    .filter((l) => l.th === thread)
+    .map((l, n) =>
+      makeItem({ id: `free-${thread}-${n}`, title: thread, body: l.b, sender: l.s,
+        avatar: l.a, outgoing: l.o, time: l.t, read: true }),
+    );
+  const send = () => {
+    const text = draft.trim();
+    if (!text) return;
+    setDraft("");
+    const now = new Date();
+    const t = `${now.toISOString().slice(0, 10)} ${now.toTimeString().slice(0, 5)}`;
+    const mine = JSON.stringify({ th: thread, o: true, b: text, t, s: "我", a: "" } satisfies Sent);
+    const count = extras.filter((e) => e.outgoing).length;
+    const next = [...log, mine];
+    setLog(next);
+    const reply = nextAutoReply(replies, count);
+    if (!reply) return;
+    timer.current = setTimeout(() => {
+      setLog([...next, JSON.stringify({ th: thread, o: false, b: reply.body, t, s: reply.sender, a: reply.avatar } satisfies Sent)]);
+    }, 1200);
+  };
+  return (
+    <>
+      <MessageList items={[...base, ...extras]} creator={false} onItem={p.onItem} onRead={p.onRead} />
+      <form
+        className="skin-compose wx-free-compose"
+        onSubmit={(e) => {
+          e.preventDefault();
+          send();
+        }}
+      >
+        <Mic size={20} />
+        <input
+          aria-label="输入消息"
+          value={draft}
+          onChange={(e) => setDraft(e.target.value)}
+          enterKeyHint="send"
+        />
+        {draft.trim() ? (
+          <button type="submit" className="wx-send">发送</button>
+        ) : (
+          <Smile size={21} />
+        )}
+      </form>
+    </>
+  );
+}
 export function WeChatSkin(p: SkinProps) {
   const [tab, setTab] = useState("微信"),
     [query, setQuery] = useState(""),
@@ -166,7 +226,7 @@ export function WeChatSkin(p: SkinProps) {
   const conversations = [
     ...new Set(
       p.items
-        .filter((i) => !["朋友圈", "我"].includes(i.folder))
+        .filter((i) => !["朋友圈", "我", autoReplyFolder].includes(i.folder))
         .map((i) => i.title),
     ),
   ];
@@ -276,15 +336,19 @@ export function WeChatSkin(p: SkinProps) {
             utility !== "聊天信息" && <p className="skin-empty">暂无内容</p>}
         </div>
       ) : p.thread ? (
-        <>
-          <MessageList
-            items={p.items.filter((i) => i.title === p.thread)}
-            creator={p.creator}
-            onItem={p.onItem}
-            onRead={p.onRead}
-          />
-          <Compose creator={p.creator} onAdd={p.onAdd} />
-        </>
+        p.creator ? (
+          <>
+            <MessageList
+              items={p.items.filter((i) => i.title === p.thread)}
+              creator={p.creator}
+              onItem={p.onItem}
+              onRead={p.onRead}
+            />
+            <Compose creator={p.creator} onAdd={p.onAdd} />
+          </>
+        ) : (
+          <WxFreeChat p={p} />
+        )
       ) : moments ? (
         <div className="wx-moments">
           <div className="wx-moment-cover">
@@ -350,7 +414,10 @@ export function WeChatSkin(p: SkinProps) {
                       }}
                     >
                       <span className="wx-chat-avatar">
-                        <Avatar name={t} src={last.avatar} />
+                        <Avatar
+                          name={t}
+                          src={list.find((i) => i.meta?.threadAvatar)?.meta.threadAvatar ?? last.avatar}
+                        />
                         {!readThreads.includes(t) &&
                           list.some((i) => !i.read) && (
                             <b className="wx-unread">
