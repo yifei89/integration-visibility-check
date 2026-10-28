@@ -41,18 +41,19 @@ describe("EXO manager content import", () => {
     const s = dispatch(w, initialRuntime(w), "read", "灿烈哥");
     expect(s.choices).toHaveLength(0);
     const replies = w.data.wechat.filter((i) => i.title === "灿烈哥" && i.folder === autoReplyFolder);
-    expect(replies.map((r) => r.body)).toEqual(["啊对对ㅋㅋ 谢谢！", "明白！我尽量第一个到ㅋㅋ"]);
-    expect(nextAutoReply(replies, 0)?.body).toBe("啊对对ㅋㅋ 谢谢！");
-    expect(nextAutoReply(replies, 1)?.body).toBe("明白！我尽量第一个到ㅋㅋ");
-    expect(nextAutoReply(replies, 2)?.body).toBe("啊对对ㅋㅋ 谢谢！");
+    expect(replies).toHaveLength(15);
+    expect(replies.slice(0, 2).map((r) => r.body)).toEqual(["아 맞다 맞다 ㅋㅋㅋㅋ 고마워요!!!（啊对对对ㅋㅋㅋㅋ 谢谢！！！）", "알겠어요!! 제가 1등으로 도착할게요 ㅋㅋㅋ（知道啦！！我要第一个到ㅋㅋㅋ）"]);
+    expect(nextAutoReply(replies, 0)?.body).toBe("아 맞다 맞다 ㅋㅋㅋㅋ 고마워요!!!（啊对对对ㅋㅋㅋㅋ 谢谢！！！）");
+    expect(nextAutoReply(replies, 1)?.body).toBe("알겠어요!! 제가 1등으로 도착할게요 ㅋㅋㅋ（知道啦！！我要第一个到ㅋㅋㅋ）");
+    expect(nextAutoReply(replies, 15)?.body).toBe("아 맞다 맞다 ㅋㅋㅋㅋ 고마워요!!!（啊对对对ㅋㅋㅋㅋ 谢谢！！！）");
   });
   it("group notifications name the group chat so tapping opens it", () => {
     const w = createEmptyWork(); importExoManager(w);
-    const n = notificationContent("微信 · EXO工作群（6）：俊勉哥：大家都到了吗？还差谁？", w.apps);
+    const n = notificationContent("微信 · EXO工作群（6）：俊勉哥：다들 도착했어요? 누구 아직이에요?（大家都到了吗？还差谁？）", w.apps);
     expect(n.appId).toBe("wechat");
     expect(n.thread).toBe("EXO工作群（6）");
     const action = w.nodes.find((x) => x.id === "exo-notice-4")?.actions.find((a) => a.type === "notification");
-    expect(action?.value).toBe("微信 · EXO工作群（6）：俊勉哥：大家都到了吗？还差谁？");
+    expect(action?.value).toBe("微信 · EXO工作群（6）：俊勉哥：다들 도착했어요? 누구 아직이에요?（大家都到了吗？还差谁？）");
   });
   it("members get their own avatar and the album holds 16 EXO photos", () => {
     const w = createEmptyWork(); importExoManager(w);
@@ -67,7 +68,7 @@ describe("EXO manager content import", () => {
     s = advance(w, s, 23999);
     expect(s.notifications).toHaveLength(0);
     s = advance(w, s, 1);
-    expect(s.notifications).toEqual(["微信 · 灿烈哥：下午几点来着ㅋㅋ"]);
+    expect(s.notifications).toEqual(["微信 · 灿烈哥：근데 오후에 몇 시였죠…? ㅋㅋㅋ（下午是几点来着…？ㅋㅋㅋ）"]);
     s = advance(w, s, 216000);
     expect(s.notifications).toHaveLength(10);
     expect(s.notifications[9]).toBe("微信 · 暻秀哥：忙完记得吃饭。");
