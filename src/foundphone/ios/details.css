@@ -214,3 +214,16 @@
   background: none;
   color: #007aff;
 }
+.ios18 .native-detail .native-call-screen {
+  inset: 0;
+  z-index: 30;
+}
+.native-call-avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 27px;
+  background: #ffffff33;
+}
