@@ -1,6 +1,7 @@
 import content from "./exo-manager-content.json";
 import { applyPlayerSetup } from "./playerSetup";
 import { autoReplyFolder } from "./wechatReplies";
+import { suggestionAppId } from "./suggestions";
 import { registry } from "./registry";
 import { makeItem, type Item, type StoryNode, type Work } from "./schema";
 
@@ -140,7 +141,8 @@ const pictureApps = ["photos", "instagram", "threads", "weibo", "redbook", "douy
  * that name the chat they belong to.
  */
 export function applyExoExtras(w: Work): boolean {
-  if (w.variables[exoExtrasMarker]) return false;
+  const suggest = addSuggestionApp(w);
+  if (w.variables[exoExtrasMarker]) return suggest;
   // WeChat: drop reply choices; the member answers become the thread's fixed replies.
   w.nodes = w.nodes.filter((n) => !/^exo-(offer|reply)-/.test(n.id));
   w.data.wechat = (w.data.wechat ?? []).filter((i) => !i.id.startsWith("exo-wechat-sent-"));
@@ -184,5 +186,14 @@ export function applyExoExtras(w: Work): boolean {
     }
   }
   w.variables[exoExtrasMarker] = true;
+  return true;
+}
+const suggestMarker = "suggest_app_v1";
+/** The 「建议」 app is installed once on every work; a later uninstall sticks. */
+export function addSuggestionApp(w: Work): boolean {
+  if (w.variables[suggestMarker]) return false;
+  if (!w.apps.some((a) => a.id === suggestionAppId))
+    w.apps.push({ id: suggestionAppId, name: "建议", installed: true, visible: true, dock: false, folder: "", icon: "💡" });
+  w.variables[suggestMarker] = true;
   return true;
 }

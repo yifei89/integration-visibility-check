@@ -4130,3 +4130,11 @@
 .catalog-slot[hidden] {
   display: none;
 }
+.suggest-skin { display: flex; flex-direction: column; height: 100%; background: #f6f5f1; }
+.suggest-body { padding: 20px 18px; display: flex; flex-direction: column; gap: 12px; }
+.suggest-body h1 { font-size: 26px; margin: 0; }
+.suggest-body p { margin: 0; color: #6b6b6b; font-size: 14px; line-height: 1.5; }
+.suggest-body textarea { min-height: 180px; border: 0; border-radius: 12px; padding: 12px; font-size: 16px; resize: none; background: #fff; outline: none; }
+.suggest-send { display: flex; align-items: center; justify-content: center; gap: 6px; height: 44px; border: 0; border-radius: 12px; background: #1c1c1e; color: #fff; font-size: 15px; }
+.suggest-send:disabled { opacity: 0.4; }
+.suggest-body small { color: #6b6b6b; text-align: center; }
