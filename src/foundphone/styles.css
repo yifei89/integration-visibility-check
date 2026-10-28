@@ -3888,8 +3888,25 @@ label {
   font-size: 11px;
   color: #888;
 }
-.wx-contact {
+.wechat-ui .wx-contact {
   font-size: 14px;
+  justify-content: flex-start;
+  padding: 9px 15px;
+  border-bottom: 0;
+  position: relative;
+}
+.wechat-ui .wx-contact::after {
+  content: "";
+  position: absolute;
+  left: 66px;
+  right: 0;
+  bottom: 0;
+  border-bottom: 1px solid #eee;
+}
+.wechat-ui .wx-contact > :first-child {
+  width: 40px;
+  height: 40px;
+  flex: none;
 }
 .wx-discovery {
   display: flex;
