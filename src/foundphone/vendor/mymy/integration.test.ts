@@ -3,7 +3,7 @@ import { compileStory } from "../../story-engine/compiler";
 import { testStory } from "../../story-engine/testStory";
 import { dispatch } from "../../engine";
 import { initialRuntime } from "../../schema";
-import fixture from "../../../tests/fixtures/mymy-ui/story.json";
+import fixture from "../../../../tests/fixtures/mymy-ui/story.json";
 describe("Mymy adapters preserve shared story engine", () => {
   it("compiles authored KKT and verifies read → call → Instagram unlock", () => {
     const { story, work } = compileStory(fixture);

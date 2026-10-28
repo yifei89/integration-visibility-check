@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import example from "../../tests/fixtures/story-example/story.json";
+import example from "../../../tests/fixtures/story-example/story.json";
 import { compileStory } from "./compiler";
 import { testStory } from "./testStory";
 const copy = () => structuredClone(example);

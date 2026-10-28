@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import blank from "../../stories/blank/story.json";
+import blank from "../../../stories/blank/story.json";
 import { compileStory } from "../story-engine/compiler";
 import {
   defaultLayout,
@@ -96,7 +96,7 @@ it("adds store to legacy work without changing author data or other app states",
 });
 
 it("migrates preview folders once while preserving custom folders and widgets", async () => {
-  const preview = await import("../../stories/test-preview/story.json");
+  const preview = await import("../../../stories/test-preview/story.json");
   const w = compileStory(preview.default).work;
   const before = JSON.stringify(w);
   const old = defaultLayout(w);
