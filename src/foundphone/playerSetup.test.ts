@@ -3,6 +3,12 @@ import { createEmptyWork } from "./demo";
 import { applyPlayerSetup, personalizeWork } from "./playerSetup";
 
 describe("player setup", () => {
+  it("sets the manager identity to female", () => {
+    const work = createEmptyWork();
+    applyPlayerSetup(work);
+    expect(work.variables.playerGender).toBe("female");
+    expect(personalizeWork(work, "朱妍").variables.playerGender).toBe("female");
+  });
   it("sets the lockscreen passcode to 0412 once", () => {
     const work = createEmptyWork();
     expect(applyPlayerSetup(work)).toBe(true);

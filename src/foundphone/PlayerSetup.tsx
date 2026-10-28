@@ -27,7 +27,7 @@ export function PlayerSetup({ work, children }: { work: Work; children: (work: W
   if (personalized) return children(personalized);
   return (
     <section className="player-setup" aria-label="设置自己的名字">
-      <span className="player-setup-kicker">EXO · 新人经纪人</span>
+      <span className="player-setup-kicker">EXO · 新人女经纪人</span>
       <h1>你的名字</h1>
       <form onSubmit={(event) => { event.preventDefault(); if (name.trim()) setPersonalized(personalizeWork(work, name)); }}>
         <label htmlFor="player-name">姓名</label>
