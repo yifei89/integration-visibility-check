@@ -18,3 +18,4 @@
 - vite-plugin-pwa from upstream was not ported (conflicts with TanStack Start SSR build); offline caching is not available.
 - Default app installation is centralized in `foundphone/apps.ts`; catalog records and content remain available for downloads. Database upgrades and preview layout revisions apply changed defaults once, so later user installations persist.
 - App Store installation progress represents a local timed phase for bundled content, not network bytes; commit installation only at completion and cancel timers on launcher unmount.
+- Uploaded EXO manager content is sanitized static data mapped by `exoManager.ts`; import it once into the selected studio work and default player, preserving existing records and device settings. Extra source apps remain uninstalled custom catalog entries; replies and notifications use the existing story engine.

@@ -5,7 +5,7 @@
   "description": "仅用于界面测试，不含剧情",
   "category": "互动手机故事",
   "cover": "",
-  "updatedAt": 2,
+  "updatedAt": 3,
   "phone": {
     "owner": "机主",
     "date": "2026-10-25",
@@ -458,22 +458,152 @@
       "dock": false,
       "folder": "",
       "icon": ""
+    },
+    {
+      "id": "dianping",
+      "name": "大众点评",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "gmail",
+      "name": "Gmail",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
+      "id": "googlemaps",
+      "name": "Google Maps",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
     }
   ],
   "data": {
     "phone": [
       {
-        "id": "test-item-phone",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-phone-0",
+        "title": "俊勉哥",
+        "body": "今天 08:12 · 已接 2分18秒",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "status": "已接"
+        },
+        "time": "2026-10-28 08:12",
+        "sender": "俊勉哥",
+        "avatar": "",
+        "kind": "call",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "最近通话",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-phone-1",
+        "title": "灿烈哥",
+        "body": "昨天 22:16 · 未接来电",
+        "richText": "",
+        "meta": {
+          "status": "未接"
+        },
+        "time": "2026-10-27 22:16",
+        "sender": "灿烈哥",
+        "avatar": "",
+        "kind": "call",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "最近通话",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-phone-2",
+        "title": "公司车辆调度",
+        "body": "昨天 18:21 · 已拨 1分40秒",
+        "richText": "",
+        "meta": {
+          "status": "已拨"
+        },
+        "time": "2026-10-27 18:21",
+        "sender": "公司车辆调度",
+        "avatar": "",
+        "kind": "call",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "最近通话",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-phone-3",
+        "title": "钟仁哥",
+        "body": "昨天 16:05 · 已接 43秒",
+        "richText": "",
+        "meta": {
+          "status": "已接"
+        },
+        "time": "2026-10-27 16:05",
+        "sender": "钟仁哥",
+        "avatar": "",
+        "kind": "call",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "最近通话",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-phone-notice-5",
+        "title": "灿烈哥",
+        "body": "未接来电：会议室到底在几楼？",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "灿烈哥",
         "avatar": "",
         "kind": "text",
         "media": "",
-        "hidden": false,
+        "hidden": true,
         "unlock": "",
         "password": "",
         "folder": "",
@@ -486,20 +616,22 @@
     ],
     "contacts": [
       {
-        "id": "test-item-contacts",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-contacts-0",
+        "title": "金俊勉｜俊勉哥",
+        "body": "EXO · 成员",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "金俊勉｜俊勉哥",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "工作联系人",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -507,22 +639,137 @@
         "comments": []
       },
       {
-        "id": "test-contact-card",
-        "title": "测试联系人",
-        "body": "这是一条测试内容。",
+        "id": "exo-contacts-1",
+        "title": "朴灿烈｜灿烈哥",
+        "body": "EXO · 成员",
         "richText": "",
         "meta": {
-          "phone": ""
+          "source": "EXO 新人经纪人 · 架空剧情"
         },
-        "time": "2026-10-25 09:41",
-        "sender": "机主",
+        "time": "2026-10-28 09:42",
+        "sender": "朴灿烈｜灿烈哥",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "工作联系人",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-contacts-2",
+        "title": "都暻秀｜暻秀哥",
+        "body": "EXO · 成员",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "都暻秀｜暻秀哥",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "工作联系人",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-contacts-3",
+        "title": "金钟仁｜钟仁哥",
+        "body": "EXO · 成员",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "金钟仁｜钟仁哥",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "工作联系人",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-contacts-4",
+        "title": "吴世勋｜世勋哥",
+        "body": "EXO · 成员",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "吴世勋｜世勋哥",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "工作联系人",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-contacts-5",
+        "title": "公司行政",
+        "body": "入职手续",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "公司行政",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "工作联系人",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-contacts-6",
+        "title": "车辆调度",
+        "body": "工作车辆",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "车辆调度",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "工作联系人",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -532,20 +779,91 @@
     ],
     "photos": [
       {
-        "id": "test-item-photos",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-photos-0",
+        "title": "IMG_1028_0834",
+        "body": "公司门口的清晨，建筑外墙与早餐咖啡",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "IMG_1028_0834",
         "avatar": "",
-        "kind": "text",
+        "kind": "image",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "最近项目相册",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photos-1",
+        "title": "IMG_1028_1215",
+        "body": "七楼会议室桌上的五瓶水",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "IMG_1028_1215",
+        "avatar": "",
+        "kind": "image",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "最近项目相册",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photos-2",
+        "title": "IMG_1028_1435",
+        "body": "手写的行程修改笔记",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "IMG_1028_1435",
+        "avatar": "",
+        "kind": "image",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "最近项目相册",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-photos-3",
+        "title": "IMG_1028_1830",
+        "body": "回家路上的夜色与地铁站",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "IMG_1028_1830",
+        "avatar": "",
+        "kind": "image",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "最近项目相册",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -555,20 +873,22 @@
     ],
     "camera": [
       {
-        "id": "test-item-camera",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-camera-0",
+        "title": "取景说明",
+        "body": "仅为模拟页面，不调用摄像头。可点击快门新增一张虚构工作照片。",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "取景说明",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "相机取景器",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -578,20 +898,91 @@
     ],
     "safari": [
       {
-        "id": "test-item-safari",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-safari-0",
+        "title": "公司附近午餐推荐",
+        "body": "今天 09:52",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:52",
+        "sender": "公司附近午餐推荐",
         "avatar": "",
-        "kind": "text",
+        "kind": "note",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "历史记录",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-safari-1",
+        "title": "会议室投屏方法",
+        "body": "今天 09:17",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:17",
+        "sender": "会议室投屏方法",
+        "avatar": "",
+        "kind": "note",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "历史记录",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-safari-2",
+        "title": "首尔周三天气",
+        "body": "今天 08:41",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 08:41",
+        "sender": "首尔周三天气",
+        "avatar": "",
+        "kind": "note",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "历史记录",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-safari-3",
+        "title": "韩语工作邮件常用表达",
+        "body": "昨天 23:10",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-27 23:10",
+        "sender": "韩语工作邮件常用表达",
+        "avatar": "",
+        "kind": "note",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "历史记录",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -601,20 +992,68 @@
     ],
     "notes": [
       {
-        "id": "test-item-notes",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-notes-0",
+        "title": "入职第一周",
+        "body": "• 群发时间一定要写清楚\n• 行程变化先找俊勉哥确认\n• 灿烈哥需要单独提醒\n• 世勋哥经常只回“好”",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "入职第一周",
         "avatar": "",
-        "kind": "text",
+        "kind": "note",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "我的备忘录",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-notes-1",
+        "title": "会议室物品",
+        "body": "矿泉水 6 瓶\n纸巾\n充电线\n备用转接头",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "会议室物品",
+        "avatar": "",
+        "kind": "note",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "我的备忘录",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-notes-2",
+        "title": "明天记得",
+        "body": "向行政领取工牌\n确认停车场入口\n带备用充电宝",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "明天记得",
+        "avatar": "",
+        "kind": "note",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "我的备忘录",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -624,17 +1063,134 @@
     ],
     "calendar": [
       {
-        "id": "test-item-calendar",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-calendar-0",
+        "title": "09:00",
+        "body": "到公司，领取工作资料",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:00",
+        "sender": "09:00",
+        "avatar": "",
+        "kind": "event",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "10 月 28 日 · 工作日程",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-calendar-1",
+        "title": "11:30",
+        "body": "核对下午会议与车辆",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 11:30",
+        "sender": "11:30",
+        "avatar": "",
+        "kind": "event",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "10 月 28 日 · 工作日程",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-calendar-2",
+        "title": "14:00",
+        "body": "EXO 五人工作会议 · 7F",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 14:00",
+        "sender": "14:00",
+        "avatar": "",
+        "kind": "event",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "10 月 28 日 · 工作日程",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-calendar-3",
+        "title": "16:30",
+        "body": "下一周行程对齐",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 16:30",
+        "sender": "16:30",
+        "avatar": "",
+        "kind": "event",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "10 月 28 日 · 工作日程",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-calendar-4",
+        "title": "19:00",
+        "body": "整理会议纪要并回传",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 19:00",
+        "sender": "19:00",
+        "avatar": "",
+        "kind": "event",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "10 月 28 日 · 工作日程",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-calendar-notice-1",
+        "title": "日程提醒",
+        "body": "14:00 EXO 五人会议 · 七楼会议室",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "日程提醒",
         "avatar": "",
         "kind": "text",
         "media": "",
-        "hidden": false,
+        "hidden": true,
         "unlock": "",
         "password": "",
         "folder": "",
@@ -647,17 +1203,111 @@
     ],
     "mail": [
       {
-        "id": "test-item-mail",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-mail-0",
+        "title": "行政团队",
+        "body": "欢迎入职｜请查收工作须知",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "行政团队",
+        "avatar": "",
+        "kind": "note",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "收件箱",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-mail-1",
+        "title": "统筹组",
+        "body": "下周行程初版（待确认）",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "统筹组",
+        "avatar": "",
+        "kind": "note",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "收件箱",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-mail-2",
+        "title": "场地负责人",
+        "body": "会议室预订确认",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "场地负责人",
+        "avatar": "",
+        "kind": "note",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "收件箱",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-mail-3",
+        "title": "服装协调",
+        "body": "服装试装时间待回复",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "服装协调",
+        "avatar": "",
+        "kind": "note",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "收件箱",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-mail-notice-8",
+        "title": "行政团队",
+        "body": "请在下班前确认工牌申请",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "行政团队",
         "avatar": "",
         "kind": "text",
         "media": "",
-        "hidden": false,
+        "hidden": true,
         "unlock": "",
         "password": "",
         "folder": "",
@@ -670,20 +1320,91 @@
     ],
     "clock": [
       {
-        "id": "test-item-clock",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-clock-0",
+        "title": "07:10",
+        "body": "起床 · 每个工作日",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "clock": "07:10"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "07:10",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "闹钟",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-clock-1",
+        "title": "08:00",
+        "body": "检查群通知 · 工作日",
+        "richText": "",
+        "meta": {
+          "clock": "08:00"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "08:00",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "闹钟",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-clock-2",
+        "title": "13:30",
+        "body": "提醒全员会议 · 今天",
+        "richText": "",
+        "meta": {
+          "clock": "13:30"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "13:30",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "闹钟",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-clock-3",
+        "title": "22:30",
+        "body": "明日准备 · 周日至周四",
+        "richText": "",
+        "meta": {
+          "clock": "22:30"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "22:30",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "闹钟",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -693,17 +1414,65 @@
     ],
     "reminders": [
       {
-        "id": "test-item-reminders",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-reminders-0",
+        "title": "未完成",
+        "body": "□ 给灿烈哥再次发会议时间\n□ 确认所有人到达楼层\n□ 收齐下周空档\n□ 回覆行政工牌邮件",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "未完成",
+        "avatar": "",
+        "kind": "note",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "今天的待办",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-reminders-1",
+        "title": "已完成",
+        "body": "✓ 会议室预约\n✓ 发送五人群欢迎信息\n✓ 取饮用水",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "已完成",
+        "avatar": "",
+        "kind": "note",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "今天的待办",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-reminders-notice-6",
+        "title": "待办提醒",
+        "body": "会议纪要、车辆安排还没有核对",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "待办提醒",
         "avatar": "",
         "kind": "text",
         "media": "",
-        "hidden": false,
+        "hidden": true,
         "unlock": "",
         "password": "",
         "folder": "",
@@ -716,20 +1485,91 @@
     ],
     "files": [
       {
-        "id": "test-item-files",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-files-0",
+        "title": "EXO_本周行程_版本03.pdf",
+        "body": "今天 08:51 · 演示文件名",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "extension": "pdf"
+        },
+        "time": "2026-10-28 08:51",
+        "sender": "EXO_本周行程_版本03.pdf",
         "avatar": "",
-        "kind": "text",
+        "kind": "file",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "iCloud Drive / 工作文件",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-files-1",
+        "title": "会议纪要_1028.txt",
+        "body": "今天 18:48",
+        "richText": "",
+        "meta": {
+          "extension": "txt"
+        },
+        "time": "2026-10-28 18:48",
+        "sender": "会议纪要_1028.txt",
+        "avatar": "",
+        "kind": "file",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "iCloud Drive / 工作文件",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-files-2",
+        "title": "车辆安排_周三.csv",
+        "body": "今天 12:11",
+        "richText": "",
+        "meta": {
+          "extension": "csv"
+        },
+        "time": "2026-10-28 12:11",
+        "sender": "车辆安排_周三.csv",
+        "avatar": "",
+        "kind": "file",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "iCloud Drive / 工作文件",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-files-3",
+        "title": "新人入职指南.pdf",
+        "body": "昨天 17:02",
+        "richText": "",
+        "meta": {
+          "extension": "pdf"
+        },
+        "time": "2026-10-27 17:02",
+        "sender": "新人入职指南.pdf",
+        "avatar": "",
+        "kind": "file",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "iCloud Drive / 工作文件",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -739,20 +1579,91 @@
     ],
     "music": [
       {
-        "id": "test-item-music",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-music-0",
+        "title": "EXO — First Snow",
+        "body": "通勤歌单",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "EXO — First Snow",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "最近播放",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-music-1",
+        "title": "EXO — Growl",
+        "body": "工作前提神",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "EXO — Growl",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "最近播放",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-music-2",
+        "title": "EXO — Love Me Right",
+        "body": "下班路上",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "EXO — Love Me Right",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "最近播放",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-music-3",
+        "title": "安静的咖啡馆",
+        "body": "纯音乐播放列表",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "安静的咖啡馆",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "最近播放",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -762,20 +1673,91 @@
     ],
     "maps": [
       {
-        "id": "test-item-maps",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-maps-0",
+        "title": "公司七楼会议室",
+        "body": "今天 14:00 · 室内地点",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 14:00",
+        "sender": "公司七楼会议室",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "收藏地点",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-maps-1",
+        "title": "公司附近汤饭店",
+        "body": "暻秀哥推荐 · 午餐",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "公司附近汤饭店",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "收藏地点",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-maps-2",
+        "title": "B2 停车场入口",
+        "body": "钟仁哥问过路线",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "B2 停车场入口",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "收藏地点",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-maps-3",
+        "title": "公司前台",
+        "body": "工牌领取",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "公司前台",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "收藏地点",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -785,20 +1767,74 @@
     ],
     "weather": [
       {
-        "id": "test-item-weather",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-weather-0",
+        "title": "首尔",
+        "body": "多云转晴 · 17°C · 虚构场景气温",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "locationLabel": "首尔",
+          "temperature": "17",
+          "condition": "多云转晴"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "首尔",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "天气 · 仅故事设定",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-weather-1",
+        "title": "下午 14:00",
+        "body": "18°C · 出行带薄外套",
+        "richText": "",
+        "meta": {
+          "locationLabel": "下午 14:00",
+          "temperature": "18",
+          "condition": "18°C"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "下午 14:00",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "天气 · 仅故事设定",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-weather-2",
+        "title": "晚上 21:00",
+        "body": "12°C · 适合外套",
+        "richText": "",
+        "meta": {
+          "locationLabel": "晚上 21:00",
+          "temperature": "12",
+          "condition": "12°C"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "晚上 21:00",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "天气 · 仅故事设定",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -808,20 +1844,68 @@
     ],
     "wallet": [
       {
-        "id": "test-item-wallet",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-wallet-0",
+        "title": "公司门禁卡",
+        "body": "申请中 · 需要行政审核",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "公司门禁卡",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "工作票证",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wallet-1",
+        "title": "交通卡",
+        "body": "余额 ₩23,500 · 虚构数值",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "交通卡",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "工作票证",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wallet-2",
+        "title": "咖啡消费",
+        "body": "₩5,800 · 示例记录",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "咖啡消费",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "交易",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -831,20 +1915,71 @@
     ],
     "health": [
       {
-        "id": "test-item-health",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-health-0",
+        "title": "步数",
+        "body": "6,842 步（虚构）",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "metric": "步数",
+          "value": "6,842 步"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "步数",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "今日健康记录 · 模拟",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-health-1",
+        "title": "站立提醒",
+        "body": "今天已站立 7 小时",
+        "richText": "",
+        "meta": {
+          "metric": "站立提醒",
+          "value": "今天已站立 7 小时"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "站立提醒",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "今日健康记录 · 模拟",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-health-2",
+        "title": "睡眠",
+        "body": "昨晚 6小时42分（虚构）",
+        "richText": "",
+        "meta": {
+          "metric": "睡眠",
+          "value": "昨晚 6小时42分"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "睡眠",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "今日健康记录 · 模拟",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -854,20 +1989,68 @@
     ],
     "find": [
       {
-        "id": "test-item-find",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-find-0",
+        "title": "经纪人手机",
+        "body": "当前设备 · 地理位置不启用",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "经纪人手机",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "设备和物品",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-find-1",
+        "title": "工作钥匙扣",
+        "body": "最后登记：公司办公室（剧情）",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "工作钥匙扣",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "设备和物品",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-find-2",
+        "title": "提醒",
+        "body": "实际 GPS 与他人定位均不启用",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "提醒",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "设备和物品",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -877,20 +2060,45 @@
     ],
     "calculator": [
       {
-        "id": "test-item-calculator",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-calculator-0",
+        "title": "示例",
+        "body": "5 人 × ₩8,000 午餐预算 = ₩40,000",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "示例",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "工作费用小算盘",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-calculator-1",
+        "title": "提醒",
+        "body": "此页面有可使用的加减乘除计算器",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "提醒",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "工作费用小算盘",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -900,20 +2108,91 @@
     ],
     "settings": [
       {
-        "id": "test-item-settings",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-settings-0",
+        "title": "机主",
+        "body": "新入职经纪人 · 虚构身份",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "机主",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "手机设置",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-settings-1",
+        "title": "语言",
+        "body": "简体中文",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "语言",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "手机设置",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-settings-2",
+        "title": "通知",
+        "body": "已开启故事消息提醒",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "通知",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "手机设置",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-settings-3",
+        "title": "隐私",
+        "body": "所有数据保存在当前浏览器 localStorage",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "隐私",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "手机设置",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -923,20 +2202,68 @@
     ],
     "weibo": [
       {
-        "id": "test-item-weibo",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-weibo-0",
+        "title": "关注列表",
+        "body": "EXO 官方账号、公司官方账号",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "关注列表",
         "avatar": "",
-        "kind": "text",
+        "kind": "post",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "微博 · 工作观察",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-weibo-1",
+        "title": "草稿箱",
+        "body": "【转发文案待审核】感谢大家的支持，后续动态请以官方发布为准。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "草稿箱",
+        "avatar": "",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微博 · 工作观察",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-weibo-2",
+        "title": "提醒",
+        "body": "不要提前发布未公开行程",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "提醒",
+        "avatar": "",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微博 · 工作观察",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -946,20 +2273,68 @@
     ],
     "redbook": [
       {
-        "id": "test-item-redbook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-redbook-0",
+        "title": "收藏：职场通勤包整理",
+        "body": "备用充电线 / 纸巾 / 小本子",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "收藏：职场通勤包整理",
         "avatar": "",
-        "kind": "text",
+        "kind": "post",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "小红书 · 私人收藏",
+        "favorite": true,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-redbook-1",
+        "title": "收藏：一人食便当",
+        "body": "会议日也要吃上饭",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "收藏：一人食便当",
+        "avatar": "",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "小红书 · 私人收藏",
+        "favorite": true,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-redbook-2",
+        "title": "草稿：入职首周碎碎念",
+        "body": "只有自己可见，不包含成员隐私",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "草稿：入职首周碎碎念",
+        "avatar": "",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "小红书 · 私人收藏",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -969,20 +2344,68 @@
     ],
     "douyin": [
       {
-        "id": "test-item-douyin",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-douyin-0",
+        "title": "收藏：拉伸教程",
+        "body": "久坐后 8 分钟放松",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "收藏：拉伸教程",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "抖音 · 休息碎片",
+        "favorite": true,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-douyin-1",
+        "title": "收藏：桌面收纳",
+        "body": "把所有充电线分颜色",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "收藏：桌面收纳",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "抖音 · 休息碎片",
+        "favorite": true,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-douyin-2",
+        "title": "草稿",
+        "body": "下班街景视频 · 未发布",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "草稿",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "抖音 · 休息碎片",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -992,20 +2415,68 @@
     ],
     "bilibili": [
       {
-        "id": "test-item-bilibili",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-bilibili-0",
+        "title": "Excel 行程表排版基础",
+        "body": "稍后再看",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "Excel 行程表排版基础",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "哔哩哔哩 · 稍后再看",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-bilibili-1",
+        "title": "新手工作汇报结构",
+        "body": "收藏",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "新手工作汇报结构",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "哔哩哔哩 · 稍后再看",
+        "favorite": true,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-bilibili-2",
+        "title": "自制咖啡教程",
+        "body": "午休时看一眼",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "自制咖啡教程",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "哔哩哔哩 · 稍后再看",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1015,20 +2486,68 @@
     ],
     "alipay": [
       {
-        "id": "test-item-alipay",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-alipay-0",
+        "title": "办公用品",
+        "body": "模拟支出 ¥36.00",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "办公用品",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "支付宝 · 示例账本",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-alipay-1",
+        "title": "餐饮",
+        "body": "模拟支出 ¥28.00",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "餐饮",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "支付宝 · 示例账本",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-alipay-2",
+        "title": "备注",
+        "body": "非真实支付信息；不连接账户",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "备注",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "支付宝 · 示例账本",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1038,20 +2557,68 @@
     ],
     "taobao": [
       {
-        "id": "test-item-taobao",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-taobao-0",
+        "title": "便携充电宝",
+        "body": "数量 1 · 待比较",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "便携充电宝",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "淘宝 · 购物车",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-taobao-1",
+        "title": "文件分类夹",
+        "body": "数量 2",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "文件分类夹",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "淘宝 · 购物车",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-taobao-2",
+        "title": "桌面便签纸",
+        "body": "数量 3",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "桌面便签纸",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "淘宝 · 购物车",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1061,20 +2628,68 @@
     ],
     "netease": [
       {
-        "id": "test-item-netease",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-netease-0",
+        "title": "歌单：上班路上别睡着",
+        "body": "EXO、轻快流行",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "歌单：上班路上别睡着",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "网易云音乐 · 私人歌单",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-netease-1",
+        "title": "歌单：写会议纪要",
+        "body": "低音量纯音乐",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "歌单：写会议纪要",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "网易云音乐 · 私人歌单",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-netease-2",
+        "title": "最近评论草稿",
+        "body": "今天顺利下班就算胜利。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "最近评论草稿",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "网易云音乐 · 私人歌单",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1107,20 +2722,68 @@
     ],
     "forum": [
       {
-        "id": "test-item-forum",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-forum-0",
+        "title": "帖子：新人经纪人如何安排多人行程？",
+        "body": "热评：重要安排至少核对两遍",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "帖子：新人经纪人如何安排多人行程？",
         "avatar": "",
-        "kind": "text",
+        "kind": "post",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "论坛 · 工作经验交流",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-forum-1",
+        "title": "收藏：如何做会议纪要",
+        "body": "分清待确认与已确认",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "收藏：如何做会议纪要",
+        "avatar": "",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "论坛 · 工作经验交流",
+        "favorite": true,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-forum-2",
+        "title": "发帖草稿",
+        "body": "新人第一周，怎么不手忙脚乱？",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "发帖草稿",
+        "avatar": "",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "论坛 · 工作经验交流",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1130,21 +2793,69 @@
     ],
     "instagram": [
       {
-        "id": "test-item-instagram",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-instagram-0",
+        "title": "关注",
+        "body": "EXO 官方公开内容",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "关注",
         "avatar": "",
-        "kind": "text",
+        "kind": "post",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "Instagram · 关注与草稿",
         "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-instagram-1",
+        "title": "Story 草稿",
+        "body": "工作桌角落的咖啡杯 · 未发布",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "Story 草稿",
+        "avatar": "",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Story",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-instagram-2",
+        "title": "收藏",
+        "body": "城市摄影与简单穿搭",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "收藏",
+        "avatar": "",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Instagram · 关注与草稿",
+        "favorite": true,
         "outgoing": false,
         "read": false,
         "likes": 0,
@@ -1153,20 +2864,68 @@
     ],
     "tiktok": [
       {
-        "id": "test-item-tiktok",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-tiktok-0",
+        "title": "收藏：快速办公整理",
+        "body": "标注已收藏",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "收藏：快速办公整理",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "TikTok · For You",
+        "favorite": true,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-tiktok-1",
+        "title": "收藏：城市夜景剪辑",
+        "body": "待看",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "收藏：城市夜景剪辑",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "TikTok · For You",
+        "favorite": true,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-tiktok-2",
+        "title": "发布状态",
+        "body": "没有公开发布涉及成员的私人内容",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "发布状态",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "TikTok · For You",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1176,21 +2935,69 @@
     ],
     "twitter": [
       {
-        "id": "test-item-twitter",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-twitter-0",
+        "title": "列表：官方资讯",
+        "body": "只查看官方公开动态",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "列表：官方资讯",
         "avatar": "",
-        "kind": "text",
+        "kind": "post",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "X · 时间线",
         "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-twitter-1",
+        "title": "草稿",
+        "body": "今天是充实的一天。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "草稿",
+        "avatar": "",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "X · 时间线",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-twitter-2",
+        "title": "书签",
+        "body": "工作效率小技巧",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "书签",
+        "avatar": "",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "X · 时间线",
+        "favorite": true,
         "outgoing": false,
         "read": false,
         "likes": 0,
@@ -1199,20 +3006,68 @@
     ],
     "youtube": [
       {
-        "id": "test-item-youtube",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-youtube-0",
+        "title": "EXO 官方公开表演",
+        "body": "加入稍后再看",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "EXO 官方公开表演",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "YouTube · 观看记录",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-youtube-1",
+        "title": "5分钟会议纪要整理",
+        "body": "已看",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "5分钟会议纪要整理",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "YouTube · 观看记录",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-youtube-2",
+        "title": "睡前拉伸 10 分钟",
+        "body": "稍后再看",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "睡前拉伸 10 分钟",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "YouTube · 观看记录",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1268,20 +3123,68 @@
     ],
     "reddit": [
       {
-        "id": "test-item-reddit",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-reddit-0",
+        "title": "r/productivity",
+        "body": "如何有效管理任务",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "r/productivity",
         "avatar": "",
-        "kind": "text",
+        "kind": "post",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "Reddit · 保存帖子",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-reddit-1",
+        "title": "r/organization",
+        "body": "背包整理方法",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "r/organization",
+        "avatar": "",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Reddit · 保存帖子",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-reddit-2",
+        "title": "个人备注",
+        "body": "不要公开讨论工作中的敏感信息",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "个人备注",
+        "avatar": "",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Reddit · 保存帖子",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1291,21 +3194,69 @@
     ],
     "spotify": [
       {
-        "id": "test-item-spotify",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-spotify-0",
+        "title": "WORKDAY / 08:00",
+        "body": "通勤音乐",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "WORKDAY / 08:00",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "Spotify · 歌单",
         "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-spotify-1",
+        "title": "AFTER HOURS",
+        "body": "下班放松",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "AFTER HOURS",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Spotify · 歌单",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-spotify-2",
+        "title": "EXO Favorites",
+        "body": "公开发行作品收藏",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "EXO Favorites",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Spotify · 歌单",
+        "favorite": true,
         "outgoing": false,
         "read": false,
         "likes": 0,
@@ -1314,20 +3265,68 @@
     ],
     "netflix": [
       {
-        "id": "test-item-netflix",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-netflix-0",
+        "title": "下班放松片单",
+        "body": "未选定",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "下班放松片单",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "Netflix · 继续观看",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-netflix-1",
+        "title": "稍后观看",
+        "body": "悬疑剧收藏夹",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "稍后观看",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Netflix · 继续观看",
+        "favorite": true,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-netflix-2",
+        "title": "提醒",
+        "body": "今晚不熬夜，明天还要早起",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "提醒",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Netflix · 继续观看",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1337,21 +3336,69 @@
     ],
     "pinterest": [
       {
-        "id": "test-item-pinterest",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-pinterest-0",
+        "title": "工作桌面布置",
+        "body": "暖色木纹",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "工作桌面布置",
         "avatar": "",
-        "kind": "text",
+        "kind": "post",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "Pinterest · 灵感板",
         "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-pinterest-1",
+        "title": "极简行程手账",
+        "body": "便于快速查看",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "极简行程手账",
+        "avatar": "",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Pinterest · 灵感板",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-pinterest-2",
+        "title": "深夜城市摄影",
+        "body": "收藏 12 张",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "深夜城市摄影",
+        "avatar": "",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Pinterest · 灵感板",
+        "favorite": true,
         "outgoing": false,
         "read": false,
         "likes": 0,
@@ -1360,64 +3407,22 @@
     ],
     "threads": [
       {
-        "id": "test-item-threads",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
-        "id": "test-threads-message-1",
-        "title": "测试会话1",
-        "body": "这是一条测试消息。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试联系人1",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "私信",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
-        "id": "test-threads-activity-1",
-        "title": "测试动态1",
-        "body": "这是一条测试回复动态。",
+        "id": "exo-threads-0",
+        "title": "草稿",
+        "body": "突然理解了为什么工作群里总有人反复确认楼层。",
         "richText": "",
         "meta": {
-          "activityType": "reply"
+          "source": "EXO 新人经纪人 · 架空剧情"
         },
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户1",
+        "time": "2026-10-28 09:42",
+        "sender": "草稿",
         "avatar": "",
-        "kind": "text",
+        "kind": "post",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "Threads · 私人动态",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1425,87 +3430,45 @@
         "comments": []
       },
       {
-        "id": "test-threads-message-2",
-        "title": "测试会话2",
-        "body": "这是一条测试消息。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试联系人2",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "私信",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
-        "id": "test-threads-activity-2",
-        "title": "测试动态2",
-        "body": "这是一条测试回复动态。",
+        "id": "exo-threads-1",
+        "title": "收藏",
+        "body": "职场小感悟",
         "richText": "",
         "meta": {
-          "activityType": "reply"
+          "source": "EXO 新人经纪人 · 架空剧情"
         },
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户2",
+        "time": "2026-10-28 09:42",
+        "sender": "收藏",
         "avatar": "",
-        "kind": "text",
+        "kind": "post",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
-        "favorite": false,
+        "folder": "Threads · 私人动态",
+        "favorite": true,
         "outgoing": false,
         "read": false,
         "likes": 0,
         "comments": []
       },
       {
-        "id": "test-threads-message-3",
-        "title": "测试会话3",
-        "body": "这是一条测试消息。",
-        "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "测试联系人3",
-        "avatar": "",
-        "kind": "text",
-        "media": "",
-        "hidden": false,
-        "unlock": "",
-        "password": "",
-        "folder": "私信",
-        "favorite": false,
-        "outgoing": false,
-        "read": false,
-        "likes": 0,
-        "comments": []
-      },
-      {
-        "id": "test-threads-activity-3",
-        "title": "测试动态3",
-        "body": "这是一条测试回复动态。",
+        "id": "exo-threads-2",
+        "title": "提醒",
+        "body": "请勿透露内部行程及艺人私人信息",
         "richText": "",
         "meta": {
-          "activityType": "reply"
+          "source": "EXO 新人经纪人 · 架空剧情"
         },
-        "time": "2026-10-25 09:41",
-        "sender": "测试用户3",
+        "time": "2026-10-28 09:42",
+        "sender": "提醒",
         "avatar": "",
-        "kind": "text",
+        "kind": "post",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "Threads · 私人动态",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1515,20 +3478,91 @@
     ],
     "appstore": [
       {
-        "id": "test-appstore",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
+        "id": "exo-appstore-0",
+        "title": "微信",
+        "body": "消息及工作群",
         "richText": "",
-        "meta": {},
-        "time": "2026-10-25 09:41",
-        "sender": "机主",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "微信",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "已安装与更新",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-appstore-1",
+        "title": "KakaoTalk",
+        "body": "公司与成员沟通",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "KakaoTalk",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "已安装与更新",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-appstore-2",
+        "title": "日历",
+        "body": "演出与会议提醒",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "日历",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "已安装与更新",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-appstore-3",
+        "title": "Spotify",
+        "body": "通勤歌单",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "Spotify",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "已安装与更新",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1538,23 +3572,68 @@
     ],
     "messages": [
       {
-        "id": "test-message-messages",
-        "title": "测试会话",
-        "body": "这是一条测试消息。",
+        "id": "exo-messages-0",
+        "title": "公司行政",
+        "body": "工牌已可领取，请到一楼前台核对姓名。",
         "richText": "",
         "meta": {
-          "conversationId": "test-chat-messages",
-          "participants": "owner,test-contact"
+          "source": "EXO 新人经纪人 · 架空剧情"
         },
-        "time": "2026-10-25 09:41",
-        "sender": "测试联系人",
+        "time": "2026-10-28 09:42",
+        "sender": "公司行政",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "短信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-messages-1",
+        "title": "停车场服务台",
+        "body": "访客车辆可在 B2 临停。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "停车场服务台",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "短信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-messages-2",
+        "title": "外卖平台",
+        "body": "您的订单已送达公司前台。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "外卖平台",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "短信",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1564,23 +3643,1241 @@
     ],
     "wechat": [
       {
-        "id": "test-message-wechat",
-        "title": "测试会话",
-        "body": "这是一条测试消息。",
+        "id": "exo-wechat-0",
+        "title": "EXO工作群（6）",
+        "body": "俊勉哥：大家到了之后在群里说一声",
         "richText": "",
         "meta": {
-          "conversationId": "test-chat-wechat",
-          "participants": "owner,test-contact"
+          "source": "EXO 新人经纪人 · 架空剧情"
         },
-        "time": "2026-10-25 09:41",
-        "sender": "测试联系人",
+        "time": "2026-10-28 09:42",
+        "sender": "EXO工作群（6）",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "工作微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-1",
+        "title": "俊勉哥",
+        "body": "如果有不清楚的随时问我",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "俊勉哥",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "工作微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-2",
+        "title": "灿烈哥",
+        "body": "下午几点来着ㅋㅋ",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "灿烈哥",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "工作微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-3",
+        "title": "暻秀哥",
+        "body": "那家汤饭店不错",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "暻秀哥",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "工作微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-4",
+        "title": "钟仁哥",
+        "body": "停车场入口找到了！",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "钟仁哥",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "工作微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-5",
+        "title": "世勋哥",
+        "body": "哥，我在六楼",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "世勋哥",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "工作微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-0-0",
+        "title": "EXO工作群（6）",
+        "body": "大家早上好，今天新经纪人第一天上班。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:20",
+        "sender": "金俊勉",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-0-1",
+        "title": "EXO工作群（6）",
+        "body": "欢迎欢迎👏👏",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:21",
+        "sender": "朴灿烈",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-0-2",
+        "title": "EXO工作群（6）",
+        "body": "你好ㅎㅎ",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:22",
+        "sender": "金钟仁",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-0-3",
+        "title": "EXO工作群（6）",
+        "body": "你好，以后辛苦了。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:23",
+        "sender": "都暻秀",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-0-4",
+        "title": "EXO工作群（6）",
+        "body": "你好",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:24",
+        "sender": "吴世勋",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-0-5",
+        "title": "EXO工作群（6）",
+        "body": "大家好！以后请多多关照！",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:25",
+        "sender": "我",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": true,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-0-6",
+        "title": "EXO工作群（6）",
+        "body": "今天下午两点，七楼会议室见。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:26",
+        "sender": "金俊勉",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-sent-0-0",
+        "title": "EXO工作群（6）",
+        "body": "收到，大家下午见！",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "我",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": true,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-received-0-0",
+        "title": "EXO工作群（6）",
+        "body": "好的ㅎㅎ 我们下午见。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "金俊勉",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-sent-0-1",
+        "title": "EXO工作群（6）",
+        "body": "请大家确认到达时间",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "我",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": true,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-received-0-1",
+        "title": "EXO工作群（6）",
+        "body": "我已经到了。六楼没人。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "吴世勋",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-sent-0-2",
+        "title": "EXO工作群（6）",
+        "body": "会议室在七楼！",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "我",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": true,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-received-0-2",
+        "title": "EXO工作群（6）",
+        "body": "ㅋㅋㅋ世勋你又走错楼了？",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "朴灿烈",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-1-0",
+        "title": "俊勉哥",
+        "body": "有什么不清楚的直接问我。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:20",
+        "sender": "金俊勉",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-1-1",
+        "title": "俊勉哥",
+        "body": "提醒一下：会议室换到七楼了。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:21",
+        "sender": "金俊勉",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-sent-1-0",
+        "title": "俊勉哥",
+        "body": "收到，谢谢俊勉哥！",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "我",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": true,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-received-1-0",
+        "title": "俊勉哥",
+        "body": "不客气ㅎㅎ 不用太紧张。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "金俊勉",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-sent-1-1",
+        "title": "俊勉哥",
+        "body": "灿烈哥需要单独提醒吗？",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "我",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": true,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-received-1-1",
+        "title": "俊勉哥",
+        "body": "最好再发一次ㅋㅋ 他有时候消息太多。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "金俊勉",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-2-0",
+        "title": "灿烈哥",
+        "body": "新经纪人你好！！",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:20",
+        "sender": "朴灿烈",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-2-1",
+        "title": "灿烈哥",
+        "body": "下午几点来着ㅋㅋ",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:21",
+        "sender": "朴灿烈",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-sent-2-0",
+        "title": "灿烈哥",
+        "body": "下午两点，七楼会议室",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "我",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": true,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-received-2-0",
+        "title": "灿烈哥",
+        "body": "啊对对ㅋㅋ 谢谢！",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "朴灿烈",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-sent-2-1",
+        "title": "灿烈哥",
+        "body": "哥，记得提前十分钟到",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "我",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": true,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-received-2-1",
+        "title": "灿烈哥",
+        "body": "明白！我尽量第一个到ㅋㅋ",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "朴灿烈",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-3-0",
+        "title": "暻秀哥",
+        "body": "下午两点，七楼对吧？我会提前到。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:20",
+        "sender": "都暻秀",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-3-1",
+        "title": "暻秀哥",
+        "body": "你吃早饭了吗？公司右转有家汤饭店。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:21",
+        "sender": "都暻秀",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-sent-3-0",
+        "title": "暻秀哥",
+        "body": "谢谢哥，我会吃饭的",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "我",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": true,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-received-3-0",
+        "title": "暻秀哥",
+        "body": "嗯，忙也要记得吃。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "都暻秀",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-sent-3-1",
+        "title": "暻秀哥",
+        "body": "哥，餐厅推荐收到啦",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "我",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": true,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-received-3-1",
+        "title": "暻秀哥",
+        "body": "那家汤不错。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "都暻秀",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-4-0",
+        "title": "钟仁哥",
+        "body": "你好ㅎㅎ",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:20",
+        "sender": "金钟仁",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-4-1",
+        "title": "钟仁哥",
+        "body": "地下停车场入口在哪里啊？",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:21",
+        "sender": "金钟仁",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-sent-4-0",
+        "title": "钟仁哥",
+        "body": "我给你发停车场位置",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "我",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": true,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-received-4-0",
+        "title": "钟仁哥",
+        "body": "谢谢！！啊我好像看到入口了ㅋㅋ",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "金钟仁",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-sent-4-1",
+        "title": "钟仁哥",
+        "body": "哥，七楼会议室见",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "我",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": true,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-received-4-1",
+        "title": "钟仁哥",
+        "body": "知道啦ㅎㅎ",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "金钟仁",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-5-0",
+        "title": "世勋哥",
+        "body": "你好。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:20",
+        "sender": "吴世勋",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-chat-5-1",
+        "title": "世勋哥",
+        "body": "下午你也在吗？",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:21",
+        "sender": "吴世勋",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-sent-5-0",
+        "title": "世勋哥",
+        "body": "哥，我们在七楼",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "我",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": true,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-received-5-0",
+        "title": "世勋哥",
+        "body": "……知道了ㅋㅋ",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "吴世勋",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-sent-5-1",
+        "title": "世勋哥",
+        "body": "对，我会全程跟着大家",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "我",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": true,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-received-5-1",
+        "title": "世勋哥",
+        "body": "哦，那下午见。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "吴世勋",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-notice-0",
+        "title": "灿烈哥",
+        "body": "下午几点来着ㅋㅋ",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "朴灿烈",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-notice-3",
+        "title": "世勋哥",
+        "body": "我在六楼，会议室没人",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "吴世勋",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-notice-4",
+        "title": "EXO工作群（6）",
+        "body": "大家都到了吗？还差谁？",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "金俊勉",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-notice-7",
+        "title": "钟仁哥",
+        "body": "找到停车场啦，谢谢！",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "金钟仁",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-notice-9",
+        "title": "暻秀哥",
+        "body": "忙完记得吃饭。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "都暻秀",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "微信",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1590,23 +4887,68 @@
     ],
     "qq": [
       {
-        "id": "test-message-qq",
-        "title": "测试会话",
-        "body": "这是一条测试消息。",
+        "id": "exo-qq-0",
+        "title": "新入职互助群",
+        "body": "同事小林：有人知道工牌在哪里领吗",
         "richText": "",
         "meta": {
-          "conversationId": "test-chat-qq",
-          "participants": "owner,test-contact"
+          "source": "EXO 新人经纪人 · 架空剧情"
         },
-        "time": "2026-10-25 09:41",
-        "sender": "测试联系人",
+        "time": "2026-10-28 09:42",
+        "sender": "新入职互助群",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "QQ · 同事小群",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-qq-1",
+        "title": "文件传输助手",
+        "body": "会议材料_草稿.txt",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "文件传输助手",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "QQ · 同事小群",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-qq-2",
+        "title": "系统提醒",
+        "body": "请勿在公开群转发未公布工作资料",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "系统提醒",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "QQ · 同事小群",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1616,23 +4958,45 @@
     ],
     "whatsapp": [
       {
-        "id": "test-message-whatsapp",
-        "title": "测试会话",
-        "body": "这是一条测试消息。",
+        "id": "exo-whatsapp-0",
+        "title": "活动协调人",
+        "body": "Could you confirm the updated call time?",
         "richText": "",
         "meta": {
-          "conversationId": "test-chat-whatsapp",
-          "participants": "owner,test-contact"
+          "source": "EXO 新人经纪人 · 架空剧情"
         },
-        "time": "2026-10-25 09:41",
-        "sender": "测试联系人",
+        "time": "2026-10-28 09:42",
+        "sender": "活动协调人",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "WhatsApp · 海外对接",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-whatsapp-1",
+        "title": "设备供应商",
+        "body": "Received the request. Thank you.",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "设备供应商",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "WhatsApp · 海外对接",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1642,23 +5006,68 @@
     ],
     "telegram": [
       {
-        "id": "test-message-telegram",
-        "title": "测试会话",
-        "body": "这是一条测试消息。",
+        "id": "exo-telegram-0",
+        "title": "天气提醒",
+        "body": "明日有温差，请注意外套",
         "richText": "",
         "meta": {
-          "conversationId": "test-chat-telegram",
-          "participants": "owner,test-contact"
+          "source": "EXO 新人经纪人 · 架空剧情"
         },
-        "time": "2026-10-25 09:41",
-        "sender": "测试联系人",
+        "time": "2026-10-28 09:42",
+        "sender": "天气提醒",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "Telegram · 个人订阅",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-telegram-1",
+        "title": "资讯频道",
+        "body": "今日待读消息",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "资讯频道",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Telegram · 个人订阅",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-telegram-2",
+        "title": "保存的消息",
+        "body": "备用转接头型号",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "保存的消息",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Telegram · 个人订阅",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1668,23 +5077,68 @@
     ],
     "discord": [
       {
-        "id": "test-message-discord",
-        "title": "测试会话",
-        "body": "这是一条测试消息。",
+        "id": "exo-discord-0",
+        "title": "朋友的周末计划",
+        "body": "周末要一起玩吗？",
         "richText": "",
         "meta": {
-          "conversationId": "test-chat-discord",
-          "participants": "owner,test-contact"
+          "source": "EXO 新人经纪人 · 架空剧情"
         },
-        "time": "2026-10-25 09:41",
-        "sender": "测试联系人",
+        "time": "2026-10-28 09:42",
+        "sender": "朋友的周末计划",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "Discord · 朋友服务器",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-discord-1",
+        "title": "待办机器人",
+        "body": "记得给手机充电",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "待办机器人",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Discord · 朋友服务器",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-discord-2",
+        "title": "个人状态",
+        "body": "忙碌中",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "个人状态",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Discord · 朋友服务器",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1694,23 +5148,45 @@
     ],
     "line": [
       {
-        "id": "test-message-line",
-        "title": "测试会话",
-        "body": "这是一条测试消息。",
+        "id": "exo-line-0",
+        "title": "朋友 Yuki",
+        "body": "下次来日本一起吃饭呀",
         "richText": "",
         "meta": {
-          "conversationId": "test-chat-line",
-          "participants": "owner,test-contact"
+          "source": "EXO 新人经纪人 · 架空剧情"
         },
-        "time": "2026-10-25 09:41",
-        "sender": "测试联系人",
+        "time": "2026-10-28 09:42",
+        "sender": "朋友 Yuki",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "LINE · 联系人",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-line-1",
+        "title": "日本行程协调",
+        "body": "会议时间待确定",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "日本行程协调",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "LINE · 联系人",
         "favorite": false,
         "outgoing": false,
         "read": false,
@@ -1746,20 +5222,88 @@
     ],
     "kakao": [
       {
-        "id": "test-message-kakao",
-        "title": "测试会话",
-        "body": "这是一条测试消息。",
+        "id": "exo-kakao-0",
+        "title": "EXO 일정 체크（6）",
+        "body": "SUHO：오늘 2시, 7층입니다.（今天两点，七楼）",
         "richText": "",
         "meta": {
-          "conversationId": "test-chat-kakao",
-          "participants": "owner,test-contact"
+          "source": "EXO 新人经纪人 · 架空剧情"
         },
-        "time": "2026-10-25 09:41",
-        "sender": "测试联系人",
+        "time": "2026-10-28 09:42",
+        "sender": "EXO 일정 체크（6）",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "KakaoTalk · 工作对话",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-kakao-1",
+        "title": "公司统筹",
+        "body": "일정표 확인 부탁드립니다.（请确认行程表）",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "公司统筹",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "KakaoTalk · 工作对话",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-kakao-2",
+        "title": "车辆调度",
+        "body": "地下停车场入口已发送",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "车辆调度",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "KakaoTalk · 工作对话",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-kakao-notice-2",
+        "title": "EXO 일정 체크",
+        "body": "오늘 2시, 7층입니다.（今天两点，七楼）",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "EXO 일정 체크",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
         "unlock": "",
         "password": "",
         "folder": "",
@@ -1768,34 +5312,1361 @@
         "read": false,
         "likes": 0,
         "comments": []
-      },
+      }
+    ],
+    "dianping": [
       {
-        "id": "test-reply-kakao",
-        "title": "测试会话",
-        "body": "这是一条测试回复。",
+        "id": "exo-dianping-0",
+        "title": "公司附近汤饭店",
+        "body": "暻秀哥推荐（剧情设定）",
         "richText": "",
         "meta": {
-          "conversationId": "test-chat-kakao",
-          "participants": "owner,test-contact"
+          "source": "EXO 新人经纪人 · 架空剧情"
         },
-        "time": "2026-10-25 09:41",
-        "sender": "机主",
+        "time": "2026-10-28 09:42",
+        "sender": "公司附近汤饭店",
         "avatar": "",
         "kind": "text",
         "media": "",
         "hidden": false,
         "unlock": "",
         "password": "",
-        "folder": "",
+        "folder": "大众点评 · 午餐收藏",
         "favorite": false,
-        "outgoing": true,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-dianping-1",
+        "title": "安静咖啡店",
+        "body": "适合整理资料",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "安静咖啡店",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "大众点评 · 午餐收藏",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-dianping-2",
+        "title": "烤肉餐厅",
+        "body": "待团队确认",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "烤肉餐厅",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "大众点评 · 午餐收藏",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      }
+    ],
+    "google": [
+      {
+        "id": "exo-google-0",
+        "title": "presentation checklist",
+        "body": "昨天 23:12",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-27 23:12",
+        "sender": "presentation checklist",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Google · 最近搜索",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-google-1",
+        "title": "Seoul subway last train",
+        "body": "昨天 22:18",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-27 22:18",
+        "sender": "Seoul subway last train",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Google · 最近搜索",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-google-2",
+        "title": "professional meeting minutes template",
+        "body": "今天 08:32",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 08:32",
+        "sender": "professional meeting minutes template",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Google · 最近搜索",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      }
+    ],
+    "gmail": [
+      {
+        "id": "exo-gmail-0",
+        "title": "设备通知",
+        "body": "新设备登录提醒（虚构）",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "设备通知",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "收件箱",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-gmail-1",
+        "title": "购物平台",
+        "body": "订单已发货",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "购物平台",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "收件箱",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-gmail-2",
+        "title": "订阅邮件",
+        "body": "每周效率工具合集",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "订阅邮件",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "收件箱",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      }
+    ],
+    "googlemaps": [
+      {
+        "id": "exo-googlemaps-0",
+        "title": "公司",
+        "body": "已保存",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "公司",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Google Maps · 个人地点",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-googlemaps-1",
+        "title": "附近便利店",
+        "body": "计划中途补水",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "附近便利店",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Google Maps · 个人地点",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-googlemaps-2",
+        "title": "地铁站",
+        "body": "通勤路线收藏",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "地铁站",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "Google Maps · 个人地点",
+        "favorite": true,
+        "outgoing": false,
         "read": false,
         "likes": 0,
         "comments": []
       }
     ]
   },
-  "nodes": [],
-  "variables": {},
-  "mode": "explore"
+  "nodes": [
+    {
+      "id": "exo-offer-0-0",
+      "label": "回复 EXO工作群（6）",
+      "type": "action",
+      "event": "read",
+      "target": "EXO工作群（6）",
+      "conditions": [
+        {
+          "key": "exo-reply-0-0",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "choice",
+          "key": "exo-reply-0-0",
+          "value": "收到，大家下午见！"
+        }
+      ],
+      "next": [],
+      "once": false,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-reply-0-0",
+      "label": "收到，大家下午见！",
+      "type": "action",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-sent-0-0",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "exo-wechat-received-0-0",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "exo-reply-0-0",
+          "value": true
+        }
+      ],
+      "next": [
+        "exo-offer-0-0",
+        "exo-offer-0-1",
+        "exo-offer-0-2"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-offer-0-1",
+      "label": "回复 EXO工作群（6）",
+      "type": "action",
+      "event": "read",
+      "target": "EXO工作群（6）",
+      "conditions": [
+        {
+          "key": "exo-reply-0-1",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "choice",
+          "key": "exo-reply-0-1",
+          "value": "请大家确认到达时间"
+        }
+      ],
+      "next": [],
+      "once": false,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-reply-0-1",
+      "label": "请大家确认到达时间",
+      "type": "action",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-sent-0-1",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "exo-wechat-received-0-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "exo-reply-0-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "exo-offer-0-0",
+        "exo-offer-0-1",
+        "exo-offer-0-2"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-offer-0-2",
+      "label": "回复 EXO工作群（6）",
+      "type": "action",
+      "event": "read",
+      "target": "EXO工作群（6）",
+      "conditions": [
+        {
+          "key": "exo-reply-0-2",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "choice",
+          "key": "exo-reply-0-2",
+          "value": "会议室在七楼！"
+        }
+      ],
+      "next": [],
+      "once": false,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-reply-0-2",
+      "label": "会议室在七楼！",
+      "type": "action",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-sent-0-2",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "exo-wechat-received-0-2",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "exo-reply-0-2",
+          "value": true
+        }
+      ],
+      "next": [
+        "exo-offer-0-0",
+        "exo-offer-0-1",
+        "exo-offer-0-2"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-offer-1-0",
+      "label": "回复 俊勉哥",
+      "type": "action",
+      "event": "read",
+      "target": "俊勉哥",
+      "conditions": [
+        {
+          "key": "exo-reply-1-0",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "choice",
+          "key": "exo-reply-1-0",
+          "value": "收到，谢谢俊勉哥！"
+        }
+      ],
+      "next": [],
+      "once": false,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-reply-1-0",
+      "label": "收到，谢谢俊勉哥！",
+      "type": "action",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-sent-1-0",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "exo-wechat-received-1-0",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "exo-reply-1-0",
+          "value": true
+        }
+      ],
+      "next": [
+        "exo-offer-1-0",
+        "exo-offer-1-1"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-offer-1-1",
+      "label": "回复 俊勉哥",
+      "type": "action",
+      "event": "read",
+      "target": "俊勉哥",
+      "conditions": [
+        {
+          "key": "exo-reply-1-1",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "choice",
+          "key": "exo-reply-1-1",
+          "value": "灿烈哥需要单独提醒吗？"
+        }
+      ],
+      "next": [],
+      "once": false,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-reply-1-1",
+      "label": "灿烈哥需要单独提醒吗？",
+      "type": "action",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-sent-1-1",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "exo-wechat-received-1-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "exo-reply-1-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "exo-offer-1-0",
+        "exo-offer-1-1"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-offer-2-0",
+      "label": "回复 灿烈哥",
+      "type": "action",
+      "event": "read",
+      "target": "灿烈哥",
+      "conditions": [
+        {
+          "key": "exo-reply-2-0",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "choice",
+          "key": "exo-reply-2-0",
+          "value": "下午两点，七楼会议室"
+        }
+      ],
+      "next": [],
+      "once": false,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-reply-2-0",
+      "label": "下午两点，七楼会议室",
+      "type": "action",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-sent-2-0",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "exo-wechat-received-2-0",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "exo-reply-2-0",
+          "value": true
+        }
+      ],
+      "next": [
+        "exo-offer-2-0",
+        "exo-offer-2-1"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-offer-2-1",
+      "label": "回复 灿烈哥",
+      "type": "action",
+      "event": "read",
+      "target": "灿烈哥",
+      "conditions": [
+        {
+          "key": "exo-reply-2-1",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "choice",
+          "key": "exo-reply-2-1",
+          "value": "哥，记得提前十分钟到"
+        }
+      ],
+      "next": [],
+      "once": false,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-reply-2-1",
+      "label": "哥，记得提前十分钟到",
+      "type": "action",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-sent-2-1",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "exo-wechat-received-2-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "exo-reply-2-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "exo-offer-2-0",
+        "exo-offer-2-1"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-offer-3-0",
+      "label": "回复 暻秀哥",
+      "type": "action",
+      "event": "read",
+      "target": "暻秀哥",
+      "conditions": [
+        {
+          "key": "exo-reply-3-0",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "choice",
+          "key": "exo-reply-3-0",
+          "value": "谢谢哥，我会吃饭的"
+        }
+      ],
+      "next": [],
+      "once": false,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-reply-3-0",
+      "label": "谢谢哥，我会吃饭的",
+      "type": "action",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-sent-3-0",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "exo-wechat-received-3-0",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "exo-reply-3-0",
+          "value": true
+        }
+      ],
+      "next": [
+        "exo-offer-3-0",
+        "exo-offer-3-1"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-offer-3-1",
+      "label": "回复 暻秀哥",
+      "type": "action",
+      "event": "read",
+      "target": "暻秀哥",
+      "conditions": [
+        {
+          "key": "exo-reply-3-1",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "choice",
+          "key": "exo-reply-3-1",
+          "value": "哥，餐厅推荐收到啦"
+        }
+      ],
+      "next": [],
+      "once": false,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-reply-3-1",
+      "label": "哥，餐厅推荐收到啦",
+      "type": "action",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-sent-3-1",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "exo-wechat-received-3-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "exo-reply-3-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "exo-offer-3-0",
+        "exo-offer-3-1"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-offer-4-0",
+      "label": "回复 钟仁哥",
+      "type": "action",
+      "event": "read",
+      "target": "钟仁哥",
+      "conditions": [
+        {
+          "key": "exo-reply-4-0",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "choice",
+          "key": "exo-reply-4-0",
+          "value": "我给你发停车场位置"
+        }
+      ],
+      "next": [],
+      "once": false,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-reply-4-0",
+      "label": "我给你发停车场位置",
+      "type": "action",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-sent-4-0",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "exo-wechat-received-4-0",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "exo-reply-4-0",
+          "value": true
+        }
+      ],
+      "next": [
+        "exo-offer-4-0",
+        "exo-offer-4-1"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-offer-4-1",
+      "label": "回复 钟仁哥",
+      "type": "action",
+      "event": "read",
+      "target": "钟仁哥",
+      "conditions": [
+        {
+          "key": "exo-reply-4-1",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "choice",
+          "key": "exo-reply-4-1",
+          "value": "哥，七楼会议室见"
+        }
+      ],
+      "next": [],
+      "once": false,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-reply-4-1",
+      "label": "哥，七楼会议室见",
+      "type": "action",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-sent-4-1",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "exo-wechat-received-4-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "exo-reply-4-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "exo-offer-4-0",
+        "exo-offer-4-1"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-offer-5-0",
+      "label": "回复 世勋哥",
+      "type": "action",
+      "event": "read",
+      "target": "世勋哥",
+      "conditions": [
+        {
+          "key": "exo-reply-5-0",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "choice",
+          "key": "exo-reply-5-0",
+          "value": "哥，我们在七楼"
+        }
+      ],
+      "next": [],
+      "once": false,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-reply-5-0",
+      "label": "哥，我们在七楼",
+      "type": "action",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-sent-5-0",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "exo-wechat-received-5-0",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "exo-reply-5-0",
+          "value": true
+        }
+      ],
+      "next": [
+        "exo-offer-5-0",
+        "exo-offer-5-1"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-offer-5-1",
+      "label": "回复 世勋哥",
+      "type": "action",
+      "event": "read",
+      "target": "世勋哥",
+      "conditions": [
+        {
+          "key": "exo-reply-5-1",
+          "op": "neq",
+          "value": true
+        }
+      ],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "choice",
+          "key": "exo-reply-5-1",
+          "value": "对，我会全程跟着大家"
+        }
+      ],
+      "next": [],
+      "once": false,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-reply-5-1",
+      "label": "对，我会全程跟着大家",
+      "type": "action",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-sent-5-1",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "exo-wechat-received-5-1",
+          "value": true
+        },
+        {
+          "type": "variable",
+          "key": "exo-reply-5-1",
+          "value": true
+        }
+      ],
+      "next": [
+        "exo-offer-5-0",
+        "exo-offer-5-1"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-notifications-start",
+      "label": "开始工作日通知",
+      "type": "action",
+      "event": "openApp",
+      "target": "wechat",
+      "conditions": [],
+      "logic": "and",
+      "actions": [],
+      "next": [
+        "exo-notice-0"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80
+    },
+    {
+      "id": "exo-notice-0",
+      "label": "微信 · 灿烈哥",
+      "type": "delay",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-notice-0",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "wechat",
+          "value": "微信 · 灿烈哥：下午几点来着ㅋㅋ"
+        }
+      ],
+      "next": [
+        "exo-notice-1"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80,
+      "delayMs": 24000
+    },
+    {
+      "id": "exo-notice-1",
+      "label": "日历 · 日程提醒",
+      "type": "delay",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-calendar-notice-1",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "calendar",
+          "value": "日历 · 日程提醒：14:00 EXO 五人会议 · 七楼会议室"
+        }
+      ],
+      "next": [
+        "exo-notice-2"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80,
+      "delayMs": 24000
+    },
+    {
+      "id": "exo-notice-2",
+      "label": "KakaoTalk · EXO 일정 체크",
+      "type": "delay",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-kakao-notice-2",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "kakao",
+          "value": "KakaoTalk · EXO 일정 체크：오늘 2시, 7층입니다.（今天两点，七楼）"
+        }
+      ],
+      "next": [
+        "exo-notice-3"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80,
+      "delayMs": 24000
+    },
+    {
+      "id": "exo-notice-3",
+      "label": "微信 · 世勋哥",
+      "type": "delay",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-notice-3",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "wechat",
+          "value": "微信 · 世勋哥：我在六楼，会议室没人"
+        }
+      ],
+      "next": [
+        "exo-notice-4"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80,
+      "delayMs": 24000
+    },
+    {
+      "id": "exo-notice-4",
+      "label": "微信 · 俊勉哥",
+      "type": "delay",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-notice-4",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "wechat",
+          "value": "微信 · 俊勉哥：大家都到了吗？还差谁？"
+        }
+      ],
+      "next": [
+        "exo-notice-5"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80,
+      "delayMs": 24000
+    },
+    {
+      "id": "exo-notice-5",
+      "label": "电话 · 灿烈哥",
+      "type": "delay",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-phone-notice-5",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "phone",
+          "value": "电话 · 灿烈哥：未接来电：会议室到底在几楼？"
+        }
+      ],
+      "next": [
+        "exo-notice-6"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80,
+      "delayMs": 24000
+    },
+    {
+      "id": "exo-notice-6",
+      "label": "提醒事项 · 待办提醒",
+      "type": "delay",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-reminders-notice-6",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "reminders",
+          "value": "提醒事项 · 待办提醒：会议纪要、车辆安排还没有核对"
+        }
+      ],
+      "next": [
+        "exo-notice-7"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80,
+      "delayMs": 24000
+    },
+    {
+      "id": "exo-notice-7",
+      "label": "微信 · 钟仁哥",
+      "type": "delay",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-notice-7",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "wechat",
+          "value": "微信 · 钟仁哥：找到停车场啦，谢谢！"
+        }
+      ],
+      "next": [
+        "exo-notice-8"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80,
+      "delayMs": 24000
+    },
+    {
+      "id": "exo-notice-8",
+      "label": "邮件 · 行政团队",
+      "type": "delay",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-mail-notice-8",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "mail",
+          "value": "邮件 · 行政团队：请在下班前确认工牌申请"
+        }
+      ],
+      "next": [
+        "exo-notice-9"
+      ],
+      "once": true,
+      "x": 80,
+      "y": 80,
+      "delayMs": 24000
+    },
+    {
+      "id": "exo-notice-9",
+      "label": "微信 · 暻秀哥",
+      "type": "delay",
+      "event": "",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-wechat-notice-9",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "wechat",
+          "value": "微信 · 暻秀哥：忙完记得吃饭。"
+        }
+      ],
+      "next": [],
+      "once": true,
+      "x": 80,
+      "y": 80,
+      "delayMs": 24000
+    }
+  ],
+  "variables": {
+    "exo_manager_import_v1": true
+  },
+  "mode": "mixed"
 }

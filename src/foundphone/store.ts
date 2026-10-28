@@ -2,6 +2,7 @@ import { create } from "zustand";
 import { createWork, createEmptyWork } from "./demo";
 import { uid, validateWork, type Work } from "./schema";
 import { db } from "./persistence";
+import { importExoManager } from "./exoManager";
 export { db } from "./persistence";
 type Store = {
   works: Work[];
@@ -38,6 +39,11 @@ export const useStudio = create<Store>((set, get) => ({
         const w = createWork();
         await db.works.put(w);
         works = [w];
+      }
+      const current = works[0];
+      if (current && importExoManager(current)) {
+        current.updatedAt = Date.now();
+        await db.works.put(current);
       }
       set({ works, work: works[0], status: "已保存到本机" });
     } catch (e) {
