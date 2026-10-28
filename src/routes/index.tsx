@@ -1,5 +1,5 @@
 // FoundPhone runtime player route (migrated from exo-FoundPhone-Studio).
-import { createFileRoute, ClientOnly, Link } from "@tanstack/react-router";
+import { createFileRoute, ClientOnly } from "@tanstack/react-router";
 import { lazy, Suspense } from "react";
 
 const StoryPlayer = lazy(() =>
@@ -48,24 +48,6 @@ function Index() {
       >
         <StoryPlayer />
       </Suspense>
-      <Link
-        to="/studio"
-        style={{
-          position: "fixed",
-          right: 16,
-          bottom: 16,
-          zIndex: 9999,
-          padding: "10px 18px",
-          borderRadius: 999,
-          background: "#1c1c1e",
-          color: "#f5f4f0",
-          fontSize: 14,
-          textDecoration: "none",
-          boxShadow: "0 8px 24px rgba(0,0,0,.25)",
-        }}
-      >
-        打开创作器
-      </Link>
     </ClientOnly>
   );
 }
