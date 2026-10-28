@@ -196,7 +196,13 @@ export function makeItem(partial: Partial<Item> = {}): Item {
 export function validateWork(input: unknown): Work {
   return workSchema.parse(input);
 }
+/** Bundled media shipped with the app (public/media), safe relative paths only. */
+const bundledMedia = /^\.\/media\/[\w-]+\.(jpg|jpeg|png|webp)$/;
+export function isImage(value: string) {
+  return value.startsWith("data:image/") || bundledMedia.test(value);
+}
 export function safeMedia(value: string) {
+  if (bundledMedia.test(value)) return value;
   return /^data:(image\/(png|jpeg|webp|gif)|audio\/(mpeg|mp3|wav|ogg|webm|mp4)|video\/(mp4|webm));base64,[a-zA-Z0-9+/=\s]+$/.test(
     value,
   )

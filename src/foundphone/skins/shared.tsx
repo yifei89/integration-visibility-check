@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import { useState, type ReactNode } from "react";
 import type { SkinProps } from "../AppSkins";
-import { safeMedia, type Item } from "../schema";
+import { isImage, safeMedia, type Item } from "../schema";
 export type Props = SkinProps;
 export const meta = (
   i: Pick<Item, "meta"> | undefined,
