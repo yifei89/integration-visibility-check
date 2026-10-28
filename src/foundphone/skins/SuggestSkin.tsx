@@ -33,7 +33,7 @@ export function SuggestSkin(p: SkinProps) {
             if (state !== "sending") setState("");
           }}
         />
-        <label className="suggest-send" style={{ cursor: "pointer" }}>
+        <label className="suggest-attach">
           <Paperclip size={16} /> 添加图片 / 视频 / 音频
           <input
             type="file"
