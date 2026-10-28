@@ -1,0 +1,17 @@
+{
+  "source": "code-archive: exo-FoundPhone-Studio-main.zip (GitHub exo-FoundPhone-Studio)",
+  "capabilities": [
+    { "capability": "application code (React 19 + Vite SPA, 82 source files)", "source": "src/", "outcome": "copied to src/foundphone/, mounted via TanStack routes", "status": "in_progress", "next_action": "verify build + runtime" },
+    { "capability": "story runtime player (/)", "source": "index.html + src/runtime/StoryPlayer.tsx", "outcome": "route / with ClientOnly", "status": "in_progress", "next_action": "verify" },
+    { "capability": "studio editor", "source": "src/main.tsx", "outcome": "route /studio with ClientOnly", "status": "in_progress", "next_action": "verify" },
+    { "capability": "story data (template/blank/test-preview)", "source": "stories/*.json via scripts/story.mjs build", "outcome": "precompiled to public/work.json, blank-work.json, test-work.json", "status": "in_progress", "next_action": "verify fetch" },
+    { "capability": "local persistence (Dexie/IndexedDB)", "source": "src/persistence.ts", "outcome": "unchanged, browser-local", "status": "migrate", "next_action": "verify save in studio" },
+    { "capability": "static export (player-runtime zip)", "source": "src/io.ts staticExport + scripts/package-player.mjs", "outcome": "public/player-runtime copied from source build", "status": "in_progress", "next_action": "verify manifest.json exists" },
+    { "capability": "original app icons", "source": "assets/app-icons", "outcome": "copied to public/icon-assets, VITE_ORIGINAL_ICONS=true", "status": "in_progress", "next_action": "verify icons render" },
+    { "capability": "PWA offline cache (vite-plugin-pwa)", "source": "vite configs", "outcome": "not ported; conflicts with TanStack Start SSR build", "status": "accepted_loss", "next_action": "none" },
+    { "capability": "auth/users", "source": "none in source", "outcome": "not applicable, app is login-free local-first", "status": "verified", "next_action": "none" },
+    { "capability": "server database/records", "source": "none in source", "outcome": "not applicable", "status": "verified", "next_action": "none" },
+    { "capability": "external providers/payments/email", "source": "none in source", "outcome": "not applicable", "status": "verified", "next_action": "none" },
+    { "capability": "git bidirectional sync", "source": "user request", "outcome": "user connects Git in project settings after migration; Lovable creates a new repo", "status": "pending_user", "next_action": "tell user to connect GitHub in settings" }
+  ]
+}
