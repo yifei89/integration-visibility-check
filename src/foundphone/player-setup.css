@@ -1,0 +1,14 @@
+.player-setup {
+  width: min(360px, calc(100% - 48px));
+  margin: auto;
+  color: var(--ink);
+  background: var(--background);
+  padding: 28px;
+  border-radius: 8px;
+}
+.player-setup-kicker { color: var(--muted); font-size: 12px; }
+.player-setup h1 { font-size: 28px; margin: 14px 0 28px; }
+.player-setup form { display: grid; gap: 12px; }
+.player-setup label { font-size: 13px; }
+.player-setup input { background: var(--background); color: var(--ink); border-color: var(--line); }
+.player-setup form button { margin-top: 12px; }
