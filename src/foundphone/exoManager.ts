@@ -1,4 +1,5 @@
 import content from "./exo-manager-content.json";
+import dialogue from "./exo-dialogue.json";
 import { applyPlayerSetup } from "./playerSetup";
 import { autoReplyFolder } from "./wechatReplies";
 import { suggestionAppId } from "./suggestions";
@@ -142,7 +143,7 @@ const pictureApps = ["photos", "instagram", "threads", "weibo", "redbook", "douy
  */
 export function applyExoExtras(w: Work): boolean {
   const suggest = addSuggestionApp(w);
-  if (w.variables[exoExtrasMarker]) return suggest;
+  if (w.variables[exoExtrasMarker]) return applyExoDialogue(w) || suggest;
   // WeChat: drop reply choices; the member answers become the thread's fixed replies.
   w.nodes = w.nodes.filter((n) => !/^exo-(offer|reply)-/.test(n.id));
   w.data.wechat = (w.data.wechat ?? []).filter((i) => !i.id.startsWith("exo-wechat-sent-"));
@@ -186,6 +187,41 @@ export function applyExoExtras(w: Work): boolean {
     }
   }
   w.variables[exoExtrasMarker] = true;
+  applyExoDialogue(w);
+  return true;
+}
+export const exoDialogueMarker = "exo_dialogue_ko_v1";
+/** Members' own voice (Korean with Chinese translation): replaces imported chats, fixed replies and notices once. */
+export function applyExoDialogue(w: Work): boolean {
+  if (w.variables[exoDialogueMarker]) return false;
+  const threads = Object.keys(content.chats);
+  // The HTML's chat-list summaries would show up as extra messages inside each chat.
+  w.data.wechat = (w.data.wechat ?? []).filter((i) => !/^exo-wechat-\d+$/.test(i.id));
+  threads.forEach((thread, t) => {
+    const chats = dialogue.chats[thread as keyof typeof dialogue.chats] ?? [];
+    const replies = dialogue.replies[thread as keyof typeof dialogue.replies] ?? [];
+    const avatar = exoAvatars[thread];
+    w.data.wechat = w.data.wechat.filter((i) => !i.id.startsWith(`exo-wechat-chat-${t}-`) && !i.id.startsWith(`exo-wechat-received-${t}-`));
+    chats.forEach(([sender, body], i) => w.data.wechat.push(record("wechat", `chat-${t}-${i}`, thread, body, {
+      sender, outgoing: sender === "我", folder: "微信", avatar: sender === "我" ? "" : avatarFor(sender),
+      time: `2026-10-28 09:${String(20 + i).padStart(2, "0")}`, meta: { source: "EXO 新人经纪人 · 架空剧情", threadAvatar: avatar },
+    })));
+    replies.forEach(([sender, body], i) => w.data.wechat.push(record("wechat", `received-${t}-${i}`, thread, body, {
+      sender, folder: autoReplyFolder, avatar: avatarFor(sender), meta: { source: "EXO 新人经纪人 · 架空剧情", threadAvatar: avatar },
+    })));
+  });
+  dialogue.events.forEach((text, index) => {
+    if (!text) return;
+    const e = content.events[index];
+    const app = exoAppIds[e.app];
+    const item = w.data[app]?.find((i) => i.id === `exo-${app}-notice-${index}`);
+    if (item) item.body = text;
+    const action = w.nodes.find((n) => n.id === `exo-notice-${index}`)?.actions.find((a) => a.type === "notification");
+    if (action) action.value = app === "wechat" && e.target
+      ? `微信 · ${e.target}：${e.target === e.from ? "" : e.from + "："}${text}`
+      : `${e.app} · ${e.from}：${text}`;
+  });
+  w.variables[exoDialogueMarker] = true;
   return true;
 }
 const suggestMarker = "suggest_app_v1";
