@@ -716,13 +716,10 @@ svg {
   background-size: cover;
 }
 .wallpaper-sage {
-  background: linear-gradient(
-    155deg,
-    #d7ddbc 0%,
-    #a0b79b 33%,
-    #526f62 66%,
-    #b5c0aa 100%
-  );
+  background: url("/__l5e/assets-v1/7819c686-90c6-463b-898c-9d2a1ee68d25/sehun-wallpaper.jpg") center/cover no-repeat;
+}
+.wallpaper-sage .wallpaper-orb {
+  display: none;
 }
 .wallpaper-sand {
   background: linear-gradient(

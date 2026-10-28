@@ -528,7 +528,7 @@
   opacity: 0.4;
   cursor: default;
 }
-.ios18 .library-get:disabled {
+.ios18 .launcher-sheet .library-get:disabled {
   opacity: 1;
 }
 .ios18 .library-install-progress {
@@ -546,15 +546,15 @@
   border: 0;
   border-radius: 2px;
   overflow: hidden;
-  background: var(--muted);
-  color: var(--primary);
+  background: var(--ios-bg);
+  color: var(--ios-blue);
 }
 .ios18 .library-install-progress progress::-webkit-progress-bar {
-  background: var(--muted);
+  background: var(--ios-bg);
 }
 .ios18 .library-install-progress progress::-webkit-progress-value {
-  background: var(--primary);
+  background: var(--ios-blue);
 }
 .ios18 .library-install-progress progress::-moz-progress-bar {
-  background: var(--primary);
+  background: var(--ios-blue);
 }
