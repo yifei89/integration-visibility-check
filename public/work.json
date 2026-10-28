@@ -6666,6 +6666,7 @@
     }
   ],
   "variables": {
+    "playerGender": "female",
     "playerNameRequired": true,
     "player_setup_v1": true,
     "exo_manager_import_v1": true
