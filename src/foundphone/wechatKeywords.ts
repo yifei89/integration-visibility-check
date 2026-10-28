@@ -547,6 +547,9 @@ interface MatchCandidate {
   order: number;
 }
 
+/** Plot-sensitive rules that outrank ordinary keywords; add entries here. */
+const specialRules: { keys: string[]; replies: Partial<Record<Character, string>> }[] = [];
+
 const negativeTopics = new Set<Topic>([
   "dontLikeMe",
   "breakUp",
