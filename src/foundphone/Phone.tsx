@@ -148,6 +148,8 @@ function PhoneRuntime({
   const [recent, setRecent] = useState<string[]>([]);
   const appSnapshots = useRef(new Map<string, HTMLElement>());
   const [banner, setBanner] = useState("");
+  const [noticeThread, setNoticeThread] = useState("");
+  const pendingNotice = useRef("");
   const noticesSeen = useRef(0);
   const [contextApp, setContextApp] = useState("");
   const [deviceScale, setDeviceScale] = useState(0.84);
@@ -275,12 +277,20 @@ function PhoneRuntime({
   const open = (id: string) => {
     if (!work.apps.some((a) => a.id === id && a.installed)) return;
     setApp(id);
+    setNoticeThread("");
     setKeyboard(false);
     setRecent((v) => [id, ...v.filter((a) => a !== id)].slice(0, 8));
     setFolder("");
     setPanel("");
     onOpen?.(id);
     event("openApp", id);
+  };
+  /** Open the app (and chat thread) a notification belongs to. */
+  const openNotice = (text: string) => {
+    const n = notificationContent(text, work.apps);
+    if (!work.apps.some((a) => a.id === n.appId && a.installed)) return;
+    open(n.appId);
+    setNoticeThread(getApp(n.appId).engine === "messaging" ? n.thread : "");
   };
   const installedApps = work.apps.filter((a) => a.installed);
   const apps = installedApps.filter((a) => a.visible);
@@ -289,6 +299,11 @@ function PhoneRuntime({
       setLocked(false);
       setPinOpen(false);
       event("password", pin);
+      if (pendingNotice.current) {
+        const text = pendingNotice.current;
+        pendingNotice.current = "";
+        setTimeout(() => openNotice(text), 0);
+      }
     } else {
       setPinError("密码不正确");
       setPinOpen(true);
@@ -440,6 +455,7 @@ function PhoneRuntime({
                 setPinOpen={setPinOpen}
                 error={pinError}
                 onUnlock={unlock}
+                onNotice={(text) => (pendingNotice.current = text)}
                 onLight={() => setPanel("light")}
                 onCamera={() => {
                   setQuickCamera(true);
@@ -454,6 +470,7 @@ function PhoneRuntime({
                 origin={launchOrigin}
               >
                 <AppContent
+                  initialThread={noticeThread}
                   app={plugin}
                   name={
                     work.apps.find((a) => a.id === app)?.name ?? plugin.name
@@ -567,11 +584,12 @@ function PhoneRuntime({
                     <SystemNotifications
                       notices={s.notifications}
                       apps={work.apps}
-                      onOpen={() => {
+                      onOpen={(text) => {
                         setPanel("");
-                        if (locked) beginUnlock();
-                        else if (installedApps.some((a) => a.id === "messages"))
-                          open("messages");
+                        if (locked) {
+                          pendingNotice.current = text;
+                          beginUnlock();
+                        } else openNotice(text);
                       }}
                       onDismiss={dismissNotice}
                     />
@@ -694,8 +712,9 @@ function PhoneRuntime({
             <button
               className="device-banner"
               onClick={() => {
+                const text = banner;
                 setBanner("");
-                setPanel("notification");
+                openNotice(text);
               }}
             >
               <AppIcon
@@ -867,6 +886,7 @@ function Media({ item }: { item: Item }) {
   );
 }
 function AppContent({
+  initialThread = "",
   app,
   name,
   items,
@@ -880,6 +900,7 @@ function AppContent({
   onUi,
   work,
 }: {
+  initialThread?: string;
   app: AppPlugin;
   name: string;
   items: Item[];
@@ -894,7 +915,10 @@ function AppContent({
   work: Work;
 }) {
   const [detail, setDetail] = useState<Item | null>(null);
-  const [thread, setThread] = useState("");
+  const [thread, setThread] = useState(initialThread);
+  useEffect(() => {
+    if (initialThread) setThread(initialThread);
+  }, [initialThread]);
   const [tab, setTab] = useState(app.tabs[0]);
   const [q, setQ] = useState("");
   const [pw, setPw] = useState("");
