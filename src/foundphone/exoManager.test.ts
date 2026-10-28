@@ -71,6 +71,6 @@ describe("EXO manager content import", () => {
     expect(s.notifications).toEqual(["微信 · 灿烈哥：근데 오후에 몇 시였죠…? ㅋㅋㅋ（下午是几点来着…？ㅋㅋㅋ）"]);
     s = advance(w, s, 216000);
     expect(s.notifications).toHaveLength(10);
-    expect(s.notifications[9]).toBe("微信 · 暻秀哥：忙完记得吃饭。");
+    expect(s.notifications[9]).toBe("微信 · 暻秀哥：일 끝나면 밥 꼭 먹어요.（忙完记得吃饭。）");
   });
 });
