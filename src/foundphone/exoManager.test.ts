@@ -57,7 +57,8 @@ describe("EXO manager content import", () => {
     const w = createEmptyWork(); importExoManager(w);
     expect(w.data.wechat.find((i) => i.sender === "朴灿烈")?.avatar).toBe("./media/avatar-chanyeol.jpg");
     expect(w.data.wechat.find((i) => i.title === "EXO工作群（6）")?.meta.threadAvatar).toBe("./media/avatar-group.jpg");
-    expect(w.data.photos.filter((i) => i.media.startsWith("./media/exo-"))).toHaveLength(16);
+    expect(w.data.photos.filter((i) => i.id.startsWith("exo-photo-") && i.media.startsWith("./media/exo-"))).toHaveLength(16);
+    expect(w.data.photos.every((i) => i.media)).toBe(true);
   });
   it("delivers the first notification after 24 seconds and all ten in sequence", () => {
     const w = createEmptyWork(); importExoManager(w);
