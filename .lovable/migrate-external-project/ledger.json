@@ -1,6 +1,7 @@
 {
   "source": "code-archive: exo-FoundPhone-Studio-main.zip (GitHub exo-FoundPhone-Studio)",
   "capabilities": [
+    { "capability": "uploaded EXO manager HTML content", "source": "EXO_新人经纪人_49Apps_互动手机.html", "outcome": "extract static records without executing uploaded scripts; map to existing apps and preserve four additional app names", "status": "in_progress", "next_action": "import and verify app records, interactive replies, and notifications" },
     { "capability": "application code (React 19 + Vite SPA, 82 source files)", "source": "src/", "outcome": "copied to src/foundphone/, mounted via TanStack routes", "status": "verified", "next_action": "none" },
     { "capability": "story runtime player (/)", "source": "index.html + src/runtime/StoryPlayer.tsx", "outcome": "route / with ClientOnly; lock screen renders, work.json loads", "status": "verified", "next_action": "none" },
     { "capability": "studio editor (/studio)", "source": "src/main.tsx", "outcome": "route /studio with ClientOnly; editor renders, work 雨停之前 loads from IndexedDB", "status": "verified", "next_action": "none" },
