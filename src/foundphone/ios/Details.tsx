@@ -34,7 +34,7 @@ export function NativeDetail({
 }) {
   const [favorite, setFavorite] = useState(item.favorite),
     [copied, setCopied] = useState(false),
-    [call, setCall] = useState(false);
+    [call, setCall] = useState("");
   const media = safeMedia(item.media),
     name =
       app === "notes"
@@ -118,7 +118,7 @@ export function NativeDetail({
             ].map(([Icon, label]) => {
               const Glyph = Icon as typeof Phone;
               return (
-                <button key={String(label)} onClick={() => setCall(true)}>
+                <button key={String(label)} onClick={() => label !== "信息" && setCall(String(label))}>
                   <Glyph size={23} />
                   {String(label)}
                 </button>
@@ -134,9 +134,14 @@ export function NativeDetail({
             <p>{item.body}</p>
           </div>
           {call && (
-            <div className="native-detail-group">
-              <p>作品内模拟 · {item.title}</p>
-              <button onClick={() => setCall(false)}>结束</button>
+            <div className="virtual-call native-call-screen">
+              <small>{call === "视频" ? "视频通话" : "语音通话"} · 作品内模拟</small>
+              <span className="native-call-avatar">{item.title.slice(0, 1)}</span>
+              <h2>{item.title}</h2>
+              <p>正在通话…</p>
+              <button aria-label="挂断" onClick={() => setCall("")}>
+                <Phone />
+              </button>
             </div>
           )}
         </div>
