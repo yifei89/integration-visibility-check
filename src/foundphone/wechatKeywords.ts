@@ -23,7 +23,52 @@ const sehun: KeywordRule[] = [
   { keys: ["早安", "早上好", "좋은 아침"], reply: "누나 굿모닝! 아침은 먹었어요?\n（姐姐早！吃早饭了吗？）" },
 ];
 
-const rules: Record<string, KeywordRule[]> = { 世勋: sehun };
+
+const age = ["几岁", "多大", "年龄", "岁数", "몇 살", "나이"];
+const suho: KeywordRule[] = [
+  { keys: age, reply: "스물여섯이에요. 멤버들 중에선 형이죠.\n（二十六岁。在成员里算哥哥了。）" },
+  { keys: ["生日", "생일"], reply: "5월 22일이에요.\n（5月22日。）" },
+  { keys: ["身高", "多高", "키"], reply: "173이요… 키 얘기는 그만해요 ㅎㅎ\n（173……身高的话题就到这吧ㅎㅎ）" },
+  { keys: ["血型", "혈액형"], reply: "AB형이에요.\n（AB型。）" },
+  { keys: ["哪里人", "老家", "家乡", "고향"], reply: "서울 압구정이요.\n（首尔狎鸥亭。）" },
+  { keys: ["名字", "本名", "이름"], reply: "김준면이에요. 수호는 예명이고요.\n（金俊勉。Suho是艺名。）" },
+  { keys: ["队长", "担当", "位置", "포지션"], reply: "EXO 리더이고 보컬 맡고 있어요.\n（EXO队长，负责Vocal。）" },
+  { keys: ["出道", "데뷔"], reply: "2012년 4월 데뷔했어요.\n（2012年4月出道。）" },
+];
+const chanyeol: KeywordRule[] = [
+  { keys: age, reply: "스물넷! 11월 되면 한 살 더 먹어요ㅋㅋ\n（二十四！到11月又长一岁哈哈）" },
+  { keys: ["生日", "생일"], reply: "11월 27일이요! 선물 기대할게요 ㅋㅋ\n（11月27日！期待礼物哈哈）" },
+  { keys: ["身高", "多高", "키"], reply: "185요. 높은 데 있는 거 필요하면 불러요.\n（185。要拿高处的东西就叫我。）" },
+  { keys: ["血型", "혈액형"], reply: "A형이요.\n（A型。）" },
+  { keys: ["哪里人", "老家", "家乡", "고향"], reply: "서울이요!\n（首尔！）" },
+  { keys: ["名字", "本名", "이름"], reply: "박찬열! 해피바이러스 박찬열입니다~\n（朴灿烈！快乐病毒朴灿烈~）" },
+  { keys: ["队长", "担当", "位置", "포지션"], reply: "래퍼요. 기타랑 드럼도 쳐요!\n（Rapper。还会弹吉他打鼓！）" },
+  { keys: ["出道", "데뷔"], reply: "2012년 4월이요.\n（2012年4月。）" },
+];
+const kyungsoo: KeywordRule[] = [
+  { keys: age, reply: "스물넷이요.\n（二十四。）" },
+  { keys: ["生日", "생일"], reply: "1월 12일이요.\n（1月12日。）" },
+  { keys: ["身高", "多高", "키"], reply: "…그건 왜 물어요.\n（……问这个干嘛。）" },
+  { keys: ["血型", "혈액형"], reply: "A형이요.\n（A型。）" },
+  { keys: ["哪里人", "老家", "家乡", "고향"], reply: "경기도 고양시요.\n（京畿道高阳市。）" },
+  { keys: ["名字", "本名", "이름"], reply: "도경수요. 디오는 활동명이고요.\n（都暻秀。D.O.是活动名。）" },
+  { keys: ["队长", "担当", "位置", "포지션"], reply: "메인 보컬이요. 요리도 좀 하고요.\n（主唱。也会做点菜。）" },
+  { keys: ["出道", "데뷔"], reply: "2012년 4월이요.\n（2012年4月。）" },
+  { keys: ["喜欢吃", "爱吃", "吃什么", "음식"], reply: "제가 만들어 줄까요? 집밥이 제일 좋아요.\n（要我做给你吃吗？家常菜最好。）" },
+];
+const jongin: KeywordRule[] = [
+  { keys: age, reply: "스물셋이요. 세훈이랑 동갑이에요.\n（二十三。和世勋同岁。）" },
+  { keys: ["生日", "생일"], reply: "1월 14일이요.\n（1月14日。）" },
+  { keys: ["身高", "多高", "키"], reply: "182요.\n（182。）" },
+  { keys: ["血型", "혈액형"], reply: "A형이요.\n（A型。）" },
+  { keys: ["哪里人", "老家", "家乡", "고향"], reply: "전라남도 순천이요.\n（全罗南道顺天。）" },
+  { keys: ["名字", "本名", "이름"], reply: "김종인이요. 카이는 예명.\n（金钟仁。Kai是艺名。）" },
+  { keys: ["队长", "担当", "位置", "포지션"], reply: "메인 댄서요.\n（主舞。）" },
+  { keys: ["出道", "데뷔"], reply: "2012년 4월이요.\n（2012年4月。）" },
+  { keys: ["狗", "宠物"], reply: "몽구, 짱구, 지구 세 마리 키워요.\n（养了Monggu、Jjanggu、Jjigu三只狗。）" },
+];
+
+const rules: Record<string, KeywordRule[]> = { 世勋: sehun, 俊勉哥: suho, 灿烈哥: chanyeol, 暻秀哥: kyungsoo, 钟仁哥: jongin };
 
 /** The keyword reply for this thread's message, or undefined when nothing matches. */
 export function keywordReply(thread: string, text: string): string | undefined {
