@@ -14,9 +14,10 @@ describe("EXO manager content import", () => {
     importExoManager(w);
     expect(Object.keys(exoAppIds)).toHaveLength(49);
     for (const id of Object.values(exoAppIds)) expect(w.data[id].length).toBeGreaterThan(0);
-    expect(w.apps.filter((a) => a.installed)).toHaveLength(25);
+    expect(w.apps.filter((a) => a.installed && a.id !== "suggest")).toHaveLength(25);
+    expect(w.apps.find((a) => a.id === "suggest")?.installed).toBe(true);
     expect(w.phone).toEqual({ ...phone, passcode: "0412" });
-    for (const a of apps) expect(w.apps.find((b) => a.id === b.id)).toEqual(a);
+    for (const a of apps.filter((x) => x.id !== "suggest")) expect(w.apps.find((b) => a.id === b.id)).toEqual(a);
     expect(w.apps.find((a) => a.id === "googlemaps")?.installed).toBe(false);
     expect(validateWork(w).data.notes[0].title).toBe("入职第一周");
   });
