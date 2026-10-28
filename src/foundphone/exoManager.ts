@@ -132,7 +132,7 @@ const exoPhotos = [
 ] as const;
 /** Apps whose posts/media read as picture content; fill empty ones with the EXO photo pool. */
 const pictureApps = ["instagram", "threads", "weibo", "redbook", "douyin", "bilibili", "tiktok",
-  "twitter", "youtube", "pinterest", "reddit", "netflix", "spotify", "netease", "music", "camera", "files"];
+  "twitter", "youtube", "pinterest", "reddit", "netflix"];
 
 /**
  * Second pass over the imported story (once): member avatars, EXO photos, pictures for
@@ -179,8 +179,8 @@ export function applyExoExtras(w: Work): boolean {
   for (const app of pictureApps) {
     for (const i of w.data[app] ?? []) {
       if (i.media) continue;
+      if (i.kind === "audio" || i.kind === "video") continue;
       i.media = media(exoPhotos[next++ % exoPhotos.length][0]);
-      if (!["image", "video", "audio"].includes(i.kind) && app !== "files") i.kind = i.kind === "post" ? "post" : "image";
     }
   }
   w.variables[exoExtrasMarker] = true;
