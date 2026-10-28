@@ -2,8 +2,17 @@ import { describe, it, expect } from "vitest";
 import example from "../../../tests/fixtures/story-example/story.json";
 import { compileStory } from "./compiler";
 import { testStory } from "./testStory";
+import template from "../../../stories/template/story.json";
 const copy = () => structuredClone(example);
 describe("AI story compiler", () => {
+  it("retains downloadable app content without preinstalling it in the shipped story", () => {
+    const { work } = compileStory(template);
+    expect(work.apps.filter((a) => a.installed)).toHaveLength(25);
+    expect(work.apps.find((a) => a.id === "douyin")?.installed).toBe(false);
+    expect(work.data.douyin[0].id).toBe("test-item-douyin");
+    expect(work.apps.find((a) => a.id === "kakao")?.installed).toBe(true);
+    expect(work.apps.find((a) => a.id === "threads")?.installed).toBe(true);
+  });
   it("compiles stable IDs deterministically and preserves optional catalog", () => {
     const a = compileStory(copy()),
       b = compileStory(copy());

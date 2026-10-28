@@ -39,8 +39,8 @@
     {
       "id": "douyin",
       "name": "抖音",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -228,8 +228,8 @@
     {
       "id": "qq",
       "name": "QQ",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -237,8 +237,8 @@
     {
       "id": "weibo",
       "name": "微博",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -246,8 +246,8 @@
     {
       "id": "redbook",
       "name": "小红书",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -255,8 +255,8 @@
     {
       "id": "bilibili",
       "name": "哔哩哔哩",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -264,8 +264,8 @@
     {
       "id": "alipay",
       "name": "支付宝",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -273,8 +273,8 @@
     {
       "id": "taobao",
       "name": "淘宝",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -282,8 +282,8 @@
     {
       "id": "netease",
       "name": "网易云音乐",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -291,8 +291,8 @@
     {
       "id": "delivery",
       "name": "外卖",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -300,8 +300,8 @@
     {
       "id": "forum",
       "name": "论坛",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -309,8 +309,8 @@
     {
       "id": "whatsapp",
       "name": "WhatsApp",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -327,8 +327,8 @@
     {
       "id": "tiktok",
       "name": "TikTok",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -336,8 +336,8 @@
     {
       "id": "twitter",
       "name": "X",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -345,8 +345,8 @@
     {
       "id": "telegram",
       "name": "Telegram",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -354,8 +354,8 @@
     {
       "id": "discord",
       "name": "Discord",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -363,8 +363,8 @@
     {
       "id": "youtube",
       "name": "YouTube",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -372,8 +372,8 @@
     {
       "id": "line",
       "name": "LINE",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -381,8 +381,8 @@
     {
       "id": "snapchat",
       "name": "Snapchat",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -390,8 +390,8 @@
     {
       "id": "facebook",
       "name": "Facebook",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -399,8 +399,8 @@
     {
       "id": "messenger",
       "name": "Messenger",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -408,8 +408,8 @@
     {
       "id": "reddit",
       "name": "Reddit",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -417,8 +417,8 @@
     {
       "id": "spotify",
       "name": "Spotify",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -426,8 +426,8 @@
     {
       "id": "netflix",
       "name": "Netflix",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""
@@ -435,8 +435,8 @@
     {
       "id": "pinterest",
       "name": "Pinterest",
-      "installed": true,
-      "visible": true,
+      "installed": false,
+      "visible": false,
       "dock": false,
       "folder": "",
       "icon": ""

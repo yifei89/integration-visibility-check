@@ -2,7 +2,8 @@ import { describe, it, expect } from "vitest";
 import { createWork, createEmptyWork } from "./demo";
 import { validateWork } from "./schema";
 import {
-  essentialApps,
+  preinstalledApps,
+  applyPreinstalledApps,
   installApp,
   removeFromHome,
   uninstallApp,
@@ -13,20 +14,49 @@ describe("optional app lifecycle", () => {
   it("starts newly authored projects without seeded optional content or story", () => {
     const w = createEmptyWork();
     expect(w.nodes).toEqual([]);
-    expect(Object.keys(w.data).sort()).toEqual([...essentialApps].sort());
+    expect(Object.keys(w.data).sort()).toEqual([...preinstalledApps].sort());
     expect(Object.values(w.data).every((items) => items.length === 0)).toBe(
       true,
     );
   });
-  it("installs only six necessary system apps in new works", () => {
+  it("preinstalls exactly the 21 system apps and four requested social apps", () => {
     const w = createWork();
     expect(
       w.apps
         .filter((a) => a.installed)
         .map((a) => a.id)
         .sort(),
-    ).toEqual([...essentialApps].sort());
+    ).toEqual([
+      "phone", "messages", "contacts", "photos", "camera", "safari", "notes",
+      "calendar", "mail", "clock", "reminders", "files", "music", "maps",
+      "weather", "wallet", "health", "find", "calculator", "settings", "appstore",
+      "wechat", "instagram", "kakao", "threads",
+    ].sort());
     expect(w.apps).toHaveLength(49);
+  });
+  it("keeps the other 24 apps uninstalled until downloaded and preserves their content", () => {
+    const w = createWork();
+    const optional = w.apps.filter((a) => !a.installed);
+    expect(optional).toHaveLength(24);
+    for (const a of optional) {
+      expect(a.visible).toBe(false);
+      const data = structuredClone(w.data[a.id]);
+      installApp(w, a.id);
+      expect(a.installed).toBe(true);
+      expect(a.visible).toBe(true);
+      expect(w.data[a.id]).toEqual(data);
+    }
+  });
+  it("updates existing works once without deleting app content or custom apps", () => {
+    const w = createWork();
+    w.apps.forEach((a) => { a.installed = true; });
+    const custom = newCustomApp(w, "调查");
+    const data = structuredClone(w.data);
+    applyPreinstalledApps(w);
+    expect(w.apps.filter((a) => a.installed && a.id !== custom)).toHaveLength(25);
+    expect(w.apps.find((a) => a.id === "douyin")?.installed).toBe(false);
+    expect(w.apps.find((a) => a.id === custom)?.installed).toBe(true);
+    expect(w.data).toEqual(data);
   });
   it("upgrades old format v1 app records without uninstalling existing apps", () => {
     const old = createWork();

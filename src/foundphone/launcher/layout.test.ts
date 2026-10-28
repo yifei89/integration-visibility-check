@@ -11,10 +11,10 @@ import {
 } from "./layout";
 const work = () => compileStory(blank).work;
 describe("device layout", () => {
-  it("keeps all 47 apps and only defaults installed", () => {
+  it("keeps all 49 apps and only the 25 requested defaults installed", () => {
     const l = defaultLayout(work());
     expect(l.apps).toHaveLength(49);
-    expect(l.apps.filter((a) => a.installed)).toHaveLength(7);
+    expect(l.apps.filter((a) => a.installed)).toHaveLength(25);
   });
   it("packs different widget sizes and pages without overlap", () => {
     const l = defaultLayout(work());
@@ -112,6 +112,13 @@ it("migrates preview folders once while preserving custom folders and widgets", 
   expect(migrated.apps.find((a) => a.id === "clock")!.folder).toBe("我的工具");
   expect(migrated.widgets).toEqual(old.widgets);
   expect(JSON.stringify(w)).toBe(before);
+  expect(migrated.apps.find((a) => a.id === "douyin")?.installed).toBe(false);
+  expect(migrated.apps.filter((a) => a.installed)).toHaveLength(25);
+  const downloaded = migrated.apps.find((a) => a.id === "douyin");
+  if (!downloaded) throw Error("Missing catalog app");
+  downloaded.installed = true;
+  downloaded.visible = true;
+  expect(validateLayout(migrated, w).apps.find((a) => a.id === "douyin")?.installed).toBe(true);
   migrated.apps.find((a) => a.id === "wechat")!.folder = "作者新建文件夹";
   expect(
     validateLayout(migrated, w).apps.find((a) => a.id === "wechat")!.folder,
