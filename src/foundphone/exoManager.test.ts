@@ -45,7 +45,7 @@ describe("EXO manager content import", () => {
     expect(replies.slice(0, 2).map((r) => r.body)).toEqual(["아 맞다 맞다 ㅋㅋㅋㅋ 고마워요!!!（啊对对对ㅋㅋㅋㅋ 谢谢！！！）", "알겠어요!! 제가 1등으로 도착할게요 ㅋㅋㅋ（知道啦！！我要第一个到ㅋㅋㅋ）"]);
     expect(nextAutoReply(replies, 0)?.body).toBe("아 맞다 맞다 ㅋㅋㅋㅋ 고마워요!!!（啊对对对ㅋㅋㅋㅋ 谢谢！！！）");
     expect(nextAutoReply(replies, 1)?.body).toBe("알겠어요!! 제가 1등으로 도착할게요 ㅋㅋㅋ（知道啦！！我要第一个到ㅋㅋㅋ）");
-    expect(nextAutoReply(replies, 15)?.body).toBe("아 맞다 맞다 ㅋㅋㅋㅋ 고마워요!!!（啊对对对ㅋㅋㅋㅋ 谢谢！！！）");
+    expect(nextAutoReply(replies, 37)?.body).toBe("아 맞다 맞다 ㅋㅋㅋㅋ 고마워요!!!（啊对对对ㅋㅋㅋㅋ 谢谢！！！）");
   });
   it("Sehun's story keeps free typing with 66 ordered replies and no choice panel", () => {
     const w = createEmptyWork(); importExoManager(w);
@@ -55,7 +55,7 @@ describe("EXO manager content import", () => {
       expect(nextAutoReply(replies, index)?.id).toBe(replies[index].id);
     }
     expect(dispatch(w, initialRuntime(w), "read", "世勋").choices).toHaveLength(0);
-    expect(nextAutoReply(replies, 32)?.id).toBe(replies[0].id);
+    expect(nextAutoReply(replies, 66)?.id).toBe(replies[0].id);
   });
   it("upgrades previously imported dialogue once without deleting personal records", () => {
     const w = createEmptyWork(); importExoManager(w);
