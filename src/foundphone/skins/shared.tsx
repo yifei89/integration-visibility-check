@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import { useState, type ReactNode } from "react";
 import type { SkinProps } from "../AppSkins";
-import { safeMedia, type Item } from "../schema";
+import { isImage, safeMedia, type Item } from "../schema";
 export type Props = SkinProps;
 export const meta = (
   i: Pick<Item, "meta"> | undefined,
@@ -95,7 +95,7 @@ export function Avatar({
 }) {
   return (
     <span className={`catalog-avatar ${round ? "round" : ""}`}>
-      {safeMedia(src)?.startsWith("data:image/") ? (
+      {isImage(safeMedia(src)) ? (
         <img src={safeMedia(src)} alt="" />
       ) : (
         name.slice(0, 1) || "人"

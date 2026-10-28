@@ -1,5 +1,6 @@
 import content from "./exo-manager-content.json";
 import { applyPlayerSetup } from "./playerSetup";
+import { autoReplyFolder } from "./wechatReplies";
 import { registry } from "./registry";
 import { makeItem, type Item, type StoryNode, type Work } from "./schema";
 
@@ -31,7 +32,7 @@ function node(id: string, extra: Partial<StoryNode>): StoryNode {
 /** Add the supplied story once; preserve user-authored records and installation choices. */
 export function importExoManager(w: Work): boolean {
   const setupChanged = applyPlayerSetup(w);
-  if (w.variables[exoImportMarker]) return setupChanged;
+  if (w.variables[exoImportMarker]) return applyExoExtras(w) || setupChanged;
   const put = (app: string, item: Item) => {
     w.data[app] ??= [];
     if (!w.data[app].some((i) => i.id === item.id)) w.data[app].push(item);
@@ -102,5 +103,86 @@ export function importExoManager(w: Work): boolean {
   });
   w.variables[exoImportMarker] = true;
   w.mode = "mixed";
+  applyExoExtras(w);
+  return true;
+}
+
+export const exoExtrasMarker = "exo_manager_media_v2";
+const media = (file: string) => `./media/${file}.jpg`;
+/** Member names and nicknames as they appear in the uploaded chats → bundled avatar. */
+export const exoAvatars: Record<string, string> = {
+  金俊勉: media("avatar-suho"), 俊勉哥: media("avatar-suho"),
+  朴灿烈: media("avatar-chanyeol"), 灿烈哥: media("avatar-chanyeol"),
+  都暻秀: media("avatar-do"), 暻秀哥: media("avatar-do"),
+  金钟仁: media("avatar-kai"), 钟仁哥: media("avatar-kai"),
+  吴世勋: media("avatar-sehun"), 世勋哥: media("avatar-sehun"),
+  "EXO工作群（6）": media("avatar-group"),
+};
+const avatarFor = (text: string) =>
+  Object.entries(exoAvatars).find(([name]) => text.includes(name))?.[1] ?? "";
+const exoPhotos = [
+  ["exo-01", "2018 KBS 歌谣大祝祭 · 红毯"], ["exo-02", "2016 KBS 歌谣大祝祭 · 红毯"],
+  ["exo-03", "Monster 舞台 · 水原"], ["exo-04", "灿烈、俊勉、世勋 · 新加坡活动"],
+  ["exo-05", "俊勉 · EXO'luXion 澳门"], ["exo-06", "俊勉 · 2024 活动"],
+  ["exo-07", "灿烈 · 演唱会嘉宾"], ["exo-08", "灿烈 · ElyXiOn 曼谷"],
+  ["exo-09", "暻秀 · SMTOWN LIVE 首尔"], ["exo-10", "暻秀 · 电影发布会"],
+  ["exo-11", "钟仁 · EXO'luXion 香港"], ["exo-12", "钟仁 · 电台录制"],
+  ["exo-13", "世勋 · Music Bank 柏林"], ["exo-14", "世勋 · 品牌活动"],
+  ["exo-15", "EXO-K · 2012 丽水世博"], ["exo-16", "世勋 · EXO'rDIUM"],
+] as const;
+/** Apps whose posts/media read as picture content; fill empty ones with the EXO photo pool. */
+const pictureApps = ["photos", "instagram", "threads", "weibo", "redbook", "douyin", "bilibili", "tiktok",
+  "twitter", "youtube", "pinterest", "reddit", "netflix"];
+
+/**
+ * Second pass over the imported story (once): member avatars, EXO photos, pictures for
+ * text-only apps, free-typing WeChat (fixed replies instead of choices) and notifications
+ * that name the chat they belong to.
+ */
+export function applyExoExtras(w: Work): boolean {
+  if (w.variables[exoExtrasMarker]) return false;
+  // WeChat: drop reply choices; the member answers become the thread's fixed replies.
+  w.nodes = w.nodes.filter((n) => !/^exo-(offer|reply)-/.test(n.id));
+  w.data.wechat = (w.data.wechat ?? []).filter((i) => !i.id.startsWith("exo-wechat-sent-"));
+  for (const i of w.data.wechat) {
+    if (i.id.startsWith("exo-wechat-received-")) {
+      i.folder = autoReplyFolder;
+      i.hidden = false;
+    }
+  }
+  // Notifications name the chat so tapping them opens it.
+  content.events.forEach((e, index) => {
+    if (exoAppIds[e.app] !== "wechat" || !e.target) return;
+    const action = w.nodes.find((n) => n.id === `exo-notice-${index}`)?.actions.find((a) => a.type === "notification");
+    if (action) action.value = `微信 · ${e.target}：${e.target === e.from ? "" : e.from + "："}${e.text}`;
+  });
+  // Avatars for every member mention, and the thread picture for WeChat chats.
+  for (const items of Object.values(w.data)) {
+    for (const i of items) {
+      if (!i.avatar && !i.outgoing) i.avatar = avatarFor(i.sender) || avatarFor(i.title);
+    }
+  }
+  for (const i of w.data.wechat) {
+    const a = exoAvatars[i.title];
+    if (a) i.meta = { ...i.meta, threadAvatar: a };
+  }
+  // Photos album.
+  w.data.photos ??= [];
+  exoPhotos.forEach(([file, caption], index) => {
+    if (w.data.photos.some((i) => i.id === `exo-photo-${index}`)) return;
+    w.data.photos.push(makeItem({ id: `exo-photo-${index}`, title: caption, body: caption,
+      kind: "image", media: media(file), folder: "EXO", time: `2026-10-${String(10 + index).padStart(2, "0")} 20:00`,
+      sender: "相册", meta: { source: "Wikimedia Commons · 见 media/credits.txt" } }));
+  });
+  // Text-only picture apps get photos from the same pool.
+  let next = 0;
+  for (const app of pictureApps) {
+    for (const i of w.data[app] ?? []) {
+      if (i.media) continue;
+      if (i.kind === "audio" || i.kind === "video") continue;
+      i.media = media(exoPhotos[next++ % exoPhotos.length][0]);
+    }
+  }
+  w.variables[exoExtrasMarker] = true;
   return true;
 }

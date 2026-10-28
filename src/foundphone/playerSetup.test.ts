@@ -1,3 +1,4 @@
+import { importExoManager } from "./exoManager";
 import { describe, expect, it } from "vitest";
 import { createEmptyWork } from "./demo";
 import { applyPlayerSetup, personalizeWork } from "./playerSetup";
@@ -28,5 +29,13 @@ describe("player setup", () => {
     expect(result.phone.passcode).toBe("0412");
     expect(result.data).toEqual(work.data);
     expect(work.variables.playerName).toBeUndefined();
+  });
+  it("shows the player's name wherever an app refers to the owner", () => {
+    const work = createEmptyWork();
+    importExoManager(work);
+    const result = personalizeWork(work, "朱妍");
+    expect(result.data.settings.find((i) => i.title === "朱妍")).toBeDefined();
+    expect(result.data.find.find((i) => i.title === "朱妍的 iPhone")).toBeDefined();
+    expect(Object.values(result.data).flat().some((i) => !i.outgoing && i.sender === "我")).toBe(false);
   });
 });

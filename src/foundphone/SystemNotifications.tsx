@@ -6,9 +6,13 @@ import type { Work } from "./schema";
 export function notificationContent(text: string, apps: Work["apps"]) {
   const separator = text.search(/[:：]/);
   const sender = separator > 0 ? text.slice(0, separator) : "信息";
-  const app = apps.find((a) => a.name === sender);
+  // "微信 · 灿烈哥：…" names the app first and the chat thread second.
+  const [appName, thread = ""] = sender.split(" · ");
+  const app =
+    apps.find((a) => a.name === sender) ?? apps.find((a) => a.name === appName);
   return {
     title: sender,
+    thread: app && app.name === appName ? thread : "",
     body: separator > 0 ? text.slice(separator + 1) : text,
     appId: app?.id ?? "messages",
   };
@@ -22,7 +26,7 @@ export function SystemNotifications({
 }: {
   notices: string[];
   apps: Work["apps"];
-  onOpen: () => void;
+  onOpen: (text: string) => void;
   onDismiss: (index: number) => void;
   compact?: boolean;
 }) {
@@ -53,7 +57,7 @@ export function SystemNotifications({
                 if (info.offset.x < -80) onDismiss(index);
               }}
             >
-              <button className="notice-open" onClick={onOpen}>
+              <button className="notice-open" onClick={() => onOpen(text)}>
                 <span className="notice-app-art">
                   <AppArtwork id={n.appId} />
                 </span>

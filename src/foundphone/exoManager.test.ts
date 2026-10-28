@@ -1,7 +1,9 @@
 import { describe, expect, it } from "vitest";
 import { createEmptyWork } from "./demo";
 import { importExoManager, exoAppIds } from "./exoManager";
-import { advance, choose, dispatch, visible } from "./engine";
+import { advance, dispatch } from "./engine";
+import { autoReplyFolder, nextAutoReply } from "./wechatReplies";
+import { notificationContent } from "./SystemNotifications";
 import { initialRuntime, makeItem, validateWork } from "./schema";
 
 describe("EXO manager content import", () => {
@@ -33,15 +35,30 @@ describe("EXO manager content import", () => {
     expect(w.data.clock[0].meta.clock).toBe("07:10");
     expect(w.data.kakao[0].body).toContain("오늘 2시, 7층입니다.");
   });
-  it("replies unlock the original outgoing message and member response once", () => {
+  it("WeChat has no reply choices; each chat answers with its fixed lines in order", () => {
     const w = createEmptyWork(); importExoManager(w);
-    let s = dispatch(w, initialRuntime(w), "read", "灿烈哥");
-    const option = s.choices.find((c) => c.label === "下午两点，七楼会议室");
-    expect(option).toBeDefined();
-    if (!option) throw Error("Missing reply");
-    s = choose(w, s, option.target);
-    expect(w.data.wechat.some((i) => i.body === "啊对对ㅋㅋ 谢谢！" && visible(i, s))).toBe(true);
-    expect(s.choices.some((c) => c.target === option.target)).toBe(false);
+    const s = dispatch(w, initialRuntime(w), "read", "灿烈哥");
+    expect(s.choices).toHaveLength(0);
+    const replies = w.data.wechat.filter((i) => i.title === "灿烈哥" && i.folder === autoReplyFolder);
+    expect(replies.map((r) => r.body)).toEqual(["啊对对ㅋㅋ 谢谢！", "明白！我尽量第一个到ㅋㅋ"]);
+    expect(nextAutoReply(replies, 0)?.body).toBe("啊对对ㅋㅋ 谢谢！");
+    expect(nextAutoReply(replies, 1)?.body).toBe("明白！我尽量第一个到ㅋㅋ");
+    expect(nextAutoReply(replies, 2)?.body).toBe("啊对对ㅋㅋ 谢谢！");
+  });
+  it("group notifications name the group chat so tapping opens it", () => {
+    const w = createEmptyWork(); importExoManager(w);
+    const n = notificationContent("微信 · EXO工作群（6）：俊勉哥：大家都到了吗？还差谁？", w.apps);
+    expect(n.appId).toBe("wechat");
+    expect(n.thread).toBe("EXO工作群（6）");
+    const action = w.nodes.find((x) => x.id === "exo-notice-4")?.actions.find((a) => a.type === "notification");
+    expect(action?.value).toBe("微信 · EXO工作群（6）：俊勉哥：大家都到了吗？还差谁？");
+  });
+  it("members get their own avatar and the album holds 16 EXO photos", () => {
+    const w = createEmptyWork(); importExoManager(w);
+    expect(w.data.wechat.find((i) => i.sender === "朴灿烈")?.avatar).toBe("./media/avatar-chanyeol.jpg");
+    expect(w.data.wechat.find((i) => i.title === "EXO工作群（6）")?.meta.threadAvatar).toBe("./media/avatar-group.jpg");
+    expect(w.data.photos.filter((i) => i.id.startsWith("exo-photo-") && i.media.startsWith("./media/exo-"))).toHaveLength(16);
+    expect(w.data.photos.every((i) => i.media)).toBe(true);
   });
   it("delivers the first notification after 24 seconds and all ten in sequence", () => {
     const w = createEmptyWork(); importExoManager(w);

@@ -21,8 +21,17 @@ export function personalizeWork(work: Work, input: string): Work {
   for (const item of next.data.settings ?? []) {
     if (item.id === "exo-settings-0") item.body = `${name} · 女性经纪人 · 虚构身份`;
   }
+  // Every app shows the player's own name instead of a placeholder for "me".
+  for (const items of Object.values(next.data)) {
+    for (const item of items) {
+      if (item.sender === "我" && !item.outgoing) item.sender = name;
+      if (item.title === "我") item.title = name;
+      if (item.title === "机主") item.title = name;
+      if (item.title === "经纪人手机") item.title = `${name}的 iPhone`;
+    }
+  }
   for (const item of next.data.contacts ?? []) {
-    if (item.title === "我") item.sender = name;
+    if (item.title === name) item.sender = name;
   }
   return next;
 }
