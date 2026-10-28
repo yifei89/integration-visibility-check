@@ -23,3 +23,4 @@
 - GitHub Pages: `vite.pages.config.ts` + `pages/` build a server-less static SPA (`#studio` = editor) deployed by `.github/workflows/pages.yml`; Lovable asset URLs are swapped for copies in `pages/static/` because /__l5e/ doesn't exist there.
 - Bundled story media lives in `public/media/` and is referenced as `./media/<file>.jpg` (allowed by `safeMedia`/`isImage`), so it works on Lovable hosting and GitHub Pages alike; credits in `public/media/credits.txt`.
 - WeChat in player mode is free typing: records in the `自动回复` folder are a thread's fixed replies, cycled in order (`wechatReplies.ts`); the conversation log lives in runtime UI state, not authored data. Notification text `App · Thread：…` drives tap-to-open-thread.
+- Bundled EXO dialogue updates must advance the dialogue import marker so existing works receive revised authored lines once without removing personal records; narrative progression follows ordered free-chat replies, not choice nodes.

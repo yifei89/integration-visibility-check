@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { createEmptyWork } from "./demo";
-import { importExoManager, exoAppIds } from "./exoManager";
+import { importExoManager, exoAppIds, exoDialogueMarker } from "./exoManager";
 import { advance, dispatch } from "./engine";
 import { autoReplyFolder, nextAutoReply } from "./wechatReplies";
 import { notificationContent } from "./SystemNotifications";
@@ -46,6 +46,27 @@ describe("EXO manager content import", () => {
     expect(nextAutoReply(replies, 0)?.body).toBe("아 맞다 맞다 ㅋㅋㅋㅋ 고마워요!!!（啊对对对ㅋㅋㅋㅋ 谢谢！！！）");
     expect(nextAutoReply(replies, 1)?.body).toBe("알겠어요!! 제가 1등으로 도착할게요 ㅋㅋㅋ（知道啦！！我要第一个到ㅋㅋㅋ）");
     expect(nextAutoReply(replies, 15)?.body).toBe("아 맞다 맞다 ㅋㅋㅋㅋ 고마워요!!!（啊对对对ㅋㅋㅋㅋ 谢谢！！！）");
+  });
+  it("Sehun's story keeps free typing with 32 ordered replies and no choice panel", () => {
+    const w = createEmptyWork(); importExoManager(w);
+    const replies = w.data.wechat.filter((i) => i.title === "世勋" && i.folder === autoReplyFolder);
+    expect(replies).toHaveLength(32);
+    for (let index = 0; index < replies.length; index++) {
+      expect(nextAutoReply(replies, index)?.id).toBe(replies[index].id);
+    }
+    expect(dispatch(w, initialRuntime(w), "read", "世勋").choices).toHaveLength(0);
+    expect(nextAutoReply(replies, 32)?.id).toBe(replies[0].id);
+  });
+  it("upgrades previously imported dialogue once without deleting personal records", () => {
+    const w = createEmptyWork(); importExoManager(w);
+    delete w.variables[exoDialogueMarker];
+    w.variables.exo_dialogue_ko_v2 = true;
+    w.data.wechat = w.data.wechat.filter((i) => i.title !== "世勋" || i.folder !== autoReplyFolder);
+    w.data.wechat.push(makeItem({ id: "my-chat", title: "世勋", body: "我的留言", outgoing: true }));
+    expect(importExoManager(w)).toBe(true);
+    expect(w.data.wechat.filter((i) => i.title === "世勋" && i.folder === autoReplyFolder)).toHaveLength(32);
+    expect(w.data.wechat.some((i) => i.id === "my-chat")).toBe(true);
+    expect(importExoManager(w)).toBe(false);
   });
   it("group notifications name the group chat so tapping opens it", () => {
     const w = createEmptyWork(); importExoManager(w);
