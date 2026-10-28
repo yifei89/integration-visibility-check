@@ -1,9 +1,9 @@
-# Tasks
-- [x] Set the requested lockscreen password and add name entry before playing; verify entry, unlock and reload.
-- [x] Set the EXO manager identity to female and preserve the player's chosen name.
-- [x] Set the 25 requested apps as defaults in new works, existing local works (one-time upgrade), and bundled stories.
-- [x] Keep other apps available for App Store installation, verify download/open/reload in the phone and add policy tests.
-- [x] Show installation progress and percentage in App Store; verify completion and opening.
-- [x] Find a real Oh Sehun photo and use it as the phone wallpaper.
-- [x] Import the uploaded EXO manager content into matching apps, including chats, replies, and timed notifications, while preserving phone settings.
-- [x] Verify imported content in the player and studio, including save/reload and downloadable apps.
+# Roadmap
+
+- [ ] 微信通知点击跳转到对应聊天窗口
+- [ ] 微信成员头像使用对应照片
+- [ ] 微信改为自由输入，固定回复几句话（不做选项）
+- [ ] 相册放十几张 EXO 照片
+- [ ] 所有 App 内的用户名统一为玩家输入的名字
+- [ ] 没有图片的 App 补上对应图片资源
+- [ ] 新增「建议」App，收集大家的意见
