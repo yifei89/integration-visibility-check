@@ -1,4 +1,5 @@
 import content from "./exo-manager-content.json";
+import { applyPlayerSetup } from "./playerSetup";
 import { registry } from "./registry";
 import { makeItem, type Item, type StoryNode, type Work } from "./schema";
 
@@ -29,7 +30,8 @@ function node(id: string, extra: Partial<StoryNode>): StoryNode {
 
 /** Add the supplied story once; preserve user-authored records and installation choices. */
 export function importExoManager(w: Work): boolean {
-  if (w.variables[exoImportMarker]) return false;
+  const setupChanged = applyPlayerSetup(w);
+  if (w.variables[exoImportMarker]) return setupChanged;
   const put = (app: string, item: Item) => {
     w.data[app] ??= [];
     if (!w.data[app].some((i) => i.id === item.id)) w.data[app].push(item);

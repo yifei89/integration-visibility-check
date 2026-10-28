@@ -65,6 +65,7 @@ import {
 } from "./schema";
 import { dispatch, choose, visible, advance } from "./engine";
 import { db } from "./persistence";
+import { PlayerSetup } from "./PlayerSetup";
 export function AppIcon({
   id,
   name,
@@ -104,6 +105,11 @@ export function AppIcon({
 type PhoneProps = Omit<Parameters<typeof PhoneRuntime>[0], "deviceLayout">;
 export function Phone(props: PhoneProps) {
   const deviceLayout = useDeviceLayout(props.work, props.creator);
+  if (!props.creator && props.work.variables.playerNameRequired) {
+    return <PlayerSetup work={deviceLayout.work}>{(work) => (
+      <PhoneRuntime {...props} work={work} deviceLayout={deviceLayout} />
+    )}</PlayerSetup>;
+  }
   return (
     <PhoneRuntime
       {...props}
@@ -205,7 +211,7 @@ function PhoneRuntime({
       .then((saved) => {
         if (!active) return;
         if (saved && saved.state.revision === work.updatedAt)
-          setOwn(saved.state);
+          setOwn({ ...saved.state, variables: { ...saved.state.variables, ...(work.variables.playerName ? { playerName: work.variables.playerName } : {}) } });
         else {
           setOwn(dispatch(work, initialRuntime(work), "start"));
           if (saved) setLoadError("作品已更新，已开始新的进度。");
