@@ -5,6 +5,7 @@ import { HomeLauncher } from "./launcher/HomeLauncher";
 import { useDeviceLayout } from "./launcher/layout";
 import "./launcher/launcher.css";
 import { NativeDetail, nativeDetailApps } from "./ios/Details";
+import { useRealClock } from "./realtime";
 import "./ios/details.css";
 import {
   SystemNotifications,
@@ -290,7 +291,12 @@ function PhoneRuntime({
   useEffect(() => {
     if (app && !work.apps.some((a) => a.id === app && a.installed)) setApp("");
   }, [app, work.apps]);
-  const displayTime = creator ? work.phone.time : s.time || work.phone.time;
+  const realClock = useRealClock(work.phone.autoTime !== false);
+  const displayTime = realClock
+    ? realClock.time
+    : creator
+      ? work.phone.time
+      : s.time || work.phone.time;
   const plugin = getApp(app);
   useEffect(() => {
     const count = s.notifications.length;
