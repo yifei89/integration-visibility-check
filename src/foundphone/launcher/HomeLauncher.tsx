@@ -1,4 +1,6 @@
-import { useRef, useState, type ReactNode, type PointerEvent } from "react";
+import { useEffect, useRef, useState, type ReactNode, type PointerEvent } from "react";
+import { Button } from "@/components/ui/button";
+import { runInstallProgress } from "./installProgress";
 import {
   Search,
   Plus,
@@ -114,6 +116,37 @@ function WidgetFace({
   );
 }
 export function HomeLauncher(p: Props) {
+  const [installing, setInstalling] = useState<Record<string, number>>({});
+  const installations = useRef(new Map<string, () => void>());
+  const latestChange = useRef(p.change);
+  latestChange.current = p.change;
+  useEffect(() => () => {
+    installations.current.forEach((cancel) => cancel());
+    installations.current.clear();
+  }, []);
+  const startInstall = (id: string) => {
+    if (installations.current.has(id)) return;
+    const cancel = runInstallProgress(
+      (value) => setInstalling((current) => ({ ...current, [id]: value })),
+      () => {
+        latestChange.current((layout) => {
+          const app = layout.apps.find((item) => item.id === id);
+          if (!app) return;
+          app.installed = true;
+          app.visible = true;
+          app.folder = "";
+          app.dock = false;
+        });
+        installations.current.delete(id);
+        setInstalling((current) => {
+          const next = { ...current };
+          delete next[id];
+          return next;
+        });
+      },
+    );
+    installations.current.set(id, cancel);
+  };
   const [editing, setEditing] = useState(false),
     [sheet, setSheet] = useState(p.storeOpen ? "library" : ""),
     [query, setQuery] = useState(""),
@@ -725,8 +758,12 @@ export function HomeLauncher(p: Props) {
                             : "未安装"}
                         </small>
                       </button>
-                      <button
+                      <Button
+                        variant="ghost"
+                        size="sm"
                         className="library-get"
+                        disabled={installing[a.id] !== undefined}
+                        aria-label={installing[a.id] !== undefined ? `${a.name}正在安装` : undefined}
                         onClick={() => {
                           if (a.id === "appstore") {
                             setSheet("library");
@@ -735,6 +772,8 @@ export function HomeLauncher(p: Props) {
                           if (a.installed && a.visible) {
                             setSheet("");
                             p.open(a.id);
+                          } else if (!a.installed) {
+                            startInstall(a.id);
                           } else
                             patch(a.id, (x) => {
                               x.installed = true;
@@ -744,12 +783,21 @@ export function HomeLauncher(p: Props) {
                             });
                         }}
                       >
-                        {a.installed
+                        {installing[a.id] !== undefined ? (
+                          <span className="library-install-progress">
+                            <span>安装中 {installing[a.id]}%</span>
+                            <progress
+                              aria-label={`${a.name}安装进度`}
+                              value={installing[a.id]}
+                              max={100}
+                            />
+                          </span>
+                        ) : a.installed
                           ? a.visible
                             ? "打开"
                             : "添加到桌面"
                           : "获取"}
-                      </button>
+                      </Button>
                     </div>
                   ))}
               </>

@@ -536,9 +536,9 @@
 .phone-shell.ios18 textarea {
   font-family: inherit;
 }
-.ios18 .wallpaper-apple-wwdc26 {
-  background: #201947
-    url("https://developer.apple.com/wwdc26/wallpaper/downloads/wwdc26-wallpaper-iphone.png")
+.wallpaper-apple-wwdc26 {
+  background:
+    url("/__l5e/assets-v1/7819c686-90c6-463b-898c-9d2a1ee68d25/sehun-wallpaper.jpg")
     center/cover no-repeat;
 }
 .ios18 .wallpaper-apple-wwdc26 .wallpaper-orb {
