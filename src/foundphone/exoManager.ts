@@ -190,7 +190,7 @@ export function applyExoExtras(w: Work): boolean {
   applyExoDialogue(w);
   return true;
 }
-export const exoDialogueMarker = "exo_dialogue_ko_v3_sehun_story";
+export const exoDialogueMarker = "exo_dialogue_ko_v4_expansion_1";
 /** Members' own voice (Korean with Chinese translation): replaces imported chats, fixed replies and notices once. */
 export function applyExoDialogue(w: Work): boolean {
   if (w.variables[exoDialogueMarker]) return false;
