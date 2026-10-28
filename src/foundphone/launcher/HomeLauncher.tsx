@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode, type PointerEvent } from "react";
+import { useRealClock } from "../realtime";
 import { Button } from "@/components/ui/button";
 import { runInstallProgress } from "./installProgress";
 import {
@@ -64,7 +65,10 @@ function WidgetFace({
   work: Work;
   time: string;
 }) {
-  const date = new Date((work.phone.date || "2026-10-25") + "T12:00:00Z");
+  const realClock = useRealClock(work.phone.autoTime !== false);
+  const date = new Date(
+    (realClock?.date || work.phone.date || "2026-10-25") + "T12:00:00Z",
+  );
   const weather = work.data.weather?.[0];
   return (
     <div className={"widget-face widget-" + widget.type}>

@@ -103,6 +103,7 @@ export const workSchema = z.object({
     wallpaper: z.string(),
     theme: z.enum(["light", "dark"]),
     time: z.string(),
+    autoTime: z.boolean().optional(),
     battery: z.number().min(0).max(100),
     network: z.string(),
     notifications: z.boolean(),

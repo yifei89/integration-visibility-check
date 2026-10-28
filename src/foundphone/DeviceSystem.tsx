@@ -1,4 +1,5 @@
 import { SystemNotifications } from "./SystemNotifications";
+import { useRealClock } from "./realtime";
 import {
   ConnectivityModule,
   SliderModule,
@@ -81,6 +82,7 @@ export function DeviceLock({
   onCamera: () => void;
   onLight: () => void;
 }) {
+  const realClock = useRealClock(work.phone.autoTime !== false);
   const [code, setCode] = useState("");
   useEffect(() => {
     if (error) setCode("");
@@ -119,7 +121,10 @@ export function DeviceLock({
                 weekday: "long",
                 timeZone: "UTC",
               }).format(
-                new Date((work.phone.date || "2026-09-01") + "T12:00:00Z"),
+                new Date(
+                  (realClock?.date || work.phone.date || "2026-09-01") +
+                    "T12:00:00Z",
+                ),
               )}
             </p>
             <h1>{time}</h1>

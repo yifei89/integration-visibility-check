@@ -436,6 +436,14 @@ export function PhoneSettings({
         <label>
           <input
             type="checkbox"
+            checked={draft.autoTime !== false}
+            onChange={(e) => set({ ...draft, autoTime: e.target.checked })}
+          />
+          跟随真实时间（北京时间）
+        </label>
+        <label>
+          <input
+            type="checkbox"
             checked={draft.notifications}
             onChange={(e) => set({ ...draft, notifications: e.target.checked })}
           />
