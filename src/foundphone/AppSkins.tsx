@@ -33,6 +33,7 @@ import {
 } from "lucide-react";
 import { isImage, makeItem, safeMedia, type Item, type UiValue } from "./schema";
 import { autoReplyFolder, nextAutoReply } from "./wechatReplies";
+import { keywordReply } from "./wechatKeywords";
 export type SkinProps = {
   ui?: Record<string, UiValue>;
   onUi?: (key: string, value: UiValue) => void;
@@ -152,7 +153,7 @@ function Compose({
     </div>
   );
 }
-type Sent = { th: string; o: boolean; b: string; t: string; s: string; a: string };
+type Sent = { th: string; o: boolean; b: string; t: string; s: string; a: string; k?: boolean };
 /** Player chat: free text in, the thread's fixed replies out (cycled), stored in runtime UI state. */
 function WxFreeChat({ p }: { p: SkinProps }) {
   const [log, setLog] = useSkinState<string[]>(p, "freeChat", []);
@@ -179,13 +180,19 @@ function WxFreeChat({ p }: { p: SkinProps }) {
     const now = new Date();
     const t = `${now.toISOString().slice(0, 10)} ${now.toTimeString().slice(0, 5)}`;
     const mine = JSON.stringify({ th: thread, o: true, b: text, t, s: "我", a: "" } satisfies Sent);
-    const count = extras.filter((e) => e.outgoing).length;
+    // Story position counts only scripted replies; keyword answers don't advance the plot.
+    const count = log.map((l) => JSON.parse(l) as Sent).filter((l) => l.th === thread && !l.o && !l.k).length;
     const next = [...log, mine];
     setLog(next);
+    const kw = keywordReply(thread, text);
     const reply = nextAutoReply(replies, count);
-    if (!reply) return;
+    const who = reply ?? replies[0];
+    if (!kw && !reply) return;
     timer.current = setTimeout(() => {
-      setLog([...next, JSON.stringify({ th: thread, o: false, b: reply.body, t, s: reply.sender, a: reply.avatar } satisfies Sent)]);
+      const msg: Sent = kw
+        ? { th: thread, o: false, b: kw, t, s: who?.sender ?? thread, a: who?.avatar ?? "", k: true }
+        : { th: thread, o: false, b: reply!.body, t, s: reply!.sender, a: reply!.avatar };
+      setLog([...next, JSON.stringify(msg)]);
     }, 1200);
   };
   return (
