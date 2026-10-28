@@ -25,8 +25,7 @@ export function StoryPlayer() {
       .then((x) => {
         const w = validateWork(x);
         if (!location.search.includes("preview=test") && !location.search.includes("template=blank")) {
-          importExoManager(w);
-          w.updatedAt += 1;
+          if (importExoManager(w)) w.updatedAt += 1;
         }
         document.title =
           w.title === "捡手机" ? "捡手机" : w.title + " · 捡手机";

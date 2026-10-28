@@ -102,6 +102,9 @@ try {
     );
   } else if (mode === "build") {
     await mkdir("public", { recursive: true });
+    const { importExoManager } = await server.ssrLoadModule("/src/foundphone/exoManager.ts");
+    importExoManager(work);
+    work.updatedAt += 1;
     await writeFile("public/work.json", JSON.stringify(work, null, 2) + "\n");
     const blank = compileStory(
       JSON.parse(await readFile("stories/blank/story.json", "utf8")),
