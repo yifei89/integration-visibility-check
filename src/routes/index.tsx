@@ -1,3 +1,4 @@
+// FoundPhone runtime player route (migrated from exo-FoundPhone-Studio).
 import { createFileRoute, ClientOnly, Link } from "@tanstack/react-router";
 import { lazy, Suspense } from "react";
 
