@@ -494,6 +494,15 @@
       "dock": false,
       "folder": "",
       "icon": ""
+    },
+    {
+      "id": "suggest",
+      "name": "建议",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": "💡"
     }
   ],
   "data": {
@@ -6010,6 +6019,7 @@
     "playerNameRequired": true,
     "player_setup_v1": true,
     "exo_manager_import_v1": true,
+    "suggest_app_v1": true,
     "exo_manager_media_v2": true
   },
   "mode": "mixed"
