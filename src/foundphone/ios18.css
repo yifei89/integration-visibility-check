@@ -953,3 +953,27 @@
   font-size: 12px;
 }
 
+.ios18 .wechat-ui .wx-free-compose {
+  display: flex;
+  align-items: center;
+}
+.ios18 .wechat-ui .wx-free-compose input {
+  flex: 1;
+  min-width: 0;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  background: #fff;
+  padding: 0 10px;
+  font-size: 16px;
+  outline: none;
+}
+.ios18 .wechat-ui .wx-free-compose .wx-send {
+  height: 34px;
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 5px;
+  background: #07c160;
+  color: #fff;
+  font-size: 14px;
+}
