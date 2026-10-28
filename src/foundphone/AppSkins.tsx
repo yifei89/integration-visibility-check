@@ -233,9 +233,17 @@ export function WeChatSkin(p: SkinProps) {
         .map((i) => i.title),
     ),
   ];
+  // One row per person: the same avatar under another name (e.g. 俊勉哥 / 金俊勉) is a duplicate.
+  const seenAvatars = new Set<string>();
   const contacts = [
-    ...new Set(p.items.map((i) => i.sender).filter((s) => s !== "我")),
-  ];
+    ...new Set(p.items.map((i) => i.sender).filter((s) => s && s !== "我")),
+  ].filter((c) => {
+    const a = p.items.find((i) => i.sender === c && i.avatar)?.avatar;
+    if (!a) return true;
+    if (seenAvatars.has(a)) return false;
+    seenAvatars.add(a);
+    return true;
+  });
   const posts = p.items.filter(
     (i) => i.folder === "朋友圈" || i.kind === "post",
   );
