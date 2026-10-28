@@ -160,7 +160,10 @@ function WxFreeChat({ p }: { p: SkinProps }) {
   const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
   useEffect(() => () => clearTimeout(timer.current), []);
   const thread = p.thread;
-  const base = p.items.filter((i) => i.title === thread && i.folder !== autoReplyFolder);
+  // Story notifications can repeat a line already in the chat; show each line once.
+  const base = p.items
+    .filter((i) => i.title === thread && i.folder !== autoReplyFolder)
+    .filter((i, n, all) => all.findIndex((x) => x.body === i.body && x.sender === i.sender) === n);
   const replies = p.items.filter((i) => i.title === thread && i.folder === autoReplyFolder);
   const extras = log
     .map((l) => JSON.parse(l) as Sent)
@@ -401,7 +404,7 @@ export function WeChatSkin(p: SkinProps) {
                     ),
                 )
                 .map((t) => {
-                  const list = p.items.filter((i) => i.title === t),
+                  const list = p.items.filter((i) => i.title === t && i.folder !== autoReplyFolder),
                     last = list.at(-1)!;
                   return (
                     <button
