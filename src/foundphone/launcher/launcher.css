@@ -528,3 +528,33 @@
   opacity: 0.4;
   cursor: default;
 }
+.ios18 .library-get:disabled {
+  opacity: 1;
+}
+.ios18 .library-install-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 88px;
+  font-size: 11px;
+  line-height: 14px;
+}
+.ios18 .library-install-progress progress {
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border: 0;
+  border-radius: 2px;
+  overflow: hidden;
+  background: var(--muted);
+  color: var(--primary);
+}
+.ios18 .library-install-progress progress::-webkit-progress-bar {
+  background: var(--muted);
+}
+.ios18 .library-install-progress progress::-webkit-progress-value {
+  background: var(--primary);
+}
+.ios18 .library-install-progress progress::-moz-progress-bar {
+  background: var(--primary);
+}
