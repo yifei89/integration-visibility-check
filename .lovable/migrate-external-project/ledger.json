@@ -1,0 +1,18 @@
+{
+  "source": "code-archive: exo-FoundPhone-Studio-main.zip (GitHub exo-FoundPhone-Studio)",
+  "capabilities": [
+    { "capability": "application code (React 19 + Vite SPA, 82 source files)", "source": "src/", "outcome": "copied to src/foundphone/, mounted via TanStack routes", "status": "verified", "next_action": "none" },
+    { "capability": "story runtime player (/)", "source": "index.html + src/runtime/StoryPlayer.tsx", "outcome": "route / with ClientOnly; lock screen renders, work.json loads", "status": "verified", "next_action": "none" },
+    { "capability": "studio editor (/studio)", "source": "src/main.tsx", "outcome": "route /studio with ClientOnly; editor renders, work 雨停之前 loads from IndexedDB", "status": "verified", "next_action": "none" },
+    { "capability": "story data (template/blank/test-preview)", "source": "stories/*.json via scripts/story.mjs build", "outcome": "precompiled to public/work.json, blank-work.json, test-work.json (49 apps, 57 records)", "status": "verified", "next_action": "none" },
+    { "capability": "local persistence (Dexie/IndexedDB)", "source": "src/persistence.ts", "outcome": "unchanged, browser-local; studio loaded and saved locally in preview", "status": "verified", "next_action": "none" },
+    { "capability": "static export (player-runtime zip)", "source": "src/io.ts staticExport + scripts/package-player.mjs", "outcome": "public/player-runtime populated (60 files + manifest.json)", "status": "verified", "next_action": "none" },
+    { "capability": "original app icons", "source": "assets/app-icons", "outcome": "copied to public/icon-assets, VITE_ORIGINAL_ICONS=true; icons render in studio screenshot", "status": "verified", "next_action": "none" },
+    { "capability": "upstream test suite", "source": "src/*.test.ts + tests/fixtures", "outcome": "8 files, 46 tests, all passing under project vitest", "status": "verified", "next_action": "none" },
+    { "capability": "PWA offline cache (vite-plugin-pwa)", "source": "vite configs", "outcome": "not ported; conflicts with TanStack Start SSR build", "status": "accepted_loss", "next_action": "none" },
+    { "capability": "auth/users", "source": "none in source", "outcome": "not applicable, app is login-free local-first", "status": "verified", "next_action": "none" },
+    { "capability": "server database/records", "source": "none in source", "outcome": "not applicable", "status": "verified", "next_action": "none" },
+    { "capability": "external providers/payments/email", "source": "none in source", "outcome": "not applicable", "status": "verified", "next_action": "none" },
+    { "capability": "git bidirectional sync", "source": "user request", "outcome": "user connects Git in project settings; Lovable creates a new repo under yzhu04996-stack", "status": "pending_user", "next_action": "user: 项目设置 → Git → 选择 yzhu04996-stack → 连接" }
+  ]
+}
