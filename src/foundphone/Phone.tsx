@@ -213,7 +213,7 @@ function PhoneRuntime({
       .then((saved) => {
         if (!active) return;
         if (saved && saved.state.revision === work.updatedAt)
-          setOwn({ ...saved.state, variables: { ...saved.state.variables, ...(work.variables.playerName ? { playerName: work.variables.playerName } : {}) } });
+          setOwn({ ...saved.state, choices: (saved.state.choices ?? []).filter((c) => work.nodes.some((n) => n.id === c.target)), variables: { ...saved.state.variables, ...(work.variables.playerName ? { playerName: work.variables.playerName } : {}) } });
         else {
           setOwn(dispatch(work, initialRuntime(work), "start"));
           if (saved) setLoadError("作品已更新，已开始新的进度。");
