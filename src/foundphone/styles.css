@@ -4068,22 +4068,24 @@ label {
   padding: 0 9px;
 }
 .wx-moments {
+  --moment-surface: #fff;
+  --moment-panel: #f3f3f3;
+  --moment-name: #61769a;
+  --moment-muted: #929292;
+  --moment-line: #eee;
   flex: 1;
   overflow: auto;
-  background: #fff;
+  background: var(--moment-surface);
 }
 .wx-moment-cover {
-  height: 140px;
-  background: #8f9e96;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 13px;
-  color: #fff;
+  height: 210px;
+  overflow: hidden;
 }
-.wx-moment-cover span {
-  font-size: 16px;
+.wx-moment-cover > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
 }
 .wx-moment-post {
   display: flex;
@@ -4092,13 +4094,14 @@ label {
   text-align: left;
   padding: 18px 13px;
   width: 100%;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--moment-line);
 }
 .wx-moment-post > div {
   flex: 1;
+  min-width: 0;
 }
 .wx-moment-post strong {
-  color: #61769a;
+  color: var(--moment-name);
   font-size: 12px;
 }
 .wx-moment-post p {
@@ -4106,17 +4109,26 @@ label {
   line-height: 1.8;
   margin-top: 8px;
   white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 .wx-moment-post small {
-  color: #aaa;
+  color: var(--moment-muted);
   font-size: 9px;
   display: block;
   margin-top: 10px;
 }
-.wx-moment-post img {
+.wx-moment-media {
   width: 100%;
   margin-top: 8px;
 }
+.wx-moment-post .skin-avatar { flex: 0 0 42px; width: 42px; height: 42px; overflow: hidden; }
+.wx-moment-post .skin-avatar img { width: 100%; height: 100%; object-fit: cover; margin: 0; }
+.wx-moment-actions { display: flex; justify-content: flex-end; color: var(--moment-name); gap: 4px; }
+.wx-moment-responses { background: var(--moment-panel); padding: 8px; }
+.wx-moment-responses p { margin: 0; }
+.wx-moment-likes { display: flex; align-items: center; gap: 5px; color: var(--moment-name); }
+.wx-moment-reply { display: flex; align-items: center; gap: 4px; margin-top: 8px; }
+.wx-moment-reply input { min-width: 0; flex: 1; }
 .skin-empty {
   padding: 35px 20px;
   text-align: center;

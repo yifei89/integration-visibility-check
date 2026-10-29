@@ -11,6 +11,8 @@
 
 ## Architecture
 
+- WeChat Moments interactions use the existing runtime UI save mechanism, separate from authored posts, so reader likes and comments survive reopening without changing the story.
+
 - The app is a migration of exo-FoundPhone-Studio (捡手机): all app code lives in `src/foundphone/` (copied from the upstream `src/`, so relative depth changed by one level — watch `../` paths in tests). Route `/` renders the story player, `/studio` the editor; both are client-only (Dexie/IndexedDB, browser APIs), mounted via `ClientOnly` + `React.lazy`.
 - `src/foundphone/` has its own `tsconfig.json` matching upstream's looser strictness; the root tsconfig drops `exactOptionalPropertyTypes`, `noPropertyAccessFromIndexSignature`, `noUncheckedIndexedAccess` etc. because route imports pull foundphone files into the program.
 - Story data is precompiled: `stories/*/story.json` → `public/work.json`, `blank-work.json`, `test-work.json` via `node scripts/story.mjs build` (run from project root; it loads `src/foundphone/story-engine/compiler.ts` through Vite). Re-run it after editing stories.

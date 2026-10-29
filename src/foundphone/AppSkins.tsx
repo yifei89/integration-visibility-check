@@ -34,6 +34,7 @@ import {
 import { isImage, makeItem, safeMedia, type Item, type UiValue } from "./schema";
 import { autoReplyFolder, nextAutoReply } from "./wechatReplies";
 import { keywordReply } from "./wechatKeywords";
+import { WeChatMoments } from "./WeChatMoments";
 export type SkinProps = {
   ui?: Record<string, UiValue>;
   onUi?: (key: string, value: UiValue) => void;
@@ -368,33 +369,7 @@ export function WeChatSkin(p: SkinProps) {
           <WxFreeChat p={p} />
         )
       ) : moments ? (
-        <div className="wx-moments">
-          <div className="wx-moment-cover">
-            <Camera size={32} />
-            <span>朋友圈</span>
-          </div>
-          {posts.map((i) => (
-            <button
-              key={i.id}
-              className="wx-moment-post"
-              onClick={() => p.onItem(i)}
-            >
-              <Avatar name={i.sender} />
-              <div>
-                <strong>{i.sender}</strong>
-                <p>{i.body}</p>
-                {i.media && <ItemMedia item={i} />}
-                <small>{i.time}</small>
-              </div>
-            </button>
-          ))}
-          {!posts.length && <p className="skin-empty">暂无朋友圈动态</p>}
-          {p.creator && (
-            <button className="phone-add" onClick={p.onAdd}>
-              添加朋友圈动态
-            </button>
-          )}
-        </div>
+        <WeChatMoments p={p} posts={posts} />
       ) : (
         <div className="skin-scroll">
           {tab === "微信" ? (
