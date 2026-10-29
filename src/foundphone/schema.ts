@@ -197,7 +197,8 @@ export function validateWork(input: unknown): Work {
   return workSchema.parse(input);
 }
 /** Bundled media shipped with the app (public/media), safe relative paths only. */
-const bundledMedia = /^\.\/media\/[\w-]+\.(jpg|jpeg|png|webp)$/;
+// Bundled file names may contain Chinese characters (e.g. 微信图片_…), so allow any Unicode letter/digit.
+const bundledMedia = /^\.\/media\/[\p{L}\p{N}_-]+\.(jpg|jpeg|png|webp)$/u;
 export function isImage(value: string) {
   return value.startsWith("data:image/") || bundledMedia.test(value);
 }
