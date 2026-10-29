@@ -478,3 +478,15 @@
 .threads-reference .tr-search input {
   flex: 1;
 }
+.tr-stats { font-size: 13px; opacity: .55; margin: 6px 0 4px; }
+.tr-thread { border-top: 1px solid rgba(127,127,127,.18); margin-top: 8px; padding-top: 8px; display: grid; gap: 10px; }
+.tr-reply-row { display: flex; gap: 8px; align-items: flex-start; font-size: 14px; }
+.tr-reply-row.nested { margin-left: 30px; }
+.tr-reply-row > :first-child { width: 28px; height: 28px; flex: none; }
+.tr-reply-row b { font-weight: 600; }
+.tr-reply-row b span { font-weight: 400; opacity: .55; }
+.tr-reply-row p { margin: 2px 0; }
+.tr-reply-row small { font-size: 12px; opacity: .55; display: flex; align-items: center; gap: 6px; }
+.tr-reply-row small button { background: none; border: 0; color: inherit; padding: 0; display: flex; }
+.tr-more { display: flex; justify-content: space-between; align-items: center; width: 100%; background: none; border: 0; color: inherit; opacity: .65; font-size: 13px; padding: 8px 0 0; }
+.tr-comments { padding: 0 16px; display: grid; gap: 10px; }
