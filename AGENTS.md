@@ -11,6 +11,8 @@
 
 ## Architecture
 
+- Threads feed content lives in `src/foundphone/threads-content.json` and reconciles managed records on every EXO import, so new and existing saves receive additions and text edits without losing reader-created posts or comments.
+
 - WeChat Moments interactions use the existing runtime UI save mechanism, separate from authored posts, so reader likes and comments survive reopening without changing the story.
 
 - The app is a migration of exo-FoundPhone-Studio (捡手机): all app code lives in `src/foundphone/` (copied from the upstream `src/`, so relative depth changed by one level — watch `../` paths in tests). Route `/` renders the story player, `/studio` the editor; both are client-only (Dexie/IndexedDB, browser APIs), mounted via `ClientOnly` + `React.lazy`.
