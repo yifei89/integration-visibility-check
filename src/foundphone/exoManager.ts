@@ -212,6 +212,13 @@ export function applyExoExtras(w: Work): boolean {
     kind: "post", folder: "朋友圈", avatar: exoAvatars.朴灿烈,
     time: "2017-10-29 13:40", meta: { source: "EXO 新人经纪人 · 架空剧情" },
   }));
+  const sehunMomentId = "exo-wechat-moment-sehun-bubble";
+  const sehunMomentAdded = !w.data.wechat.some((i) => i.id === sehunMomentId);
+  if (sehunMomentAdded) w.data.wechat.push(makeItem({
+    id: sehunMomentId, title: "吴世勋", sender: "吴世勋", body: "我发泡泡了欧尼们",
+    kind: "post", folder: "朋友圈", avatar: exoAvatars.吴世勋,
+    time: "2017-10-29 15:50", meta: { source: "EXO 新人经纪人 · 架空剧情" },
+  }));
   // Photos album: incremental — any list entry missing from the album is appended, so
   // existing saves pick up newly added photos without a reset.
   w.data.photos ??= [];
