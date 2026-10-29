@@ -1,5 +1,36 @@
 import type { Item } from "./schema";
 
+type ThreadContentReply = {
+  id?: string;
+  username: string;
+  content: string;
+  replyTo?: string;
+  replies?: ThreadContentReply[];
+};
+type ThreadContentPost = ThreadContentReply;
+export type ThreadContentEntry = string[] | ThreadContentPost;
+
+/** Convert both supported authoring formats to the ordered feed used by the player. */
+export function normalizeThreadsContent(items: ThreadContentEntry[]): [string, string][] {
+  const result: [string, string][] = [];
+  const addReplies = (replies: ThreadContentReply[], parent: string) => {
+    for (const reply of replies) {
+      result.push([reply.username, `回复 @${reply.replyTo || parent}：${reply.content}`]);
+      addReplies(reply.replies ?? [], reply.username);
+    }
+  };
+  for (const entry of items) {
+    if (Array.isArray(entry)) {
+      const [sender, body] = entry;
+      if (typeof sender === "string" && typeof body === "string") result.push([sender, body]);
+    } else {
+      result.push([entry.username, entry.content]);
+      addReplies(entry.replies ?? [], entry.username);
+    }
+  }
+  return result;
+}
+
 export type ThreadReply = { id: string; sender: string; replyTo: string; body: string; nested: boolean };
 
 const prefix = /^回复\s*@([^：:]+)[：:]\s*/;

@@ -12,6 +12,7 @@
 ## Architecture
 
 - Threads feed content lives in `src/foundphone/threads-content.json` and reconciles managed records on every EXO import, so new and existing saves receive additions and text edits without losing reader-created posts or comments.
+- Normalize Threads pair entries and object posts with replies through `threadTree.ts` before importing, so either authoring format loads without iterable errors.
 
 - WeChat Moments interactions use the existing runtime UI save mechanism, separate from authored posts, so reader likes and comments survive reopening without changing the story.
 

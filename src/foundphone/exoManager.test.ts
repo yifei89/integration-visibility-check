@@ -6,14 +6,17 @@ import { autoReplyFolder, nextAutoReply } from "./wechatReplies";
 import { notificationContent } from "./SystemNotifications";
 import { initialRuntime, makeItem, validateWork } from "./schema";
 import threadsContent from "./threads-content.json";
+import { normalizeThreadsContent } from "./threadTree";
+
+const bundledThreads = normalizeThreadsContent(threadsContent.Threads.items);
 
 describe("EXO manager content import", () => {
-  it("imports all 102 uploaded Threads posts with their account names and reply text", () => {
+  it("imports all bundled Threads posts and nested replies with their account names", () => {
     const w = createEmptyWork();
     importExoManager(w);
     const posts = w.data.threads.filter((i) => i.id.startsWith("exo-threads-feed-"));
-    expect(posts).toHaveLength(102);
-    expect(posts.map((i) => [i.sender, i.body])).toEqual(threadsContent.Threads.items);
+    expect(posts).toHaveLength(bundledThreads.length);
+    expect(posts.map((i) => [i.sender, i.body])).toEqual(bundledThreads);
     expect(posts.every((i) => i.kind === "post" && i.media === "")).toBe(true);
   });
   it("syncs Threads into old saves without duplicate posts or loss of reader records", () => {
@@ -23,7 +26,7 @@ describe("EXO manager content import", () => {
     const personal = makeItem({ id: "my-thread", sender: "读者", body: "自己的动态" });
     w.data.threads.push(personal);
     expect(importExoManager(w)).toBe(true);
-    expect(w.data.threads.filter((i) => i.id.startsWith("exo-threads-feed-"))).toHaveLength(102);
+    expect(w.data.threads.filter((i) => i.id.startsWith("exo-threads-feed-"))).toHaveLength(bundledThreads.length);
     expect(w.data.threads.find((i) => i.id === personal.id)).toEqual(personal);
     expect(importExoManager(w)).toBe(false);
   });
@@ -35,7 +38,7 @@ describe("EXO manager content import", () => {
     post.body = "旧版文案";
     post.comments = ["读者评论"];
     expect(importExoManager(w)).toBe(true);
-    expect(post.body).toBe(threadsContent.Threads.items[0][1]);
+    expect(post.body).toBe(bundledThreads[0][1]);
     expect(post.comments).toEqual(["读者评论"]);
     expect(importExoManager(w)).toBe(false);
   });
