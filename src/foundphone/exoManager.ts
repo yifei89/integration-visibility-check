@@ -1,6 +1,7 @@
 import content from "./exo-manager-content.json";
 import dialogue from "./exo-dialogue.json";
 import threadsContent from "./threads-content.json";
+import { normalizeThreadsContent } from "./threadTree";
 import { applyPlayerSetup } from "./playerSetup";
 import { autoReplyFolder } from "./wechatReplies";
 import { suggestionAppId } from "./suggestions";
@@ -266,7 +267,7 @@ export function applyExoExtras(w: Work): boolean {
 export function syncThreadsContent(w: Work): boolean {
   w.data.threads ??= [];
   let changed = false;
-  const posts = threadsContent.Threads.items.map(([sender, body], index) => {
+  const posts = normalizeThreadsContent(threadsContent.Threads.items).map(([sender, body], index) => {
     const id = `exo-threads-feed-${index}`;
     const existing = w.data.threads.find((i) => i.id === id);
     const fields = { title: sender, sender, body, folder: threadsContent.Threads.title };
