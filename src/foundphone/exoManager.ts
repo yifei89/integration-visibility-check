@@ -143,7 +143,15 @@ const pictureApps = ["photos", "instagram", "threads", "weibo", "redbook", "douy
  */
 export function applyExoExtras(w: Work): boolean {
   const suggest = addSuggestionApp(w);
-  if (w.variables[exoExtrasMarker]) return applyExoDialogue(w) || suggest;
+  w.data.wechat ??= [];
+  const momentId = "exo-wechat-moment-chanyeol-hate";
+  const momentAdded = !w.data.wechat.some((i) => i.id === momentId);
+  if (momentAdded) w.data.wechat.push(makeItem({
+    id: momentId, title: "朴灿烈", sender: "朴灿烈", body: "你很恨我吗",
+    kind: "post", folder: "朋友圈", avatar: exoAvatars.朴灿烈,
+    time: "2017-10-29 13:40", meta: { source: "EXO 新人经纪人 · 架空剧情" },
+  }));
+  if (w.variables[exoExtrasMarker]) return applyExoDialogue(w) || suggest || momentAdded;
   // WeChat: drop reply choices; the member answers become the thread's fixed replies.
   w.nodes = w.nodes.filter((n) => !/^exo-(offer|reply)-/.test(n.id));
   w.data.wechat = (w.data.wechat ?? []).filter((i) => !i.id.startsWith("exo-wechat-sent-"));
