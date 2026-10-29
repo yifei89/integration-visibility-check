@@ -6,7 +6,7 @@ import type { SkinProps } from "./AppSkins";
 import { safeMedia, type Item } from "./schema";
 
 function Moment({ item, p }: { item: Item; p: SkinProps }) {
-  const [liked, setLiked] = useSkinState(p, `moment:${item.id}:liked`, false);
+  const [liked, setLiked] = useSkinState<boolean>(p, `moment:${item.id}:liked`, false);
   const [comments, setComments] = useSkinState<string[]>(p, `moment:${item.id}:comments`, []);
   const [replying, setReplying] = useState(false);
   const [draft, setDraft] = useState("");
