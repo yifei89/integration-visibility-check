@@ -331,9 +331,9 @@ export function ThreadsReference(p: SkinProps) {
                         ? i.meta.story === "true"
                         : true,
                 )
-                .map(card)}
+                .map((i) => card(i))}
             {tab === "搜索" &&
-              feed.filter((i) => (i.body + i.sender).includes(query)).map(card)}
+              feed.filter((i) => (i.body + i.sender).includes(query)).map((i) => card(i))}
             {tab === "消息" &&
               messages
                 .filter(
@@ -397,7 +397,7 @@ export function ThreadsReference(p: SkinProps) {
                   .filter(
                     (i) => i.sender === p.owner || i.meta.local === "true",
                   )
-                  .map(card)}
+                  .map((i) => card(i))}
               </>
             )}
             {((tab === "消息" && !messages.length) ||
