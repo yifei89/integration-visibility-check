@@ -171,6 +171,24 @@ const exoPhotos = [
 ["微信图片_20261029000319_6170_1039", ""],
 ["微信图片_20261029000319_6171_1039", ""],
 ["微信图片_20261029000319_6172_1039", ""],
+["微信图片_20261029000319_6173_1039", ""],
+["微信图片_20261029000319_6174_1039", ""],
+["微信图片_20261029000319_6175_1039", ""],
+["微信图片_20261029000319_6176_1039", ""],
+["微信图片_20261029000319_6177_1039", ""],
+["微信图片_20261029000319_6178_1039", ""],
+["微信图片_20261029000319_6179_1039", ""],
+["微信图片_20261029000319_6180_1039", ""],
+["微信图片_20261029000319_6181_1039", ""],
+["微信图片_20261029000319_6182_1039", ""],
+["微信图片_20261029000319_6183_1039", ""],
+["微信图片_20261029001541_14271_18", ""],
+["微信图片_20261029001542_14272_18", ""],
+["微信图片_20261029001543_14273_18", ""],
+["微信图片_20261029001544_14274_18", ""],
+["微信图片_20261029001545_14275_18", ""],
+["微信图片_20261029001545_14276_18", ""],
+["微信图片_20261029001546_14277_18", ""],
 ] as const;
 /** Apps whose posts/media read as picture content; fill empty ones with the EXO photo pool. */
 const pictureApps = ["photos", "instagram", "threads", "weibo", "redbook", "douyin", "bilibili", "tiktok",
@@ -191,7 +209,18 @@ export function applyExoExtras(w: Work): boolean {
     kind: "post", folder: "朋友圈", avatar: exoAvatars.朴灿烈,
     time: "2017-10-29 13:40", meta: { source: "EXO 新人经纪人 · 架空剧情" },
   }));
-  if (w.variables[exoExtrasMarker]) return applyExoDialogue(w) || suggest || momentAdded;
+  // Photos album: incremental — any list entry missing from the album is appended, so
+  // existing saves pick up newly added photos without a reset.
+  w.data.photos ??= [];
+  let photosAdded = false;
+  exoPhotos.forEach(([file, caption], index) => {
+    if (w.data.photos.some((i) => i.id === `exo-photo-${index}`)) return;
+    photosAdded = true;
+    w.data.photos.push(makeItem({ id: `exo-photo-${index}`, title: caption, body: caption,
+      kind: "image", media: media(file), folder: "EXO", time: `2026-10-${String(10 + index).padStart(2, "0")} 20:00`,
+      sender: "相册", meta: { source: "Wikimedia Commons · 见 media/credits.txt" } }));
+  });
+  if (w.variables[exoExtrasMarker]) return applyExoDialogue(w) || suggest || momentAdded || photosAdded;
   // WeChat: drop reply choices; the member answers become the thread's fixed replies.
   w.nodes = w.nodes.filter((n) => !/^exo-(offer|reply)-/.test(n.id));
   w.data.wechat = (w.data.wechat ?? []).filter((i) => !i.id.startsWith("exo-wechat-sent-"));
@@ -217,14 +246,6 @@ export function applyExoExtras(w: Work): boolean {
     const a = exoAvatars[i.title];
     if (a) i.meta = { ...i.meta, threadAvatar: a };
   }
-  // Photos album.
-  w.data.photos ??= [];
-  exoPhotos.forEach(([file, caption], index) => {
-    if (w.data.photos.some((i) => i.id === `exo-photo-${index}`)) return;
-    w.data.photos.push(makeItem({ id: `exo-photo-${index}`, title: caption, body: caption,
-      kind: "image", media: media(file), folder: "EXO", time: `2026-10-${String(10 + index).padStart(2, "0")} 20:00`,
-      sender: "相册", meta: { source: "Wikimedia Commons · 见 media/credits.txt" } }));
-  });
   // Text-only picture apps get photos from the same pool.
   let next = 0;
   for (const app of pictureApps) {
