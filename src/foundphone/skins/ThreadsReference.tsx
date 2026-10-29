@@ -72,7 +72,7 @@ export function ThreadsReference(p: SkinProps) {
     if (i.meta.local !== "true") p.onRead(i.id);
     setSelected(i);
   };
-  const card = (i: Item) => (
+  const card = (i: Item, full = false) => (
     <article className="tr-post" key={i.id}>
       <button className="tr-avatar" onClick={() => setTab("个人主页")}>
         <Avatar name={i.sender} src={i.avatar} />
