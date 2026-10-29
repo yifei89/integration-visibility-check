@@ -29,6 +29,7 @@ import { Avatar, Media } from "./shared";
 import { makeItem, type Item } from "../schema";
 import { useSkinState } from "../skinState";
 import "./threads-reference.css";
+import { groupThreads, type ThreadReply } from "../threadTree";
 export function ThreadsReference(p: SkinProps) {
   const [tab, setTab] = useSkinState<string>(p, "threads-tab", "首页"),
     [liked, setLiked] = useSkinState<string[]>(p, "threads-liked", []),
@@ -55,10 +56,10 @@ export function ThreadsReference(p: SkinProps) {
       meta: { local: "true" },
     }),
   );
-  const feed = [
-      ...local,
-      ...p.items.filter((i) => i.folder !== "私信" && !i.meta.activityType),
-    ],
+  const tree = groupThreads(
+      p.items.filter((i) => i.folder !== "私信" && !i.meta.activityType),
+    ),
+    feed = [...local, ...tree.posts],
     messages = p.items.filter((i) => i.folder === "私信"),
     activities = p.items.filter((i) => i.meta.activityType);
   const toggle = (id: string, items: string[], set: (v: string[]) => void) =>
