@@ -246,14 +246,6 @@ export function applyExoExtras(w: Work): boolean {
     const a = exoAvatars[i.title];
     if (a) i.meta = { ...i.meta, threadAvatar: a };
   }
-  // Photos album.
-  w.data.photos ??= [];
-  exoPhotos.forEach(([file, caption], index) => {
-    if (w.data.photos.some((i) => i.id === `exo-photo-${index}`)) return;
-    w.data.photos.push(makeItem({ id: `exo-photo-${index}`, title: caption, body: caption,
-      kind: "image", media: media(file), folder: "EXO", time: `2026-10-${String(10 + index).padStart(2, "0")} 20:00`,
-      sender: "相册", meta: { source: "Wikimedia Commons · 见 media/credits.txt" } }));
-  });
   // Text-only picture apps get photos from the same pool.
   let next = 0;
   for (const app of pictureApps) {
