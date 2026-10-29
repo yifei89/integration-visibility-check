@@ -209,7 +209,18 @@ export function applyExoExtras(w: Work): boolean {
     kind: "post", folder: "朋友圈", avatar: exoAvatars.朴灿烈,
     time: "2017-10-29 13:40", meta: { source: "EXO 新人经纪人 · 架空剧情" },
   }));
-  if (w.variables[exoExtrasMarker]) return applyExoDialogue(w) || suggest || momentAdded;
+  // Photos album: incremental — any list entry missing from the album is appended, so
+  // existing saves pick up newly added photos without a reset.
+  w.data.photos ??= [];
+  let photosAdded = false;
+  exoPhotos.forEach(([file, caption], index) => {
+    if (w.data.photos.some((i) => i.id === `exo-photo-${index}`)) return;
+    photosAdded = true;
+    w.data.photos.push(makeItem({ id: `exo-photo-${index}`, title: caption, body: caption,
+      kind: "image", media: media(file), folder: "EXO", time: `2026-10-${String(10 + index).padStart(2, "0")} 20:00`,
+      sender: "相册", meta: { source: "Wikimedia Commons · 见 media/credits.txt" } }));
+  });
+  if (w.variables[exoExtrasMarker]) return applyExoDialogue(w) || suggest || momentAdded || photosAdded;
   // WeChat: drop reply choices; the member answers become the thread's fixed replies.
   w.nodes = w.nodes.filter((n) => !/^exo-(offer|reply)-/.test(n.id));
   w.data.wechat = (w.data.wechat ?? []).filter((i) => !i.id.startsWith("exo-wechat-sent-"));
