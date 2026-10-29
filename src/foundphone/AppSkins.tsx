@@ -159,8 +159,14 @@ type Sent = { th: string; o: boolean; b: string; t: string; s: string; a: string
 function WxFreeChat({ p }: { p: SkinProps }) {
   const [log, setLog] = useSkinState<string[]>(p, "freeChat", []);
   const [draft, setDraft] = useState("");
-  const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
-  useEffect(() => () => clearTimeout(timer.current), []);
+  const pendingTimers = useRef<ReturnType<typeof setTimeout>[]>([]);
+  // Read the latest chat log even if the user sends another message before a reply appears.
+  const logRef = useRef(log);
+  logRef.current = log;
+  useEffect(() => () => {
+    pendingTimers.current.forEach(clearTimeout);
+    pendingTimers.current = [];
+  }, []);
   const thread = p.thread;
   // Story notifications can repeat a line already in the chat; show each line once.
   const base = p.items
@@ -181,20 +187,30 @@ function WxFreeChat({ p }: { p: SkinProps }) {
     const now = new Date();
     const t = `${now.toISOString().slice(0, 10)} ${now.toTimeString().slice(0, 5)}`;
     const mine = JSON.stringify({ th: thread, o: true, b: text, t, s: "我", a: "" } satisfies Sent);
-    // Story position counts only scripted replies; keyword answers don't advance the plot.
-    const count = log.map((l) => JSON.parse(l) as Sent).filter((l) => l.th === thread && !l.o && !l.k).length;
-    const next = [...log, mine];
-    setLog(next);
+
+    // Keyword matches take priority. Scripted replies remain a fallback only.
     const kw = keywordReply(thread, text);
-    const reply = nextAutoReply(replies, count);
-    const who = reply ?? replies[0];
-    if (!kw && !reply) return;
-    timer.current = setTimeout(() => {
-      const msg: Sent = kw
-        ? { th: thread, o: false, b: kw, t, s: who?.sender ?? thread, a: who?.avatar ?? "", k: true }
-        : { th: thread, o: false, b: reply!.body, t, s: reply!.sender, a: reply!.avatar };
-      setLog([...next, JSON.stringify(msg)]);
+    const existing = logRef.current.map((l) => JSON.parse(l) as Sent);
+    const scriptedCount = existing.filter((l) => l.th === thread && !l.o && !l.k).length;
+    const reply = kw === undefined ? nextAutoReply(replies, scriptedCount) : undefined;
+    const who = replies[0];
+    const next = [...logRef.current, mine];
+    logRef.current = next;
+    setLog(next);
+    if (kw === undefined && !reply) return;
+
+    const msg: Sent = kw !== undefined
+      ? { th: thread, o: false, b: kw, t, s: who?.sender ?? thread, a: who?.avatar ?? "", k: true }
+      : { th: thread, o: false, b: reply!.body, t, s: reply!.sender, a: reply!.avatar };
+
+    const timer = setTimeout(() => {
+      // Append to the latest state, never overwrite messages sent while waiting.
+      const updated = [...logRef.current, JSON.stringify(msg)];
+      logRef.current = updated;
+      setLog(updated);
+      pendingTimers.current = pendingTimers.current.filter((id) => id !== timer);
     }, 1200);
+    pendingTimers.current.push(timer);
   };
   return (
     <>
