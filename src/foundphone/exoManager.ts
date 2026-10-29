@@ -1,5 +1,6 @@
 import content from "./exo-manager-content.json";
 import dialogue from "./exo-dialogue.json";
+import threadsContent from "./threads-content.json";
 import { applyPlayerSetup } from "./playerSetup";
 import { autoReplyFolder } from "./wechatReplies";
 import { suggestionAppId } from "./suggestions";
@@ -201,6 +202,7 @@ const pictureApps = ["photos", "instagram", "threads", "weibo", "redbook", "douy
  */
 export function applyExoExtras(w: Work): boolean {
   const suggest = addSuggestionApp(w);
+  const threadsChanged = syncThreadsContent(w);
   w.data.wechat ??= [];
   const momentId = "exo-wechat-moment-chanyeol-hate";
   const momentAdded = !w.data.wechat.some((i) => i.id === momentId);
@@ -220,7 +222,7 @@ export function applyExoExtras(w: Work): boolean {
       kind: "image", media: media(file), folder: "EXO", time: `2026-10-${String(10 + index).padStart(2, "0")} 20:00`,
       sender: "相册", meta: { source: "Wikimedia Commons · 见 media/credits.txt" } }));
   });
-  if (w.variables[exoExtrasMarker]) return applyExoDialogue(w) || suggest || momentAdded || photosAdded;
+  if (w.variables[exoExtrasMarker]) return applyExoDialogue(w) || suggest || momentAdded || photosAdded || threadsChanged;
   // WeChat: drop reply choices; the member answers become the thread's fixed replies.
   w.nodes = w.nodes.filter((n) => !/^exo-(offer|reply)-/.test(n.id));
   w.data.wechat = (w.data.wechat ?? []).filter((i) => !i.id.startsWith("exo-wechat-sent-"));
@@ -250,6 +252,7 @@ export function applyExoExtras(w: Work): boolean {
   let next = 0;
   for (const app of pictureApps) {
     for (const i of w.data[app] ?? []) {
+      if (i.id.startsWith("exo-threads-feed-")) continue;
       if (i.media) continue;
       if (i.kind === "audio" || i.kind === "video") continue;
       i.media = media(exoPhotos[next++ % exoPhotos.length][0]);
@@ -258,6 +261,33 @@ export function applyExoExtras(w: Work): boolean {
   w.variables[exoExtrasMarker] = true;
   applyExoDialogue(w);
   return true;
+}
+/** Reconcile bundled Threads posts on every import, preserving reader/authored records. */
+export function syncThreadsContent(w: Work): boolean {
+  w.data.threads ??= [];
+  let changed = false;
+  const posts = threadsContent.Threads.items.map(([sender, body], index) => {
+    const id = `exo-threads-feed-${index}`;
+    const existing = w.data.threads.find((i) => i.id === id);
+    const fields = { title: sender, sender, body, folder: threadsContent.Threads.title };
+    if (!existing) {
+      changed = true;
+      return record("threads", `feed-${index}`, sender, body, {
+        ...fields, kind: "post", time: "", media: "",
+        meta: { source: "Threads 内容清单" },
+      });
+    }
+    for (const [key, value] of Object.entries(fields)) {
+      if (existing[key as keyof typeof fields] !== value) {
+        Object.assign(existing, { [key]: value });
+        changed = true;
+      }
+    }
+    return existing;
+  });
+  const ids = new Set(posts.map((i) => i.id));
+  if (changed) w.data.threads = [...posts, ...w.data.threads.filter((i) => !ids.has(i.id))];
+  return changed;
 }
 export const exoDialogueMarker = "exo_dialogue_ko_v4_expansion_1";
 /** Members' own voice (Korean with Chinese translation): replaces imported chats, fixed replies and notices once. */

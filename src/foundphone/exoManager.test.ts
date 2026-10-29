@@ -5,8 +5,40 @@ import { advance, dispatch } from "./engine";
 import { autoReplyFolder, nextAutoReply } from "./wechatReplies";
 import { notificationContent } from "./SystemNotifications";
 import { initialRuntime, makeItem, validateWork } from "./schema";
+import threadsContent from "./threads-content.json";
 
 describe("EXO manager content import", () => {
+  it("imports all 102 uploaded Threads posts with their account names and reply text", () => {
+    const w = createEmptyWork();
+    importExoManager(w);
+    const posts = w.data.threads.filter((i) => i.id.startsWith("exo-threads-feed-"));
+    expect(posts).toHaveLength(102);
+    expect(posts.map((i) => [i.sender, i.body])).toEqual(threadsContent.Threads.items);
+    expect(posts.every((i) => i.kind === "post" && i.media === "")).toBe(true);
+  });
+  it("syncs Threads into old saves without duplicate posts or loss of reader records", () => {
+    const w = createEmptyWork();
+    importExoManager(w);
+    w.data.threads = w.data.threads.filter((i) => !i.id.startsWith("exo-threads-feed-"));
+    const personal = makeItem({ id: "my-thread", sender: "读者", body: "自己的动态" });
+    w.data.threads.push(personal);
+    expect(importExoManager(w)).toBe(true);
+    expect(w.data.threads.filter((i) => i.id.startsWith("exo-threads-feed-"))).toHaveLength(102);
+    expect(w.data.threads.find((i) => i.id === personal.id)).toEqual(personal);
+    expect(importExoManager(w)).toBe(false);
+  });
+  it("refreshes edited bundled Threads posts while retaining reader comments", () => {
+    const w = createEmptyWork();
+    importExoManager(w);
+    const post = w.data.threads.find((i) => i.id === "exo-threads-feed-0");
+    if (!post) throw new Error("Missing imported post");
+    post.body = "旧版文案";
+    post.comments = ["读者评论"];
+    expect(importExoManager(w)).toBe(true);
+    expect(post.body).toBe(threadsContent.Threads.items[0][1]);
+    expect(post.comments).toEqual(["读者评论"]);
+    expect(importExoManager(w)).toBe(false);
+  });
   it("imports all 49 source apps, preserving the 25 installed apps and phone settings", () => {
     const w = createEmptyWork();
     const phone = structuredClone(w.phone);
