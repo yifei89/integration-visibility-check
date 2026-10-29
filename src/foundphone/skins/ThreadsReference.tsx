@@ -128,8 +128,60 @@ export function ThreadsReference(p: SkinProps) {
             <Send />
           </button>
         </div>
+        {(() => {
+          const list = tree.replies[i.id] ?? [];
+          const mine = replies.filter((v) => v.startsWith(i.id + "\t")).length;
+          const total = list.length + i.comments.length + mine;
+          const likes = i.likes + (liked.includes(i.id) ? 1 : 0);
+          const shown = full ? list : list.slice(0, 2);
+          return (
+            <>
+              {(likes > 0 || total > 0) && (
+                <div className="tr-stats">
+                  {likes}个赞 · {total}条回复
+                </div>
+              )}
+              {shown.length > 0 && (
+                <div className="tr-thread">
+                  {shown.map((r) => replyRow(r))}
+                </div>
+              )}
+              {!full && total > shown.length && (
+                <button className="tr-more" onClick={() => open(i)}>
+                  查看全部{total}条回复 <ChevronRight size={16} />
+                </button>
+              )}
+            </>
+          );
+        })()}
       </div>
     </article>
+  );
+  const replyRow = (r: ThreadReply) => (
+    <div className={"tr-reply-row" + (r.nested ? " nested" : "")} key={r.id}>
+      <Avatar name={r.sender} />
+      <div>
+        <b>
+          {r.sender}
+          {r.nested && <span> 回复 {r.replyTo}</span>}
+        </b>
+        <p>{r.body}</p>
+        <small>
+          回复
+          <button
+            aria-label={"喜欢回复" + r.id}
+            aria-pressed={liked.includes(r.id)}
+            onClick={() => toggle(r.id, liked, setLiked)}
+          >
+            <Heart
+              size={13}
+              fill={liked.includes(r.id) ? "#ff3060" : "none"}
+              color={liked.includes(r.id) ? "#ff3060" : "currentColor"}
+            />
+          </button>
+        </small>
+      </div>
+    </div>
   );
   return (
     <div className="threads-reference">
@@ -146,7 +198,7 @@ export function ThreadsReference(p: SkinProps) {
               <b>串文</b>
               <MoreHorizontal />
             </header>
-            {card(selected)}
+            {card(selected, true)}
             <div className="tr-comments">
               {[
                 ...selected.comments,
@@ -154,7 +206,14 @@ export function ThreadsReference(p: SkinProps) {
                   .filter((v) => v.startsWith(selected.id + "\t"))
                   .map((v) => v.split("\t").slice(1).join("\t")),
               ].map((c, n) => (
-                <p key={n}>{c}</p>
+                <div className="tr-reply-row" key={n}>
+                  <Avatar name={p.owner || "我"} />
+                  <div>
+                    <b>{p.owner || "我"}</b>
+                    <p>{c}</p>
+                    <small>刚刚 · 回复</small>
+                  </div>
+                </div>
               ))}
             </div>
             <form
