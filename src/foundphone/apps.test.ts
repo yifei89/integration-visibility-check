@@ -32,12 +32,12 @@ describe("optional app lifecycle", () => {
       "weather", "wallet", "health", "find", "calculator", "settings", "appstore",
       "wechat", "instagram", "kakao", "threads",
     ].sort());
-    expect(w.apps).toHaveLength(49);
+    expect(w.apps).toHaveLength(50);
   });
-  it("keeps the other 24 apps uninstalled until downloaded and preserves their content", () => {
+  it("keeps the other 25 apps uninstalled until downloaded and preserves their content", () => {
     const w = createWork();
     const optional = w.apps.filter((a) => !a.installed);
-    expect(optional).toHaveLength(24);
+    expect(optional).toHaveLength(25);
     for (const a of optional) {
       expect(a.visible).toBe(false);
       const data = structuredClone(w.data[a.id]);
