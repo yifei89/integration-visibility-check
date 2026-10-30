@@ -17188,13 +17188,15 @@
         "body": "全新未拆 · ¥1699 · 你关注的卖家正在捡漏",
         "richText": "",
         "meta": {
-          "source": "EXO 新人经纪人 · 架空剧情"
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "price": "1699",
+          "status": "捡漏中"
         },
         "time": "2026-10-28 09:42",
         "sender": "EXO原皮官娃",
         "avatar": "",
-        "kind": "text",
-        "media": "",
+        "kind": "image",
+        "media": "./media/exo-05.jpg",
         "hidden": true,
         "unlock": "",
         "password": "",
