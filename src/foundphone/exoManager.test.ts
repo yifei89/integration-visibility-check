@@ -125,12 +125,11 @@ describe("EXO manager content import", () => {
     expect(s.notifications).toHaveLength(0);
     s = advance(w, s, 1);
     expect(s.notifications).toEqual(["微信 · 灿烈哥：근데 오후에 몇 시였죠…? ㅋㅋㅋ（下午是几点来着…？ㅋㅋㅋ）"]);
+    // Xianyu's bargain notice lands 60s in, between the second and third chat notice.
     s = advance(w, s, 216000);
-    expect(s.notifications).toHaveLength(10);
-    expect(s.notifications[9]).toBe("微信 · 暻秀哥：일 끝나면 밥 꼭 먹어요.（忙完记得吃饭。）");
-    s = advance(w, s, 36000);
     expect(s.notifications).toHaveLength(11);
-    expect(s.notifications[10]).toBe("闲鱼 · EXO原皮官娃：你关注的EXO原皮官娃正在捡漏");
+    expect(s.notifications[2]).toBe("闲鱼 · EXO原皮官娃：你关注的EXO原皮官娃正在捡漏");
+    expect(s.notifications[10]).toBe("微信 · 暻秀哥：일 끝나면 밥 꼭 먹어요.（忙完记得吃饭。）");
   });
   it("installs Xianyu with the story and pushes its bargain notice on older saves too", () => {
     const w = createEmptyWork(); importExoManager(w);
