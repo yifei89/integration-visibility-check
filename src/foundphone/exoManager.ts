@@ -233,6 +233,34 @@ export function applyExoExtras(w: Work): boolean {
     kind: "post", folder: "朋友圈", avatar: exoAvatars.朴灿烈,
     time: "2017-10-29 22:00", meta: { source: "EXO 新人经纪人 · 架空剧情" },
   }));
+  // Xianyu: the secondhand app for doll hunting gets installed with the story, and its
+  // push notification queues on the next app open so older saves still receive it.
+  let xianyuAdded = false;
+  if (!w.apps.some((a) => a.id === "xianyu"))
+    w.apps.push({ id: "xianyu", name: "闲鱼", installed: true, visible: true, dock: false, folder: "", icon: "" });
+  const xianyuApp = w.apps.find((a) => a.id === "xianyu");
+  if (xianyuApp && !xianyuApp.installed) {
+    xianyuApp.installed = true;
+    xianyuApp.visible = true;
+    xianyuAdded = true;
+  }
+  w.data.xianyu ??= [];
+  const xianyuItemId = "exo-xianyu-notice-0";
+  if (!w.data.xianyu.some((i) => i.id === xianyuItemId)) {
+    xianyuAdded = true;
+    w.data.xianyu.push(record("xianyu", "notice-0", "EXO 原皮官娃", "全新未拆 · ¥1699 · 你关注的卖家正在捡漏",
+      { hidden: true, sender: "EXO原皮官娃", folder: "首页" }));
+  }
+  const xianyuNoticeId = "exo-xianyu-notice";
+  if (!w.nodes.some((n) => n.id === xianyuNoticeId)) {
+    xianyuAdded = true;
+    w.nodes.push(node(xianyuNoticeId, {
+      label: "闲鱼 · 捡漏提醒", event: "openApp", type: "delay", delayMs: 24000,
+      actions: [
+        { type: "unlock", key: xianyuItemId, value: true },
+        { type: "notification", key: "", value: "闲鱼 · EXO原皮官娃：你关注的EXO原皮官娃正在捡漏" },
+      ], next: [] }));
+  }
   // Photos album: incremental — any list entry missing from the album is appended, so
   // existing saves pick up newly added photos without a reset.
   w.data.photos ??= [];
