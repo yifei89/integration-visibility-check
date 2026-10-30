@@ -255,7 +255,7 @@ export function applyExoExtras(w: Work): boolean {
   if (!w.nodes.some((n) => n.id === xianyuNoticeId)) {
     xianyuAdded = true;
     w.nodes.push(node(xianyuNoticeId, {
-      label: "闲鱼 · 捡漏提醒", event: "openApp", type: "delay", delayMs: 24000,
+      label: "闲鱼 · 捡漏提醒", event: "openApp", type: "delay", delayMs: 60000,
       actions: [
         { type: "unlock", key: xianyuItemId, value: true },
         { type: "notification", key: "", value: "闲鱼 · EXO原皮官娃：你关注的EXO原皮官娃正在捡漏" },

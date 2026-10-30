@@ -128,5 +128,24 @@ describe("EXO manager content import", () => {
     s = advance(w, s, 216000);
     expect(s.notifications).toHaveLength(10);
     expect(s.notifications[9]).toBe("微信 · 暻秀哥：일 끝나면 밥 꼭 먹어요.（忙完记得吃饭。）");
+    s = advance(w, s, 36000);
+    expect(s.notifications).toHaveLength(11);
+    expect(s.notifications[10]).toBe("闲鱼 · EXO原皮官娃：你关注的EXO原皮官娃正在捡漏");
+  });
+  it("installs Xianyu with the story and pushes its bargain notice on older saves too", () => {
+    const w = createEmptyWork(); importExoManager(w);
+    expect(w.apps.find((a) => a.id === "xianyu")?.installed).toBe(true);
+    expect(w.nodes.find((n) => n.id === "exo-xianyu-notice")?.event).toBe("openApp");
+    const notice = notificationContent("闲鱼 · EXO原皮官娃：你关注的EXO原皮官娃正在捡漏", w.apps);
+    expect(notice.appId).toBe("xianyu");
+    expect(notice.title).toBe("闲鱼 · EXO原皮官娃");
+    // Older saves: strip the pieces and the next import restores them once.
+    w.apps = w.apps.filter((a) => a.id !== "xianyu");
+    w.nodes = w.nodes.filter((n) => n.id !== "exo-xianyu-notice");
+    w.data.xianyu = [];
+    expect(importExoManager(w)).toBe(true);
+    expect(w.apps.find((a) => a.id === "xianyu")?.installed).toBe(true);
+    expect(w.nodes.some((n) => n.id === "exo-xianyu-notice")).toBe(true);
+    expect(importExoManager(w)).toBe(false);
   });
 });
