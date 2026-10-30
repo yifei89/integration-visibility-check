@@ -219,6 +219,20 @@ export function applyExoExtras(w: Work): boolean {
     kind: "post", folder: "朋友圈", avatar: exoAvatars.吴世勋,
     time: "2017-10-29 15:50", meta: { source: "EXO 新人经纪人 · 架空剧情" },
   }));
+  const suhoMomentId = "exo-wechat-moment-suho-show";
+  const suhoMomentAdded = !w.data.wechat.some((i) => i.id === suhoMomentId);
+  if (suhoMomentAdded) w.data.wechat.push(makeItem({
+    id: suhoMomentId, title: "金俊勉", sender: "金俊勉", body: "今天我的综艺播了，大家有听吗？好想你们！",
+    kind: "post", folder: "朋友圈", avatar: exoAvatars.金俊勉,
+    time: "2017-10-30 15:20", meta: { source: "EXO 新人经纪人 · 架空剧情" },
+  }));
+  const chanyeolOsakaId = "exo-wechat-moment-chanyeol-osaka";
+  const chanyeolOsakaAdded = !w.data.wechat.some((i) => i.id === chanyeolOsakaId);
+  if (chanyeolOsakaAdded) w.data.wechat.push(makeItem({
+    id: chanyeolOsakaId, title: "朴灿烈", sender: "朴灿烈", body: "今天在大阪玩得也很开心。",
+    kind: "post", folder: "朋友圈", avatar: exoAvatars.朴灿烈,
+    time: "2017-10-29 22:00", meta: { source: "EXO 新人经纪人 · 架空剧情" },
+  }));
   // Photos album: incremental — any list entry missing from the album is appended, so
   // existing saves pick up newly added photos without a reset.
   w.data.photos ??= [];
