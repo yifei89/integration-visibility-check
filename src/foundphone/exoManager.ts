@@ -244,7 +244,7 @@ export function applyExoExtras(w: Work): boolean {
       kind: "image", media: media(file), folder: "EXO", time: `2026-10-${String(10 + index).padStart(2, "0")} 20:00`,
       sender: "相册", meta: { source: "Wikimedia Commons · 见 media/credits.txt" } }));
   });
-  if (w.variables[exoExtrasMarker]) return applyExoDialogue(w) || suggest || momentAdded || sehunMomentAdded || photosAdded || threadsChanged;
+  if (w.variables[exoExtrasMarker]) return applyExoDialogue(w) || suggest || momentAdded || sehunMomentAdded || suhoMomentAdded || chanyeolOsakaAdded || photosAdded || threadsChanged;
   // WeChat: drop reply choices; the member answers become the thread's fixed replies.
   w.nodes = w.nodes.filter((n) => !/^exo-(offer|reply)-/.test(n.id));
   w.data.wechat = (w.data.wechat ?? []).filter((i) => !i.id.startsWith("exo-wechat-sent-"));
