@@ -249,7 +249,8 @@ export function applyExoExtras(w: Work): boolean {
   if (!w.data.xianyu.some((i) => i.id === xianyuItemId)) {
     xianyuAdded = true;
     w.data.xianyu.push(record("xianyu", "notice-0", "EXO 原皮官娃", "全新未拆 · ¥1699 · 你关注的卖家正在捡漏",
-      { hidden: true, sender: "EXO原皮官娃", folder: "首页" }));
+      { hidden: true, sender: "EXO原皮官娃", folder: "首页", kind: "image", media: media("exo-05"),
+        meta: { source: "EXO 新人经纪人 · 架空剧情", price: "1699", status: "捡漏中" } }));
   }
   const xianyuNoticeId = "exo-xianyu-notice";
   if (!w.nodes.some((n) => n.id === xianyuNoticeId)) {
