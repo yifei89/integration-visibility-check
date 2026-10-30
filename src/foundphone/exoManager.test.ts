@@ -49,10 +49,10 @@ describe("EXO manager content import", () => {
     importExoManager(w);
     expect(Object.keys(exoAppIds)).toHaveLength(49);
     for (const id of Object.values(exoAppIds)) expect(w.data[id].length).toBeGreaterThan(0);
-    expect(w.apps.filter((a) => a.installed && a.id !== "suggest")).toHaveLength(25);
+    expect(w.apps.filter((a) => a.installed && !["suggest", "xianyu"].includes(a.id))).toHaveLength(25);
     expect(w.apps.find((a) => a.id === "suggest")?.installed).toBe(true);
     expect(w.phone).toEqual({ ...phone, passcode: "0412" });
-    for (const a of apps.filter((x) => x.id !== "suggest")) expect(w.apps.find((b) => a.id === b.id)).toEqual(a);
+    for (const a of apps.filter((x) => x.id !== "suggest" && x.id !== "xianyu")) expect(w.apps.find((b) => a.id === b.id)).toEqual(a);
     expect(w.apps.find((a) => a.id === "googlemaps")?.installed).toBe(false);
     expect(validateWork(w).data.notes[0].title).toBe("入职第一周");
   });
@@ -125,8 +125,26 @@ describe("EXO manager content import", () => {
     expect(s.notifications).toHaveLength(0);
     s = advance(w, s, 1);
     expect(s.notifications).toEqual(["微信 · 灿烈哥：근데 오후에 몇 시였죠…? ㅋㅋㅋ（下午是几点来着…？ㅋㅋㅋ）"]);
+    // Xianyu's bargain notice lands 60s in, between the second and third chat notice.
     s = advance(w, s, 216000);
-    expect(s.notifications).toHaveLength(10);
-    expect(s.notifications[9]).toBe("微信 · 暻秀哥：일 끝나면 밥 꼭 먹어요.（忙完记得吃饭。）");
+    expect(s.notifications).toHaveLength(11);
+    expect(s.notifications[2]).toBe("闲鱼 · EXO原皮官娃：你关注的EXO原皮官娃正在捡漏");
+    expect(s.notifications[10]).toBe("微信 · 暻秀哥：일 끝나면 밥 꼭 먹어요.（忙完记得吃饭。）");
+  });
+  it("installs Xianyu with the story and pushes its bargain notice on older saves too", () => {
+    const w = createEmptyWork(); importExoManager(w);
+    expect(w.apps.find((a) => a.id === "xianyu")?.installed).toBe(true);
+    expect(w.nodes.find((n) => n.id === "exo-xianyu-notice")?.event).toBe("openApp");
+    const notice = notificationContent("闲鱼 · EXO原皮官娃：你关注的EXO原皮官娃正在捡漏", w.apps);
+    expect(notice.appId).toBe("xianyu");
+    expect(notice.title).toBe("闲鱼 · EXO原皮官娃");
+    // Older saves: strip the pieces and the next import restores them once.
+    w.apps = w.apps.filter((a) => a.id !== "xianyu");
+    w.nodes = w.nodes.filter((n) => n.id !== "exo-xianyu-notice");
+    w.data.xianyu = [];
+    expect(importExoManager(w)).toBe(true);
+    expect(w.apps.find((a) => a.id === "xianyu")?.installed).toBe(true);
+    expect(w.nodes.some((n) => n.id === "exo-xianyu-notice")).toBe(true);
+    expect(importExoManager(w)).toBe(false);
   });
 });

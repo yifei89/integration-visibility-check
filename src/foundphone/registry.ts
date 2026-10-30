@@ -29,6 +29,7 @@ import {
   Film,
   Pin,
   AtSign,
+  Fish,
   Send,
   Tv,
   type LucideIcon,
@@ -177,6 +178,7 @@ const definitions: [
     ["好友", "聊天"],
   ],
   ["appstore", "App Store", "system", "#087cff", ShoppingBag, ["搜索"]],
+  ["xianyu", "闲鱼", "records", "#ffd418", Fish, ["首页", "消息", "我的"]],
   ["threads", "Threads", "social", "#4d5150", AtSign, ["动态", "回复"]],
 ];
 export const registry: AppPlugin[] = definitions.map(

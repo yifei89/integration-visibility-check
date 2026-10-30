@@ -219,6 +219,49 @@ export function applyExoExtras(w: Work): boolean {
     kind: "post", folder: "朋友圈", avatar: exoAvatars.吴世勋,
     time: "2017-10-29 15:50", meta: { source: "EXO 新人经纪人 · 架空剧情" },
   }));
+  const suhoMomentId = "exo-wechat-moment-suho-show";
+  const suhoMomentAdded = !w.data.wechat.some((i) => i.id === suhoMomentId);
+  if (suhoMomentAdded) w.data.wechat.push(makeItem({
+    id: suhoMomentId, title: "金俊勉", sender: "金俊勉", body: "今天我的综艺播了，大家有听吗？好想你们！",
+    kind: "post", folder: "朋友圈", avatar: exoAvatars.金俊勉,
+    time: "2017-10-30 15:20", meta: { source: "EXO 新人经纪人 · 架空剧情" },
+  }));
+  const chanyeolOsakaId = "exo-wechat-moment-chanyeol-osaka";
+  const chanyeolOsakaAdded = !w.data.wechat.some((i) => i.id === chanyeolOsakaId);
+  if (chanyeolOsakaAdded) w.data.wechat.push(makeItem({
+    id: chanyeolOsakaId, title: "朴灿烈", sender: "朴灿烈", body: "今天在大阪玩得也很开心。",
+    kind: "post", folder: "朋友圈", avatar: exoAvatars.朴灿烈,
+    time: "2017-10-29 22:00", meta: { source: "EXO 新人经纪人 · 架空剧情" },
+  }));
+  // Xianyu: the secondhand app for doll hunting gets installed with the story, and its
+  // push notification queues on the next app open so older saves still receive it.
+  let xianyuAdded = false;
+  if (!w.apps.some((a) => a.id === "xianyu"))
+    w.apps.push({ id: "xianyu", name: "闲鱼", installed: true, visible: true, dock: false, folder: "", icon: "" });
+  const xianyuApp = w.apps.find((a) => a.id === "xianyu");
+  if (xianyuApp && !xianyuApp.installed) {
+    xianyuApp.installed = true;
+    xianyuApp.visible = true;
+    xianyuAdded = true;
+  }
+  w.data.xianyu ??= [];
+  const xianyuItemId = "exo-xianyu-notice-0";
+  if (!w.data.xianyu.some((i) => i.id === xianyuItemId)) {
+    xianyuAdded = true;
+    w.data.xianyu.push(record("xianyu", "notice-0", "EXO 原皮官娃", "全新未拆 · ¥1699 · 你关注的卖家正在捡漏",
+      { hidden: true, sender: "EXO原皮官娃", folder: "首页", kind: "image", media: media("exo-05"),
+        meta: { source: "EXO 新人经纪人 · 架空剧情", price: "1699", status: "捡漏中" } }));
+  }
+  const xianyuNoticeId = "exo-xianyu-notice";
+  if (!w.nodes.some((n) => n.id === xianyuNoticeId)) {
+    xianyuAdded = true;
+    w.nodes.push(node(xianyuNoticeId, {
+      label: "闲鱼 · 捡漏提醒", event: "openApp", type: "delay", delayMs: 60000,
+      actions: [
+        { type: "unlock", key: xianyuItemId, value: true },
+        { type: "notification", key: "", value: "闲鱼 · EXO原皮官娃：你关注的EXO原皮官娃正在捡漏" },
+      ], next: [] }));
+  }
   // Photos album: incremental — any list entry missing from the album is appended, so
   // existing saves pick up newly added photos without a reset.
   w.data.photos ??= [];
@@ -230,7 +273,7 @@ export function applyExoExtras(w: Work): boolean {
       kind: "image", media: media(file), folder: "EXO", time: `2026-10-${String(10 + index).padStart(2, "0")} 20:00`,
       sender: "相册", meta: { source: "Wikimedia Commons · 见 media/credits.txt" } }));
   });
-  if (w.variables[exoExtrasMarker]) return applyExoDialogue(w) || suggest || momentAdded || sehunMomentAdded || photosAdded || threadsChanged;
+  if (w.variables[exoExtrasMarker]) return applyExoDialogue(w) || suggest || momentAdded || sehunMomentAdded || suhoMomentAdded || chanyeolOsakaAdded || xianyuAdded || photosAdded || threadsChanged;
   // WeChat: drop reply choices; the member answers become the thread's fixed replies.
   w.nodes = w.nodes.filter((n) => !/^exo-(offer|reply)-/.test(n.id));
   w.data.wechat = (w.data.wechat ?? []).filter((i) => !i.id.startsWith("exo-wechat-sent-"));

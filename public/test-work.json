@@ -458,6 +458,15 @@
       "dock": false,
       "folder": "",
       "icon": ""
+    },
+    {
+      "id": "xianyu",
+      "name": "闲鱼",
+      "installed": false,
+      "visible": false,
+      "dock": false,
+      "folder": "",
+      "icon": ""
     }
   ],
   "data": {
