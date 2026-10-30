@@ -460,6 +460,15 @@
       "icon": ""
     },
     {
+      "id": "xianyu",
+      "name": "闲鱼",
+      "installed": true,
+      "visible": true,
+      "dock": false,
+      "folder": "",
+      "icon": ""
+    },
+    {
       "id": "dianping",
       "name": "大众点评",
       "installed": false,
@@ -8995,6 +9004,54 @@
         "comments": []
       },
       {
+        "id": "exo-wechat-moment-suho-show",
+        "title": "金俊勉",
+        "body": "今天我的综艺播了，大家有听吗？好想你们！",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-suho.jpg"
+        },
+        "time": "2017-10-30 15:20",
+        "sender": "金俊勉",
+        "avatar": "./media/avatar-suho.jpg",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "朋友圈",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
+        "id": "exo-wechat-moment-chanyeol-osaka",
+        "title": "朴灿烈",
+        "body": "今天在大阪玩得也很开心。",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情",
+          "threadAvatar": "./media/avatar-chanyeol.jpg"
+        },
+        "time": "2017-10-29 22:00",
+        "sender": "朴灿烈",
+        "avatar": "./media/avatar-chanyeol.jpg",
+        "kind": "post",
+        "media": "",
+        "hidden": false,
+        "unlock": "",
+        "password": "",
+        "folder": "朋友圈",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      },
+      {
         "id": "exo-wechat-chat-0-0",
         "title": "EXO工作群（6）",
         "body": "다들 좋은 아침! 오늘부터 새 매니저님 출근하셨어요 👏（大家早上好！今天新经纪人正式上班啦 👏）",
@@ -17123,6 +17180,31 @@
         "likes": 0,
         "comments": []
       }
+    ],
+    "xianyu": [
+      {
+        "id": "exo-xianyu-notice-0",
+        "title": "EXO 原皮官娃",
+        "body": "全新未拆 · ¥1699 · 你关注的卖家正在捡漏",
+        "richText": "",
+        "meta": {
+          "source": "EXO 新人经纪人 · 架空剧情"
+        },
+        "time": "2026-10-28 09:42",
+        "sender": "EXO原皮官娃",
+        "avatar": "",
+        "kind": "text",
+        "media": "",
+        "hidden": true,
+        "unlock": "",
+        "password": "",
+        "folder": "首页",
+        "favorite": false,
+        "outgoing": false,
+        "read": false,
+        "likes": 0,
+        "comments": []
+      }
     ]
   },
   "nodes": [
@@ -17419,6 +17501,32 @@
       "x": 80,
       "y": 80,
       "delayMs": 24000
+    },
+    {
+      "id": "exo-xianyu-notice",
+      "label": "闲鱼 · 捡漏提醒",
+      "type": "delay",
+      "event": "openApp",
+      "target": "",
+      "conditions": [],
+      "logic": "and",
+      "actions": [
+        {
+          "type": "unlock",
+          "key": "exo-xianyu-notice-0",
+          "value": true
+        },
+        {
+          "type": "notification",
+          "key": "",
+          "value": "闲鱼 · EXO原皮官娃：你关注的EXO原皮官娃正在捡漏"
+        }
+      ],
+      "next": [],
+      "once": true,
+      "x": 80,
+      "y": 80,
+      "delayMs": 60000
     }
   ],
   "variables": {
