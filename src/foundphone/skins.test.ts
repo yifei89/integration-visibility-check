@@ -5,7 +5,7 @@ import { makeItem, validateWork } from "./schema";
 import { createWork } from "./demo";
 import { getFields } from "./fields";
 describe("independent app coverage and authored attributes", () => {
-  it("routes all 47 built-in app identities through dedicated screens", () => {
+  it("routes all 48 built-in app identities through dedicated screens", () => {
     const previous = [
       "wechat",
       "whatsapp",
